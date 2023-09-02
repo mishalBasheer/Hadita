@@ -9,7 +9,7 @@ import app from './app.js';
 //     throw Error('Error When connecting mongoose: ', error);
 //   });
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.listen(PORT, (error) => {
   if (!error) {
