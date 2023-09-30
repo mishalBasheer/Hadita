@@ -5,7 +5,8 @@ import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import flash from 'connect-flash';
 
-import landingPage from './route/landingPage.js';
+import userRoutes from './route/userRoutes.js';
+import adminRoutes from './route/adminRoutes.js';
 
 
 const app = express();
@@ -34,6 +35,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public/')));
 // app.use(flash());
 
-app.use('/', landingPage);
+app.use('/', userRoutes);
+app.use('/admin', adminRoutes);
 
 export default app;
