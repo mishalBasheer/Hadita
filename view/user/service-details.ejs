@@ -1,0 +1,91 @@
+<%- include('partials/header') %>
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+<section>
+  <div
+    class="bg-holder overlay"
+    style="
+      background-image: url(/assets/img/background-2.jpg);
+      background-position: center bottom;
+    "
+  ></div>
+  <!--/.bg-holder-->
+  <div class="container">
+    <div class="row pt-6" data-inertia='{"weight":1.5}'>
+      <div
+        class="col-md-8 text-white"
+        data-zanim-timeline="{}"
+        data-zanim-trigger="scroll"
+      >
+        <div class="overflow-hidden">
+          <h1
+            class="text-white fs-4 fs-md-5 mb-0 lh-1"
+            data-zanim-xs='{"delay":0}'
+          >
+            <%= service.title %>
+          </h1>
+          <div
+            class="nav"
+            aria-label="breadcrumb"
+            role="navigation"
+            data-zanim-xs='{"delay":0.1}'
+          >
+            <ol class="breadcrumb fs-1 ps-0 fw-bold">
+              <li class="breadcrumb-item">
+                <a class="text-white" href="/">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a class="text-white" href="/services">Services</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <%= service.title %>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of .container-->
+</section>
+<!-- <section> close ============================-->
+<!-- ============================================-->
+
+<section class="bg-100">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card mb-6">
+          <div class="row">
+            <div
+            >
+              <h3 style="margin-bottom: 0;margin-top: 3rem;padding-left: 3rem;" ><%= service.title %></h3>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="card-body p-5">
+                <p class="dropcap"><%= service.description %></p>
+                <ol>
+                  <% service.points.forEach(element => { %>
+                  <li>
+                    <p class="mb-2"><%= element %></p>
+                  </li>
+                  <% }) %>
+                </ol>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <img
+                  class="p-5 card-img-top"
+                  src="/assets/img/news-1.jpg"
+                  alt="new image"
+                />
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
