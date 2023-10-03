@@ -17231,3 +17231,6 @@ iframe.yt-video.loaded {
   width: 0.25rem;
   margin: 0;
 }
+.ring-icon svg:hover{
+  color: var(--elixir-info);
+}

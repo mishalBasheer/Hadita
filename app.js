@@ -7,6 +7,7 @@ import flash from 'connect-flash';
 
 import userRoutes from './route/userRoutes.js';
 import adminRoutes from './route/adminRoutes.js';
+import authRoutes from './route/authRoutes.js';
 
 
 const app = express();
@@ -37,5 +38,6 @@ app.use(express.static(path.join(__dirname, 'public/')));
 
 app.use('/', userRoutes);
 app.use('/admin', adminRoutes);
+app.use('/auth', authRoutes);
 
 export default app;

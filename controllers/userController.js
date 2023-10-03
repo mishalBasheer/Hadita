@@ -1,11 +1,8 @@
 const showLanding = (req, res) => {
-  res.render("user/landingPage");
+  res.render("user/landing-page");
 };
 const showContact = (req, res) => {
   res.render("user/contact");
-};
-const showServices = (req, res) => {
-  res.render("user/services");
 };
 const showServiceDetails = (req, res) => {
   const id = req.params["id"];
@@ -42,7 +39,7 @@ const showServiceDetails = (req, res) => {
       ],
     },
     {
-      id: "business-application-devops",
+      id: "business-applications-devops",
       title: "Business Applications and DevOps",
       description:
         "Optimize your business processes with cutting-edge applications and embrace agile DevOps methodologies. Our solutions streamline workflows, enhance collaboration, and deliver high-quality software rapidly.",
@@ -75,22 +72,30 @@ const showServiceDetails = (req, res) => {
   const selectedService = services.find((el) => el.id === id);
   res.render("user/service-details", { service: selectedService });
 };
-const showAbout = (req, res) => {
-  res.render("user/about-us");
-};
 const showBlog = (req, res) => {
   res.render("user/blogs");
 };
 const showBlogDetails = (req, res) => {
   res.render("user/blog-details");
 };
+const showNews = (req, res) => {
+  res.render("user/news");
+};
+const showNewsDetails = (req, res) => {
+  res.render("user/news-details");
+};
+const showUseCase = (req, res) => {
+  res.render("user/use-cases");
+};
+
 
 export {
   showLanding,
   showContact,
-  showServices,
   showServiceDetails,
-  showAbout,
   showBlog,
-  showBlogDetails,
+  showBlogDetails,  
+  showUseCase,
+  showNews,
+  showNewsDetails,
 };
