@@ -87,6 +87,12 @@ const showNewsDetails = (req, res) => {
 const showUseCase = (req, res) => {
   res.render("user/use-cases");
 };
+const showPrivacyPolicy = (req, res) => {
+  res.render("user/privacy-policy");
+};
+const showTerms = (req, res) => {
+  res.render("user/terms-of-use");
+};
 
 
 export {
@@ -98,4 +104,6 @@ export {
   showUseCase,
   showNews,
   showNewsDetails,
+  showPrivacyPolicy,
+  showTerms,
 };

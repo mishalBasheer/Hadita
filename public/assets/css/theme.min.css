@@ -290,7 +290,7 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--elixir-info); 
+  background: var(--elixir-info);
   border-radius: 10px;
 }
 hr {
@@ -17231,6 +17231,13 @@ iframe.yt-video.loaded {
   width: 0.25rem;
   margin: 0;
 }
+.ring-icon svg{
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition:  0.6s ease-out;
+}
 .ring-icon svg:hover{
-  color: var(--elixir-info);
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }

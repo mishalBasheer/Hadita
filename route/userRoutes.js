@@ -8,12 +8,16 @@ import {
   showUseCase,
   showNews,
   showNewsDetails,
+  showPrivacyPolicy,
+  showTerms,
 } from "../controllers/userController.js";
 
 const router = express.Router();
 
 router.route("/").get(showLanding);
 router.route("/contact").get(showContact);
+router.route("/privacy-policy").get(showPrivacyPolicy);
+router.route("/terms").get(showTerms);
 router.route("/services/:id").get(showServiceDetails);
 router.route("/use-case").get(showUseCase);
 router.route("/blog").get(showBlog);
