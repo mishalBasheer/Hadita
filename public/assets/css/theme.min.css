@@ -126,7 +126,7 @@
   --elixir-list-group-hover-bg: #fafafa;
   --elixir-body-bg: #fff;
   --elixir-body-color: #6a6a6a;
-  --elixir-headings-color: #231f20;
+  --elixir-headings-color: #1669b3;
   --elixir-link-color: #231f20;
   --elixir-link-hover-color: #222d44;
   --elixir-border-color: #e1e1e1;
@@ -17240,4 +17240,7 @@ iframe.yt-video.loaded {
   -webkit-transform: rotateZ(360deg);
   -moz-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
+}
+.text-right{
+  text-align: right;
 }
