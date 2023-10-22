@@ -8,14 +8,12 @@ const showServiceDetails = (req, res) => {
   const id = req.params["id"];
   const services = [
     {
-      id: "cloud-services",
-      title: "Cloud Services",
+      id: "digital-enablement",
+      title: "Digital Enablement",
       description:
-        "Unleash the full potential of the cloud with our expert guidance. Our tailored cloud solutions include migration, deployment, and management, allowing businesses to scale efficiently, reduce operational costs, and bolster data security.",
+        "Unlock the full potential of your business's digital presence with our comprehensive digital enablement services, tailored for both new and existing ventures.",
       points: [
-        "Develop customized cloud strategies: Work closely with clients to develop tailored cloud strategies that align with their unique business objectives, driving sustainable growth and competitive advantage.",
-        "Ensure seamless cloud migration: Assist organizations in seamlessly migrating their existing on-premise platforms and environments to the cloud, leveraging the scalability and cost-efficiency of cloud infrastructure.",
-        "Enable efficient cloud integration: Specialize in enabling seamless integration between heterogeneous systems and solutions deployed across cloud and on-premises infrastructure, ensuring efficient communication and data flow.",
+        "We provide end-to-end solutions, from building a brand identity to designing your website, setting up email systems, boosting with SEO, and executing targeted digital marketing strategies. Let us be your partner in creating a strong and engaging online presence",
       ],
     },
     {
@@ -94,13 +92,12 @@ const showTerms = (req, res) => {
   res.render("user/terms-of-use");
 };
 
-
 export {
   showLanding,
   showContact,
   showServiceDetails,
   showBlog,
-  showBlogDetails,  
+  showBlogDetails,
   showUseCase,
   showNews,
   showNewsDetails,
