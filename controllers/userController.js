@@ -9,7 +9,7 @@ const showServiceDetails = (req, res) => {
   const services = [
     {
       id: "digital-enablement",
-      title: "Digital Enablement",
+      title: "Digital Enablement Services",
       description:
         "Unlock the full potential of your business's digital presence with our comprehensive digital enablement services, tailored for both new and existing ventures.",
       points: [
@@ -18,22 +18,13 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "infrastructure-services",
-      title: "Infrastructure Services",
+      title: "Infrastructure and Cloud Services",
       description:
         "Ensure the robustness and reliability of your IT infrastructure with our comprehensive services. From network design and setup to vigilant system monitoring and maintenance, we optimize system performance for peak efficiency.",
       points: [
         "Ensure the robustness and reliability of your IT infrastructure with our comprehensive services. From network design and setup to vigilant system monitoring and maintenance, we optimize system performance for peak efficiency.",
         "Facilitate IT infrastructure migrations/transitions: Guide and support organizations in migrating and transforming their existing IT infrastructure to cloud or SDDC environments, ensuring minimal disruption to business operations.",
         "Conduct IT infrastructure due diligence: Conduct thorough assessments of IT infrastructure efficacy, availability, and security, providing recommendations to mitigate risks and enhance infrastructure security based on industry best practices.",
-      ],
-    },
-    {
-      id: "it-consulting-services",
-      title: "IT Consulting Services",
-      description:
-        "Our experienced consultants craft forward-thinking IT strategies aligned with your business goals. With a focus on personalization and productivity, we provide expert guidance to accelerate growth.",
-      points: [
-        "Provide expert guidance for technology transformation: Support organizations in technology transformation and adoption of open-source and cloud technologies, offering strategic advice and guidance aligned with their business goals.",
       ],
     },
     {
@@ -47,23 +38,34 @@ const showServiceDetails = (req, res) => {
       ],
     },
     {
-      id: "digital-transformation",
-      title: "Digital Transformation",
+      id: "artificial-intelligence",
+      title: "Artificial Intelligence",
       description:
-        "Stay ahead in the digital era with our transformative services. Leverage the latest technologies and practices to drive innovation, customer engagement, and overall business success.",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste",
       points: [
-        "Support organizations in digital transformation: Help businesses become more tech-intensive, unlock the value of their data, explore innovative ways to serve customers, and empower remote workforces, ensuring they adapt to the changing socio-economic environment and stay ahead of the curve.",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste",
       ],
     },
     {
-      id: "cloud-infrastructure-security",
-      title: "Cloud and Infrastructure Security",
+      id: "it-consulting-services",
+      title: "IT Consulting Services",
       description:
-        "Comprehensive Cloud and Infrastructure Security: Safeguard valuable data with tailored strategies, vulnerability testing, and security hardening. Ensure compliance and resilience in an ever-changing digital landscape.",
+        "Our experienced consultants craft forward-thinking IT strategies aligned with your business goals. With a focus on personalization and productivity, we provide expert guidance to accelerate growth.",
       points: [
-        "Implement comprehensive security strategies and services: Tailor and implement robust security strategies and services for cloud and hybrid environments, safeguarding valuable data and digital assets.",
-        "Perform vulnerability and penetration testing: Employ sophisticated methodologies to identify vulnerabilities in infrastructure, applications, and devices, providing detailed reports and effective remediation solutions.",
-        "Implement security hardening and compliance: Implement industry-recognized security benchmarks such as CIS to strengthen the security posture of existing IT infrastructure, ensuring compliance with relevant standards and regulations.",
+        "Provide expert guidance for technology transformation: Support organizations in technology transformation and adoption of open-source and cloud technologies, offering strategic advice and guidance aligned with their business goals.",
+      ],
+    },
+    {
+      id: "e-commerce-services",
+      title: "E-Commerce Services",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste.",
+      points: [
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste.",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste.",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fugit sint repellendus quo sit enim! Amet ipsa velit saepe quisquam itaque. Facilis sed iusto commodi provident. Cupiditate delectus beatae iste.",
       ],
     },
   ];
