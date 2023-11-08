@@ -18,8 +18,8 @@ jobs:
     #     node-version: '16'
 
     - name: Build Project
-    - run: npm install
-    - run: node server.js
+      run: npm install
+      run: node server.js
 
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
