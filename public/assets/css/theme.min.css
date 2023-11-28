@@ -17244,3 +17244,7 @@ iframe.yt-video.loaded {
 .text-right{
   text-align: right;
 }
+.reduce-height{
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
