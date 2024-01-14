@@ -16541,6 +16541,22 @@ a[href].bg-200:focus {
   width: 2.5rem;
   color: #fff;
 }
+.brand-icon-twitter{
+  background: #fff;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  color: #000;
+}
 .theme-slider:hover .carousel-control-next,
 .theme-slider:hover .carousel-control-prev,
 .theme-slider:focus .carousel-control-next,

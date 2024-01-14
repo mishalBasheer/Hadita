@@ -40,4 +40,9 @@ app.use('/', userRoutes);
 app.use('/admin', adminRoutes);
 app.use('/auth', authRoutes);
 
+// 404 handling middleware
+app.use((req, res, next) => {
+    res.status(404).render('user/error-404');
+});
+
 export default app;
