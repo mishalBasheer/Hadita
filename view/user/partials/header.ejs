@@ -6,45 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- ===============================================-->
-  <!--    Document Title-->
-  <!-- ===============================================-->
-  <title>
-    Hadita Tech
-  </title>
+  <!-- Document Title -->
+  <title>Hadita Tech</title>
 
-  <!-- ===============================================-->
-  <!--    Favicons-->
-  <!-- ===============================================-->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/img/logo/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/img/logo/favicon/favicon-16x16.png" />
   <link rel="shortcut icon" type="image/x-icon" href="/img/logo/favicon/favicon.ico" />
   <link rel="manifest" href="/img/logo/favicon/site.webmanifest" />
-  <script src="/vendors/overlayscrollbars/OverlayScrollbars.min.js"></script>
 
-  <!-- ===============================================-->
-  <!--    Stylesheets-->
-  <!-- ===============================================-->
+  <!-- Preconnect for Faster Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" as="style" href="/assets/css/theme.min.css" />
+  <link rel="preload" as="script" href="/vendors/overlayscrollbars/OverlayScrollbars.min.js" />
+
+  <!-- Stylesheets -->
   <link href="/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link href="/vendors/hamburgers/hamburgers.min.css" rel="stylesheet" />
   <link href="/vendors/loaders/loaders.css" rel="stylesheet" />
   <link href="/assets/css/theme.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;600;700;800&amp;display=swap"
-    rel="stylesheet" />
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Load Google Fonts Efficiently -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    media="print" onload="this.onload=null;this.removeAttribute('media');" />
+
+  <!-- Google Tag Manager (deferred for speed) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257228017-1"></script>
-  <script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-257228017-1');
   </script>
 
+  <!-- Move Non-Essential JS to Bottom of <body> for Faster Rendering -->
 </head>
 
 <body>
@@ -78,13 +79,14 @@
                 <li><a class="dropdown-item" href="/services/digital-enablement">Digital Enablement Services</a></li>
               </ul>
             </li>
-            <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown-indicator" href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/blog">Blogs</a></li>
-                  <li><a class="dropdown-item" href="/news">News</a></li>
-                  <li><a class="dropdown-item" href="/use-case">Use Cases</a></li>
-                </ul>
-              </li> -->
+            <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown-indicator"
+                href="JavaScript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/blog">Blogs</a></li>
+                <li><a class="dropdown-item" href="/news">News</a></li>
+                <li><a class="dropdown-item" href="/use-case">Use Cases</a></li>
+              </ul>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link" href="/#about_us" role="button" aria-expanded="false">About Us</a>
             </li>

@@ -1,93 +1,80 @@
 <%- include('partials/header') %>
-<!-- ============================================-->
-<!-- <section> begin ============================-->
-<section class="reduce-height">
-  <div
-    class="bg-holder overlay"
-    style="
-      background-image: url(/assets/img/background-2.jpg);
+  <!-- ============================================-->
+  <!-- <section> begin ============================-->
+  <section class="reduce-height">
+    <div class="bg-holder overlay" style="
+      background-image: url(/assets/img/background-2.webp);
       background-position: center bottom;
       filter: opacity(0.4);
-    "
-  ></div>
-  <!--/.bg-holder-->
-  <div class="container">
-    <div class="row pt-6" data-inertia='{"weight":1.5}'>
-      <div
-        class="col-md-8 text-white"
-        data-zanim-timeline="{}"
-        data-zanim-trigger="scroll"
-      >
-        <div class="overflow-hidden">
-          <h1
-            class="fs-4 fs-md-5 mb-0 lh-1"
-            data-zanim-xs='{"delay":0}'
-          >
-            <%= service.title %>
-          </h1>
-          <div
-            class="nav"
-            aria-label="breadcrumb"
-            role="navigation"
-            data-zanim-xs='{"delay":0.1}'
-          >
-            <ol class="breadcrumb fs-1 ps-0 fw-bold">
-              <li class="breadcrumb-item">
-                <a class="text-primary" href="/">Home</a>
-              </li>
-              <li class="breadcrumb-item text-primary active" aria-current="page">
-                Services
-              </li>
-              <li class="breadcrumb-item text-primary active" aria-current="page">
-                <%= service.title %>
-              </li>
-            </ol>
+    "></div>
+    <!--/.bg-holder-->
+    <div class="container">
+      <div class="row pt-6" data-inertia='{"weight":1.5}'>
+        <div class="col-md-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+          <div class="overflow-hidden">
+            <h1 class="fs-4 fs-md-5 mb-0 lh-1" data-zanim-xs='{"delay":0}'>
+              <%= service.title %>
+            </h1>
+            <div class="nav" aria-label="breadcrumb" role="navigation" data-zanim-xs='{"delay":0.1}'>
+              <ol class="breadcrumb fs-1 ps-0 fw-bold">
+                <li class="breadcrumb-item">
+                  <a class="text-primary" href="/">Home</a>
+                </li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">
+                  Services
+                </li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">
+                  <%= service.title %>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end of .container-->
-</section>
-<!-- <section> close ============================-->
-<!-- ============================================-->
+    <!-- end of .container-->
+  </section>
+  <!-- <section> close ============================-->
+  <!-- ============================================-->
 
-<section class="bg-100">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card mb-6">
-          <div class="row">
+  <section class="bg-100">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-6">
+            <div class="row">
 
-            <div class="col-md-6">
-              <div class="card-body p-5">
-                <p class="dropcap"><%= service.description %></p>
-                <% service.content.forEach(element => { %>
-                  <% if (element.heading.length>0) { %>
-                    <h5><%= element.heading %></h5>
-                  <% } %>
-                <ul>
-                  <% element.points.forEach(el => { %>
-                  <li>
-                    <p class="mb-2"><%= el %></p>
-                  </li>
-                  <% }) %>
-                </ul>
-                <% }) %>
+              <div class="col-md-6">
+                <div class="card-body p-5">
+                  <p class="dropcap">
+                    <%= service.description %>
+                  </p>
+                  <% service.content.forEach(element=> { %>
+                    <% if (element.heading.length>0) { %>
+                      <h5>
+                        <%= element.heading %>
+                      </h5>
+                      <% } %>
+                        <ul>
+                          <% element.points.forEach(el=> { %>
+                            <li>
+                              <p class="mb-2">
+                                <%= el %>
+                              </p>
+                            </li>
+                            <% }) %>
+                        </ul>
+                        <% }) %>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img class="p-5 card-img-top" src="/assets/img/news-1.webp" alt="new image" />
               </div>
             </div>
-            <div class="col-md-6">
-              <img
-                class="p-5 card-img-top"
-                src="/assets/img/news-1.jpg"
-                alt="new image"
-              />
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<%- include('partials/footer') %>
+  <%- include('partials/footer') %>
