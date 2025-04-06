@@ -3001,3 +3001,35 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.toggle("menu-open");
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contactForm");
+  const submitButton = document.getElementById("submitContact");
+  const modal = new bootstrap.Modal(document.getElementById("contactModal"));
+
+  submitButton.addEventListener("click", function () {
+    if (contactForm.checkValidity()) {
+      // Collect form data
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value,
+        service: document.getElementById("service").value,
+      };
+
+      // Here you would typically send the data to your server
+      // For now, we'll just log it and show a success message
+      console.log("Form submitted:", formData);
+
+      // Show success message
+      alert("Thank you for your interest! We will contact you shortly.");
+
+      // Reset form and close modal
+      contactForm.reset();
+      modal.hide();
+    } else {
+      // Show validation errors
+      contactForm.reportValidity();
+    }
+  });
+});
