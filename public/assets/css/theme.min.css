@@ -17318,7 +17318,6 @@ iframe.yt-video.loaded {
 }
 
 .dropdown-item-header {
-  text-decoration: underline 2px #3d4c6f;
   display: block;
   font-weight: 600;
   color: #333;
@@ -17407,6 +17406,10 @@ iframe.yt-video.loaded {
   body.menu-open {
     overflow: hidden;
   }
+
+  .mega-menu-cta{
+    display: none;
+  }
 }
 
 .mega-menu-wrapper {
@@ -17469,6 +17472,7 @@ iframe.yt-video.loaded {
 
   .dropdown-item-header {
     border-bottom: 1px solid #eee;
+    text-decoration: none;
     padding: 10px 0;
   }
 
@@ -17491,14 +17495,6 @@ iframe.yt-video.loaded {
 .quick-contact-form .btn-primary {
   padding: 8px 16px;
   font-size: 14px;
-}
-
-.dropdown-item-header {
-  display: block;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 8px;
-  font-size: 15px;
 }
 
 .dropdown-submenu-items {
@@ -17630,9 +17626,5 @@ iframe.yt-video.loaded {
 
 /* Ensure dropdown menu doesn't interfere with underline */
 .navbar-nav .dropdown>.nav-link {
-  pointer-events: none;
-}
-
-.navbar-nav .dropdown>.nav-link::after {
   pointer-events: auto;
 }
