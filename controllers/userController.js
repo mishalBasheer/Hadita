@@ -8,123 +8,4021 @@ const showServiceDetails = (req, res) => {
   const id = req.params["id"];
   const services = [
     {
-      id: "digital-enablement",
-      title: "Digital Enablement Services",
-      description:
-        "Unlock the full potential of your business's digital presence with our comprehensive digital enablement services, tailored for both new and existing ventures.",
-
-      content: [
-        {
-          heading: "",
-          points: [
-            "We provide end-to-end solutions, from building a brand identity to designing your website, setting up email systems, boosting with SEO, and executing targeted digital marketing strategies. Let us be your partner in creating a strong and engaging online presence",
-          ],
-        },
-      ],
-    },
-    {
       id: "infrastructure-services",
-      title: "Infrastructure and Cloud Services",
+      title: "Infrastructure Services",
       description:
-        "Ensure the robustness and reliability of your IT infrastructure with our comprehensive services. From network design and setup to vigilant system monitoring and maintenance, we optimize system performance for peak efficiency.",
-
+        "HADITA Infrastructure Services: Design and Implement Robust and Resilient Infrastructure Solutions. At HADITA, we design, implement, and manage intelligent infrastructure solutions that serve as the digital backbone for modern enterprises. From foundational IT hardware to virtualized cloud infrastructure, our services are built to support secure, scalable, and high-performing environments tailored to your business goals. We provide end-to-end infrastructure services, covering physical, hybrid, and cloud-native environments with a strong focus on security, uptime, and performance.",
       content: [
         {
-          heading: "",
-          points: [
-            "Ensure the robustness and reliability of your IT infrastructure with our comprehensive services. From network design and setup to vigilant system monitoring and maintenance, we optimize system performance for peak efficiency.",
-            "Facilitate IT infrastructure migrations/transitions: Guide and support organizations in migrating and transforming their existing IT infrastructure to cloud or SDDC environments, ensuring minimal disruption to business operations.",
-            "Conduct IT infrastructure due diligence: Conduct thorough assessments of IT infrastructure efficacy, availability, and security, providing recommendations to mitigate risks and enhance infrastructure security based on industry best practices.",
+          heading: "Core IT Infrastructure Services",
+          description:
+            "These services focus on building and managing your foundational IT environment—on-premise or hybrid.",
+          offerings: [
+            "Data center setup and management",
+            "Server and storage infrastructure",
+            "Enterprise networking (LAN, WAN, SD-WAN)",
+            "Virtualization (VMware, Hyper-V, KVM)",
+            "Hyperconverged infrastructure (HCI) solutions",
+            "Infrastructure lifecycle management",
+            "Structured cabling and physical asset deployment",
+          ],
+          valueAdd:
+            "Vendor-agnostic approach and integrated solutions that reduce complexity, improve reliability, and optimize TCO.",
+          cta: {
+            title: "Speak to our Infrastructure Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Infrastructure Services",
+              url: "#cloud-infrastructure-services",
+            },
+            {
+              title: "Network Infrastructure Solutions",
+              url: "#network-infrastructure-solutions",
+            },
+            {
+              title: "Infrastructure Security Services",
+              url: "#infrastructure-security-services",
+            },
+            {
+              title: "Infrastructure Monitoring & Management",
+              url: "#infrastructure-monitoring-management",
+            },
+            {
+              title: "Infrastructure Modernization & Automation",
+              url: "#infrastructure-modernization-automation",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+            {
+              title: "Get Your Free IT & Cloud Assessment",
+              url: "#free-assessment",
+            },
+          ],
+        },
+        {
+          heading: "Cloud Infrastructure Services",
+          description:
+            "Leverage the agility of the cloud while maintaining enterprise-grade performance and governance.",
+          offerings: [
+            "Cloud infrastructure setup (IaaS, PaaS)",
+            "Public, private, and hybrid cloud provisioning",
+            "Cloud-native architecture design",
+            "Serverless computing environments",
+            "Network & storage configuration in cloud platforms",
+            "Infrastructure as Code (IaC) automation",
+            "Cloud resource scaling and management",
+          ],
+          valueAdd:
+            "Seamless integration with AWS, Azure, Google Cloud, and Oracle with expert-led deployment and support for migration and modernization.",
+          cta: {
+            title: "Speak to our Cloud Infrastructure Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Core IT Infrastructure Services",
+              url: "#core-it-infrastructure-services",
+            },
+            {
+              title: "Network Infrastructure Solutions",
+              url: "#network-infrastructure-solutions",
+            },
+            {
+              title: "Infrastructure Security Services",
+              url: "#infrastructure-security-services",
+            },
+            {
+              title: "Infrastructure Monitoring & Management",
+              url: "#infrastructure-monitoring-management",
+            },
+            {
+              title: "Infrastructure Modernization & Automation",
+              url: "#infrastructure-modernization-automation",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+            {
+              title: "Get Your Free IT & Cloud Assessment",
+              url: "#free-assessment",
+            },
+          ],
+        },
+        {
+          heading: "Network Infrastructure Solutions",
+          description:
+            "Power fast, secure, and reliable communication across your organization with intelligent networking solutions.",
+          offerings: [
+            "Enterprise Wi-Fi and LAN infrastructure",
+            "SD-WAN and WAN optimization",
+            "Network design and security architecture",
+            "Load balancing, failover, and redundancy solutions",
+            "VPN setup and secure remote access",
+            "Firewall and edge security configurations",
+          ],
+          valueAdd:
+            "Customized, high-performance networks that support digital workplaces, cloud connectivity, and zero-trust security postures.",
+          cta: {
+            title: "Speak to our Network Infrastructure Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Core IT Infrastructure Services",
+              url: "#core-it-infrastructure-services",
+            },
+            {
+              title: "Cloud Infrastructure Services",
+              url: "#cloud-infrastructure-services",
+            },
+            {
+              title: "Infrastructure Security Services",
+              url: "#infrastructure-security-services",
+            },
+            {
+              title: "Infrastructure Monitoring & Management",
+              url: "#infrastructure-monitoring-management",
+            },
+            {
+              title: "Infrastructure Modernization & Automation",
+              url: "#infrastructure-modernization-automation",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+            {
+              title: "Get Your Free IT & Cloud Assessment",
+              url: "#free-assessment",
+            },
+          ],
+        },
+        {
+          heading: "Infrastructure Security Services",
+          description:
+            "Protect your IT environment with multi-layered security that’s embedded across your infrastructure stack.",
+          offerings: [
+            "Network access control and segmentation",
+            "Infrastructure hardening and patch management",
+            "Endpoint detection and response (EDR)",
+            "SIEM and log management integration",
+            "Threat and vulnerability management",
+            "Compliance monitoring (ISO, NIST, GDPR, etc.)",
+          ],
+          valueAdd:
+            "A 'security by design' philosophy across all deployments, ensuring maximum protection against internal and external threats.",
+          cta: {
+            title: "Speak to our Infrastructure Security Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Core IT Infrastructure Services",
+              url: "#core-it-infrastructure-services",
+            },
+            {
+              title: "Cloud Infrastructure Services",
+              url: "#cloud-infrastructure-services",
+            },
+            {
+              title: "Network Infrastructure Solutions",
+              url: "#network-infrastructure-solutions",
+            },
+            {
+              title: "Infrastructure Monitoring & Management",
+              url: "#infrastructure-monitoring-management",
+            },
+            {
+              title: "Infrastructure Modernization & Automation",
+              url: "#infrastructure-modernization-automation",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+            {
+              title: "Get Your Free IT & Cloud Assessment",
+              url: "#free-assessment",
+            },
+          ],
+        },
+        {
+          heading: "Infrastructure Monitoring & Management",
+          description:
+            "Maintain peak operational efficiency and pre-empt disruptions with proactive monitoring and support.",
+          offerings: [
+            "Infrastructure monitoring (NOC services)",
+            "Real-time alerting and incident response",
+            "Predictive analytics for failure prevention",
+            "Asset health and performance reporting",
+            "Automated patching and maintenance",
+            "SLA-driven support desk and remote management",
+          ],
+          valueAdd:
+            "AI-assisted tools for predictive maintenance and reduced MTTR (mean time to repair), ensuring uninterrupted operations.",
+          cta: {
+            title: "Speak to our Infrastructure Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Core IT Infrastructure Services",
+              url: "#core-it-infrastructure-services",
+            },
+            {
+              title: "Cloud Infrastructure Services",
+              url: "#cloud-infrastructure-services",
+            },
+            {
+              title: "Network Infrastructure Solutions",
+              url: "#network-infrastructure-solutions",
+            },
+            {
+              title: "Infrastructure Security Services",
+              url: "#infrastructure-security-services",
+            },
+            {
+              title: "Infrastructure Modernization & Automation",
+              url: "#infrastructure-modernization-automation",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+            {
+              title: "Get Your Free IT & Cloud Assessment",
+              url: "#free-assessment",
+            },
+          ],
+        },
+        {
+          heading: "Infrastructure Modernization & Automation",
+          description:
+            "Transform legacy environments into agile, automated ecosystems optimized for modern workloads.",
+          offerings: [
+            "Legacy system assessment and upgrade",
+            "Containerization and microservices adoption",
+            "DevOps toolchain integration (CI/CD, GitOps)",
+            "Infrastructure automation using Ansible, Terraform, etc.",
+            "Cloud-native development support",
+            "RPA-based IT operations (AIOps)",
+          ],
+          valueAdd:
+            "Enables faster deployments, greater scalability, and reduced human error—laying the groundwork for future innovation.",
+          cta: {
+            title: "Speak to our Infrastructure Modernization Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Core IT Infrastructure Services",
+              url: "#core-it-infrastructure-services",
+            },
+            {
+              title: "Cloud Infrastructure Services",
+              url: "#cloud-infrastructure-services",
+            },
+            {
+              title: "Network Infrastructure Solutions",
+              url: "#network-infrastructure-solutions",
+            },
+            {
+              title: "Infrastructure Security Services",
+              url: "#infrastructure-security-services",
+            },
+            {
+              title: "Infrastructure Monitoring & Management",
+              url: "#infrastructure-monitoring-management",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+            {
+              title: "Get Your Free IT & Cloud Assessment",
+              url: "#free-assessment",
+            },
           ],
         },
       ],
+      footer: {
+        description:
+          "Whether you're modernizing existing systems, scaling to cloud, or establishing new IT infrastructure from scratch—HADITA can support you to do it right, securely, and future-proofed.",
+        cta: {
+          title: "Book a Consultation!",
+          form: {
+            name: "Name",
+            mobile: "Mobile",
+            buttonText: "Submit",
+          },
+        },
+      },
     },
     {
-      id: "business-applications-devops",
-      title: "Business Applications and DevOps",
+      id: "cloud-security",
+      title: "Cloud Security",
       description:
-        "Optimize your business processes with cutting-edge applications and embrace agile DevOps methodologies. Our solutions streamline workflows, enhance collaboration, and deliver high-quality software rapidly.",
-
+        "HADITA Cloud Security Services: Secure by Design. Scalable by Default. Powered by Intelligence.",
       content: [
         {
-          heading: "",
-          points: [
-            "Develop and integrate business applications: Specialize in developing web and mobile applications, intranet and portals, SharePoint migrations, and Power Platforms, enabling seamless integration and alignment between business applications for enhanced productivity.",
-            "Enable DevOps practices: Assist organizations in adopting DevOps practices, enabling continuous development and agile practices for software-driven innovations.",
+          heading: "Cloud Infrastructure Security",
+          description:
+            "Protect your foundational cloud resources—compute, storage, and networking—with policy-driven controls and continuous risk assessments.",
+          offerings: [
+            "Infrastructure-as-Code (IaC) security scanning",
+            "Cloud Security Posture Management (CSPM)",
+            "Real-time misconfiguration detection & remediation",
+            "Identity & access hardening (least privilege enforcement)",
+            "Secure VPC/subnet and network access design",
+            "Security group and firewall auditing",
+            "Encryption enforcement for data in-transit & at-rest",
+          ],
+          valueAdd:
+            "We integrate cloud-native tools like AWS Config, Azure Defender, and GCP Security Command Center alongside custom threat detection for full visibility and proactive defence.",
+          cta: {
+            title: "Speak to our Security Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Workload & Application Security",
+              url: "#workload-application-security",
+            },
+            {
+              title: "Cloud Visibility, Monitoring & Threat Detection",
+              url: "#cloud-visibility-monitoring-threat-detection",
+            },
+            {
+              title: "Identity & Access Management (IAM) Security",
+              url: "#identity-access-management-iam-security",
+            },
+            {
+              title: "Security Automation & DevSecOps",
+              url: "#security-automation-devsecops",
+            },
+            {
+              title: "Security Advisory, Audit & Training",
+              url: "#security-advisory-audit-training",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Workload & Application Security",
+          description:
+            "Secure cloud-native workloads, containers, and applications without compromising agility or performance.",
+          offerings: [
+            "Container security (Kubernetes, Docker, EKS, AKS)",
+            "Serverless workload scanning (Lambda, Cloud Functions, etc.)",
+            "Runtime protection and anomaly detection",
+            "Application firewall and micro-segmentation",
+            "API gateway and API security monitoring",
+            "Threat modelling and secure code practices",
+          ],
+          valueAdd:
+            "We bridge the gap between Dev and Sec by embedding security into CI/CD pipelines with DevSecOps best practices—shifting left to prevent vulnerabilities early.",
+          cta: {
+            title: "Speak to our Workload and Application Security Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Infrastructure Security",
+              url: "#cloud-infrastructure-security",
+            },
+            {
+              title: "Cloud Visibility, Monitoring & Threat Detection",
+              url: "#cloud-visibility-monitoring-threat-detection",
+            },
+            {
+              title: "Identity & Access Management (IAM) Security",
+              url: "#identity-access-management-iam-security",
+            },
+            {
+              title: "Security Automation & DevSecOps",
+              url: "#security-automation-devsecops",
+            },
+            {
+              title: "Security Advisory, Audit & Training",
+              url: "#security-advisory-audit-training",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Cloud Visibility, Monitoring & Threat Detection",
+          description:
+            "Centralized visibility is key to stopping breaches. HADITA delivers real-time insights and actionable intelligence across all your cloud environments.",
+          offerings: [
+            "Unified cloud asset inventory across regions & providers",
+            "Continuous security scanning and anomaly alerts",
+            "Integration with SIEM and SOAR platforms",
+            "Threat intelligence feeds & correlation",
+            "DNS monitoring and deep packet inspection (DPI)",
+            "Cloud-native audit logging (AWS CloudTrail, Azure Monitor, etc.)",
+          ],
+          valueAdd:
+            "We help you detect threats in real time and respond swiftly with managed detection and response (MDR) built into cloud operations.",
+          cta: {
+            title:
+              "Learn how we can support you in bringing visibility and threat detection!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Infrastructure Security",
+              url: "#cloud-infrastructure-security",
+            },
+            {
+              title: "Workload & Application Security",
+              url: "#workload-application-security",
+            },
+            {
+              title: "Identity & Access Management (IAM) Security",
+              url: "#identity-access-management-iam-security",
+            },
+            {
+              title: "Security Automation & DevSecOps",
+              url: "#security-automation-devsecops",
+            },
+            {
+              title: "Security Advisory, Audit & Training",
+              url: "#security-advisory-audit-training",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Identity & Access Management (IAM) Security",
+          description:
+            "Misconfigured identities are a top cloud risk. We ensure your identity policies are air-tight and aligned to least privilege principles.",
+          offerings: [
+            "Role-based access control (RBAC) and policy audits",
+            "Privileged access management (PAM)",
+            "Identity federation and SSO integration",
+            "Multi-factor authentication (MFA) enforcement",
+            "Temporary credentials management for DevOps",
+          ],
+          valueAdd:
+            "We automate identity governance with zero-trust policies and continuous monitoring to eliminate hidden permissions and toxic combinations.",
+          cta: {
+            title: "Speak to our IAM Security Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Infrastructure Security",
+              url: "#cloud-infrastructure-security",
+            },
+            {
+              title: "Workload & Application Security",
+              url: "#workload-application-security",
+            },
+            {
+              title: "Cloud Visibility, Monitoring & Threat Detection",
+              url: "#cloud-visibility-monitoring-threat-detection",
+            },
+            {
+              title: "Security Automation & DevSecOps",
+              url: "#security-automation-devsecops",
+            },
+            {
+              title: "Security Advisory, Audit & Training",
+              url: "#security-advisory-audit-training",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Security Automation & DevSecOps",
+          description:
+            "Embed security into your DevOps workflows to minimize manual effort and eliminate security debt.",
+          offerings: [
+            "Automated vulnerability scans for every code push",
+            "IaC and container pipeline scanning (Terraform, Helm, etc.)",
+            "Policy-as-Code integration for CI/CD gates",
+            "GitOps security integration",
+            "SOAR-enabled incident response",
+          ],
+          valueAdd:
+            "We turn security into a continuous process rather than a bottleneck—improving developer velocity while minimizing risks.",
+          cta: {
+            title: "Learn how we can support you in security automation!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Infrastructure Security",
+              url: "#cloud-infrastructure-security",
+            },
+            {
+              title: "Workload & Application Security",
+              url: "#workload-application-security",
+            },
+            {
+              title: "Cloud Visibility, Monitoring & Threat Detection",
+              url: "#cloud-visibility-monitoring-threat-detection",
+            },
+            {
+              title: "Identity & Access Management (IAM) Security",
+              url: "#identity-access-management-iam-security",
+            },
+            {
+              title: "Security Advisory, Audit & Training",
+              url: "#security-advisory-audit-training",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Security Advisory, Audit & Training",
+          description:
+            "Security is a journey—HADITA equips your teams with the knowledge and strategies to stay ahead of threats.",
+          offerings: [
+            "Cloud security assessments and maturity models",
+            "Risk evaluation workshops",
+            "Penetration testing and red teaming",
+            "Security awareness and training programs",
+            "Executive reporting and roadmap planning",
+          ],
+          valueAdd:
+            "We don’t just fix issues—we enable your teams with long-term resilience through actionable strategies and continuous improvement.",
+          cta: {
+            title: "Speak to our Security Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Infrastructure Security",
+              url: "#cloud-infrastructure-security",
+            },
+            {
+              title: "Workload & Application Security",
+              url: "#workload-application-security",
+            },
+            {
+              title: "Cloud Visibility, Monitoring & Threat Detection",
+              url: "#cloud-visibility-monitoring-threat-detection",
+            },
+            {
+              title: "Identity & Access Management (IAM) Security",
+              url: "#identity-access-management-iam-security",
+            },
+            {
+              title: "Security Automation & DevSecOps",
+              url: "#security-automation-devsecops",
+            },
+            {
+              title: "Managed Services",
+              url: "#managed-services",
+            },
           ],
         },
       ],
+      footer: {
+        description:
+          "Partner with HADITA to build a resilient, compliant, and intelligent cloud security posture—so your business can scale fearlessly in the digital era.",
+        cta: {
+          title: "Book a consultation with our security experts!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
     },
     {
-      id: "artificial-intelligence",
-      title: "Artificial Intelligence",
+      id: "managed-services",
+      title: "Managed Services",
       description:
-        "We're dedicated to revolutionizing industries through cutting-edge artificial intelligence solutions. Our team of experts combines deep technical expertise with a passion for innovation to deliver customized AI software that transforms businesses.",
+        "HADITA Managed Services: Simplify IT. Amplify Performance. Secure Your Future.",
       content: [
         {
-          heading: "Our Services:",
-          points: [
-            "AI-powered Solutions Tailored to Your Needs Custom AI Development: We design and develop AI solutions from the ground up, ensuring they seamlessly integrate with your existing systems and processes.",
-            "Machine Learning Algorithms: Our team specializes in creating robust machine learning models that learn and adapt, providing insights and predictions that drive informed decision-making.",
-            "Natural Language Processing (NLP): We harness the power of NLP to extract meaningful insights from text data, enabling you to understand customer sentiment, automate content analysis, and more.",
-            "Computer Vision: Our advanced computer vision applications allow for accurate image and video analysis, opening up possibilities for automation, object recognition, and more.",
-            "AI Consulting: Our experienced consultants work closely with your team to identify opportunities for AI implementation, develop a tailored strategy, and guide you through the entire process.",
+          heading: "IT Managed Services",
+          description:
+            "Whether you're a startup scaling rapidly or an enterprise seeking efficiency, our IT managed services provide comprehensive operational support.",
+          offerings: [
+            "SLA-based Service Desk & Remote Support",
+            "IT Asset Management & Software Licensing",
+            "Desktop & Endpoint Management (MDM)",
+            "Network & Infrastructure Monitoring",
+            "Hardware Procurement & Lifecycle Management",
+            "Onsite Engineer Dispatch & IT Field Services",
+          ],
+          valueAdd:
+            "A dedicated team of certified engineers ensures minimal downtime, proactive maintenance, and full IT visibility with real-time dashboards and reporting.",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Managed Services",
+              url: "#cloud-managed-services",
+            },
+            {
+              title: "Cybersecurity Managed Services",
+              url: "#cybersecurity-managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Cloud Managed Services",
+          description:
+            "Unlock the full potential of your cloud investment with proactive management, monitoring, and cost optimization.",
+          offerings: [
+            "Cloud Infrastructure Monitoring & Management",
+            "Multi-cloud Operations (AWS, Azure, GCP)",
+            "Cloud Cost Optimization & Billing Analysis",
+            "Backup, Disaster Recovery & Business Continuity",
+            "Cloud Security Monitoring & Incident Response",
+            "Continuous Compliance Management",
+          ],
+          valueAdd:
+            "We combine automation, AI, and cloud-native expertise to ensure your workloads are always available, secure, and scalable—no matter the platform.",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "IT Managed Services",
+              url: "#it-managed-services",
+            },
+            {
+              title: "Cybersecurity Managed Services",
+              url: "#cybersecurity-managed-services",
+            },
+          ],
+        },
+        {
+          heading: "Cybersecurity Managed Services",
+          description:
+            "Protect your business from evolving threats with a multi-layered, proactive cybersecurity strategy delivered as a service.",
+          offerings: [
+            "Security Operations Center (SOC)",
+            "Threat Detection & Incident Response (MDR/XDR)",
+            "Vulnerability Management & Penetration Testing",
+            "Firewall, Endpoint & Email Security Management",
+            "Identity & Access Management (IAM)",
+            "Data Loss Prevention & Ransomware Defense",
+          ],
+          valueAdd:
+            "Our cybersecurity approach is proactive, not reactive. We implement zero-trust architectures and real-time threat intelligence to keep you a step ahead.",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "IT Managed Services",
+              url: "#it-managed-services",
+            },
+            {
+              title: "Cloud Managed Services",
+              url: "#cloud-managed-services",
+            },
           ],
         },
       ],
+      footer: {
+        description:
+          "Whether you're looking to outsource your entire IT department, optimize your cloud operations, or secure your digital ecosystem—HADITA Managed Services deliver the peace of mind and performance your business deserves.",
+        cta: {
+          title: "Speak to our Managed Services Consultants!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "custom-software-development",
+      title: "Custom Software Development",
+      description:
+        "At HADITA, we specialize in building bespoke digital solutions that drive operational excellence, customer engagement, and long-term growth. Our custom software development services are tailored to meet the evolving needs of businesses across industries in the GCC region.",
+      content: [
+        {
+          heading: "Customized Software Product Development",
+          description:
+            "We design and develop custom software products from the ground up, ensuring they align with your unique business processes and objectives. Whether you need a SaaS platform, enterprise application, or customer-facing solution, HADITA delivers scalable, secure, and high-performance software tailored to your vision.",
+          offerings: [],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Legacy System Modernization",
+              url: "#legacy-system-modernization",
+            },
+            {
+              title: "Web & Mobile App Development",
+              url: "#web-mobile-app-development",
+            },
+            {
+              title: "Cloud-Native Application Development",
+              url: "#cloud-native-application-development",
+            },
+            {
+              title: "Post Deployment Support & Maintenance",
+              url: "#post-deployment-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Legacy System Modernization",
+          description:
+            "Transform outdated and underperforming legacy systems into agile, cloud-ready platforms. HADITA modernizes legacy applications by re-architecting monolithic systems, upgrading outdated tech stacks, and optimizing for future scalability and efficiency.",
+          offerings: [],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Customized Software Product Development",
+              url: "#customized-software-product-development",
+            },
+            {
+              title: "Web & Mobile App Development",
+              url: "#web-mobile-app-development",
+            },
+            {
+              title: "Cloud-Native Application Development",
+              url: "#cloud-native-application-development",
+            },
+            {
+              title: "Post Deployment Support & Maintenance",
+              url: "#post-deployment-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Web & Mobile App Development",
+          description:
+            "Create engaging digital experiences with HADITA’s end-to-end web and mobile application development. From responsive websites to native and cross-platform mobile apps, we focus on performance, intuitive design, and seamless user experiences across devices.",
+          offerings: [],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Customized Software Product Development",
+              url: "#customized-software-product-development",
+            },
+            {
+              title: "Legacy System Modernization",
+              url: "#legacy-system-modernization",
+            },
+            {
+              title: "Cloud-Native Application Development",
+              url: "#cloud-native-application-development",
+            },
+            {
+              title: "Post Deployment Support & Maintenance",
+              url: "#post-deployment-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Cloud-Native Application Development",
+          description:
+            "Leverage the power of cloud computing with applications designed specifically for cloud environments. We build resilient, microservices-based, and containerized solutions using platforms like AWS, Azure, and Google Cloud, ensuring flexibility, scalability, and cost-efficiency.",
+          offerings: [],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Customized Software Product Development",
+              url: "#customized-software-product-development",
+            },
+            {
+              title: "Legacy System Modernization",
+              url: "#legacy-system-modernization",
+            },
+            {
+              title: "Web & Mobile App Development",
+              url: "#web-mobile-app-development",
+            },
+            {
+              title: "Post Deployment Support & Maintenance",
+              url: "#post-deployment-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Post-Deployment Support & Maintenance",
+          description:
+            "Our commitment doesn’t end at launch. HADITA offers reliable software support and maintenance services, including bug fixes, performance optimization, version upgrades, and continuous improvements—ensuring your solutions stay future-ready and aligned with evolving business goals.",
+          offerings: [],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Customized Software Product Development",
+              url: "#customized-software-product-development",
+            },
+            {
+              title: "Legacy System Modernization",
+              url: "#legacy-system-modernization",
+            },
+            {
+              title: "Web & Mobile App Development",
+              url: "#web-mobile-app-development",
+            },
+            {
+              title: "Cloud-Native Application Development",
+              url: "#cloud-native-application-development",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description: "Let’s create software that works the way you do—better.",
+        cta: {
+          title: "Speak to our consultant today!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "custom-mobile-app-development",
+      title: "Custom Mobile App Development",
+      description:
+        "At HADITA, we specialize in crafting mobile applications that deliver meaningful user experiences and real business value. From concept to launch—and beyond—we build high-performance mobile apps tailored to your goals, powered by cutting-edge technology and deep user insights.",
+      content: [
+        {
+          heading: "Native App Development",
+          description:
+            "We develop native mobile apps that harness the full capabilities of iOS and Android platforms. Whether you're targeting Apple’s iOS ecosystem or the expansive Android market, HADITA delivers sleek, responsive, and feature-rich apps with maximum device compatibility and speed.",
+          offerings: [
+            "iOS (Swift, Objective-C)",
+            "Android (Kotlin, Java)",
+            "Optimized for speed, security, and device features",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cross-Platform App Development",
+              url: "#cross-platform-app-development",
+            },
+            {
+              title: "Enterprise Mobile Applications",
+              url: "#enterprise-mobile-applications",
+            },
+            {
+              title: "MVP Development",
+              url: "#mvp-development",
+            },
+            {
+              title: "Mobile App UI/UX Design",
+              url: "#mobile-app-ui-ux-design",
+            },
+            {
+              title: "Mobile App Testing & QA",
+              url: "#mobile-app-testing-qa",
+            },
+            {
+              title: "Mobile App Support & Maintenance",
+              url: "#mobile-app-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Cross-Platform App Development",
+          description:
+            "Using frameworks like Flutter and React Native, we build cross-platform mobile applications that reduce time-to-market while maintaining a native-like experience. Ideal for businesses seeking cost-effective mobile strategies without compromising on quality.",
+          offerings: [
+            "Faster development cycles",
+            "Unified UI/UX across devices",
+            "Lower maintenance costs",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Native App Development",
+              url: "#native-app-development",
+            },
+            {
+              title: "Enterprise Mobile Applications",
+              url: "#enterprise-mobile-applications",
+            },
+            {
+              title: "MVP Development",
+              url: "#mvp-development",
+            },
+            {
+              title: "Mobile App UI/UX Design",
+              url: "#mobile-app-ui-ux-design",
+            },
+            {
+              title: "Mobile App Testing & QA",
+              url: "#mobile-app-testing-qa",
+            },
+            {
+              title: "Mobile App Support & Maintenance",
+              url: "#mobile-app-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Enterprise Mobile Applications",
+          description:
+            "We develop secure, scalable mobile apps tailored for internal teams, field operations, and enterprise workflows. From workforce enablement to mobile BI dashboards, HADITA equips your organization with powerful tools—on the go.",
+          offerings: [
+            "Role-based access control",
+            "Secure integration with enterprise systems (ERP, CRM, HRMS)",
+            "Offline functionality for field operations",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Native App Development",
+              url: "#native-app-development",
+            },
+            {
+              title: "Cross-Platform App Development",
+              url: "#cross-platform-app-development",
+            },
+            {
+              title: "MVP Development",
+              url: "#mvp-development",
+            },
+            {
+              title: "Mobile App UI/UX Design",
+              url: "#mobile-app-ui-ux-design",
+            },
+            {
+              title: "Mobile App Testing & QA",
+              url: "#mobile-app-testing-qa",
+            },
+            {
+              title: "Mobile App Support & Maintenance",
+              url: "#mobile-app-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "MVP Development",
+          description:
+            "HADITA supports to bring ideas to life through Minimum Viable Products. We help validate concepts quickly with lean mobile app builds—ready to iterate, test, and scale based on user feedback and market fit.",
+          offerings: [
+            "Rapid prototyping",
+            "Lean architecture for scalability",
+            "Analytics integration for insights",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Native App Development",
+              url: "#native-app-development",
+            },
+            {
+              title: "Cross-Platform App Development",
+              url: "#cross-platform-app-development",
+            },
+            {
+              title: "Enterprise Mobile Applications",
+              url: "#enterprise-mobile-applications",
+            },
+            {
+              title: "Mobile App UI/UX Design",
+              url: "#mobile-app-ui-ux-design",
+            },
+            {
+              title: "Mobile App Testing & QA",
+              url: "#mobile-app-testing-qa",
+            },
+            {
+              title: "Mobile App Support & Maintenance",
+              url: "#mobile-app-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Mobile App UI/UX Design",
+          description:
+            "We craft beautiful, intuitive mobile interfaces that enhance user engagement and retention. Every tap, swipe, and scroll is optimized to create a seamless journey—from onboarding to checkout.",
+          offerings: [
+            "Wireframing & prototyping",
+            "Human-centered design",
+            "Motion design & microinteractions",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Native App Development",
+              url: "#native-app-development",
+            },
+            {
+              title: "Cross-Platform App Development",
+              url: "#cross-platform-app-development",
+            },
+            {
+              title: "Enterprise Mobile Applications",
+              url: "#enterprise-mobile-applications",
+            },
+            {
+              title: "MVP Development",
+              url: "#mvp-development",
+            },
+            {
+              title: "Mobile App Testing & QA",
+              url: "#mobile-app-testing-qa",
+            },
+            {
+              title: "Mobile App Support & Maintenance",
+              url: "#mobile-app-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "Mobile App Testing & QA",
+          description:
+            "From functional and usability testing to performance and security checks, HADITA ensures your app delivers a flawless experience on every device and OS version.",
+          offerings: [
+            "Manual & automated testing",
+            "Device lab coverage",
+            "Regression and stress testing",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Native App Development",
+              url: "#native-app-development",
+            },
+            {
+              title: "Cross-Platform App Development",
+              url: "#cross-platform-app-development",
+            },
+            {
+              title: "Enterprise Mobile Applications",
+              url: "#enterprise-mobile-applications",
+            },
+            {
+              title: "MVP Development",
+              url: "#mvp-development",
+            },
+            {
+              title: "Mobile App UI/UX Design",
+              url: "#mobile-app-ui-ux-design",
+            },
+            {
+              title: "Mobile App Support & Maintenance",
+              url: "#mobile-app-support-maintenance",
+            },
+          ],
+        },
+        {
+          heading: "App Maintenance & Support",
+          description:
+            "We provide post-launch support to ensure continuous improvement, regular updates, and peak performance. HADITA’s mobile app lifecycle management includes bug fixes, OS updates, feature enhancements, and user feedback implementation.",
+          offerings: [
+            "SLA-based support",
+            "App store management",
+            "Version upgrades",
+          ],
+          valueAdd: "",
+          cta: {
+            title: "Speak to our Consultant!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Native App Development",
+              url: "#native-app-development",
+            },
+            {
+              title: "Cross-Platform App Development",
+              url: "#cross-platform-app-development",
+            },
+            {
+              title: "Enterprise Mobile Applications",
+              url: "#enterprise-mobile-applications",
+            },
+            {
+              title: "MVP Development",
+              url: "#mvp-development",
+            },
+            {
+              title: "Mobile App UI/UX Design",
+              url: "#mobile-app-ui-ux-design",
+            },
+            {
+              title: "Mobile App Testing & QA",
+              url: "#mobile-app-testing-qa",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're building your first app or optimizing a mobile-first strategy, HADITA delivers future-ready mobile solutions that work as hard as you do.",
+        cta: {
+          title: "Speak to our Mobile Expert!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "rpa-services",
+      title: "Robotic Process Automation (RPA) Services",
+      description:
+        "At HADITA, we empower businesses to enhance efficiency and accuracy by automating repetitive tasks through our comprehensive RPA solutions. Our services are designed to streamline operations, reduce errors, and allow your workforce to focus on strategic initiatives.",
+      content: [
+        {
+          heading: "Process Assessment & Strategy Development",
+          description:
+            "We begin by conducting a thorough analysis of your existing workflows to identify automation opportunities. Our team collaborates with stakeholders to develop a tailored RPA strategy that aligns with your business objectives and ensures optimal return on investment.",
+          offerings: [
+            "In-depth process analysis to pinpoint automation potential.",
+            "Customized RPA roadmaps aligned with organizational goals.",
+            "Expertise in handling cross-industry processes.",
+          ],
+          cta: {
+            title:
+              "Unlock the potential of automation in your operations. Schedule a consultation with our RPA experts today.",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "RPA Implementation & Integration",
+              url: "#rpa-implementation-integration",
+            },
+            {
+              title: "RPA Tools",
+              url: "#rpa-tools",
+            },
+          ],
+        },
+        {
+          heading: "RPA Implementation & Integration",
+          description:
+            "We ensure seamless deployment of RPA solutions into your existing IT infrastructure. Our approach emphasizes minimal disruption and maximum compatibility, integrating bots with your current systems and applications.",
+          offerings: [
+            "Expertise in integrating RPA with various enterprise systems.",
+            "Adherence to best practices for smooth implementation.",
+            "Focus on scalability to accommodate future growth.",
+          ],
+          cta: {
+            title:
+              "Achieve seamless automation integration. Reach out to our team for a tailored implementation plan.",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Process Assessment & Strategy",
+              url: "#process-assessment-strategy",
+            },
+            {
+              title: "RPA Tools",
+              url: "#rpa-tools",
+            },
+          ],
+        },
+        {
+          heading: "RPA Tool: UiPath",
+          description:
+            "A user-friendly and enterprise-grade RPA platform, UiPath offers powerful automation for both attended and unattended processes. It’s ideal for rapid deployment, AI integration, and scaling automation across departments.",
+          cta: {
+            title: "Discover how UiPath can empower your business operations!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Process Assessment & Strategy",
+              url: "#process-assessment-strategy",
+            },
+            {
+              title: "RPA Implementation & Integration",
+              url: "#rpa-implementation-integration",
+            },
+          ],
+        },
+        {
+          heading: "RPA Tool: Automation Anywhere",
+          description:
+            "Known for its cloud-native architecture and robust bot capabilities, Automation Anywhere is perfect for businesses aiming for enterprise-wide automation with strong governance and security.",
+          cta: {
+            title:
+              "Explore the potential of Automation Anywhere for your enterprise!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Process Assessment & Strategy",
+              url: "#process-assessment-strategy",
+            },
+            {
+              title: "RPA Implementation & Integration",
+              url: "#rpa-implementation-integration",
+            },
+          ],
+        },
+        {
+          heading: "RPA Tool: Blue Prism",
+          description:
+            "Blue Prism delivers secure, scalable digital workforce solutions for highly regulated industries. It’s ideal for clients who require centralized control, auditability, and enterprise-grade compliance.",
+          cta: {
+            title:
+              "Find out how Blue Prism can meet your compliance and scalability needs!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Process Assessment & Strategy",
+              url: "#process-assessment-strategy",
+            },
+            {
+              title: "RPA Implementation & Integration",
+              url: "#rpa-implementation-integration",
+            },
+          ],
+        },
+        {
+          heading: "RPA Tool: Open-Source RPA Platforms",
+          description:
+            "For organizations seeking flexibility and cost-efficiency, we support open-source RPA tools such as TagUI, Robocorp, and others. These platforms offer transparency, high customization, and developer freedom.",
+          cta: {
+            title:
+              "Learn how open-source RPA tools can be a flexible solution for your business!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Process Assessment & Strategy",
+              url: "#process-assessment-strategy",
+            },
+            {
+              title: "RPA Implementation & Integration",
+              url: "#rpa-implementation-integration",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Contact HADITA today to discover how our RPA services can drive efficiency and growth in your organization.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "iot-services",
+      title: "IoT Services",
+      description:
+        "HADITA brings cutting-edge Internet of Things (IoT) solutions to businesses across the UAE. Our comprehensive IoT services are designed to seamlessly integrate devices, networks, and applications, providing real-time insights and enhancing operational efficiency.",
+      content: [
+        {
+          heading: "Consulting and Solution Development",
+          description:
+            "We begin with a thorough assessment of your business processes to identify opportunities for IoT integration. Our team collaborates with you to develop customized IoT strategies that align with your objectives and drive innovation.",
+          cta: {
+            title:
+              "Start your IoT transformation today. Speak with our experts!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Connected Devices",
+              url: "#connected-devices",
+            },
+            {
+              title: "Vertical Applications",
+              url: "#vertical-applications",
+            },
+          ],
+        },
+        {
+          heading: "Connected Devices",
+          description:
+            "Our solutions encompass the integration of various sensors and devices, enabling real-time data collection and monitoring. This connectivity allows for improved decision-making and operational efficiency.",
+          cta: {
+            title:
+              "Unlock the power of connected devices. Speak with our experts!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Consulting and Solution Development",
+              url: "#consulting-solution-development",
+            },
+            {
+              title: "End-to-End System Integration",
+              url: "#end-to-end-system-integration",
+            },
+          ],
+        },
+        {
+          heading: "Vertical Applications",
+          description:
+            "We develop industry-specific IoT applications tailored to sectors such as manufacturing, healthcare, and smart cities. These applications address unique challenges and drive sector-specific innovations.",
+          cta: {
+            title:
+              "Explore our industry-specific IoT applications. Get in touch with our team!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Consulting and Solution Development",
+              url: "#consulting-solution-development",
+            },
+            {
+              title: "Connected Devices",
+              url: "#connected-devices",
+            },
+          ],
+        },
+        {
+          heading: "End-to-End System Integration",
+          description:
+            "Our team ensures seamless integration of IoT solutions with your existing IT infrastructure, facilitating smooth data flow and interoperability between systems.",
+          cta: {
+            title: "Achieve seamless IoT integration. Talk to our experts now!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Consulting and Solution Development",
+              url: "#consulting-solution-development",
+            },
+            {
+              title: "Testing",
+              url: "#testing",
+            },
+          ],
+        },
+        {
+          heading: "Testing",
+          description:
+            "We conduct rigorous testing of IoT solutions to ensure functionality, security, and performance meet the highest standards before deployment.",
+          cta: {
+            title:
+              "Ensure quality with our comprehensive IoT testing services!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "End-to-End System Integration",
+              url: "#end-to-end-system-integration",
+            },
+            {
+              title: "Managed Services and Support",
+              url: "#managed-services-support",
+            },
+          ],
+        },
+        {
+          heading: "Managed Services and Support",
+          description:
+            "Post-deployment, we offer ongoing support and maintenance to ensure your IoT solutions continue to operate optimally and evolve with your business needs.",
+          cta: {
+            title: "Get ongoing support for your IoT solutions. Reach out now!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Testing",
+              url: "#testing",
+            },
+            {
+              title: "Industry Focus Areas",
+              url: "#industry-focus-areas",
+            },
+          ],
+        },
+        {
+          heading: "Industry Focus Areas",
+          description: "We specialize in IoT solutions for various industries:",
+          subSections: [
+            {
+              title: "Smart Industries",
+              description:
+                "Revolutionize manufacturing, energy, and utility sectors by integrating IoT solutions that enhance efficiency and promote sustainable growth.",
+            },
+            {
+              title: "Smart Living",
+              description:
+                "Elevate quality of life through IoT applications in healthcare, security, and wearable technologies, fostering safer and healthier environments.",
+            },
+            {
+              title: "Smart Enterprises",
+              description:
+                "Implement IoT in smart buildings, offices, and retail spaces to connect people, machines, and data, driving business efficiency and innovation.",
+            },
+          ],
+          cta: {
+            title: "Explore our IoT solutions tailored to your industry needs!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Consulting and Solution Development",
+              url: "#consulting-solution-development",
+            },
+            {
+              title: "Managed Services and Support",
+              url: "#managed-services-support",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Contact HADITA today to discover how our IoT services can drive efficiency and innovation in your organization.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
     },
     {
       id: "it-consulting-services",
       title: "IT Consulting Services",
       description:
-        "Our experienced consultants craft forward-thinking IT strategies aligned with your business goals. With a focus on personalization and productivity, we provide expert guidance to accelerate growth.",
-
+        "In today's rapidly evolving digital landscape, aligning technology with business objectives is crucial for sustained success. At HADITA, we offer comprehensive IT consulting services designed to empower organizations across the UAE. Our mission is to transform your IT infrastructure into a strategic asset that drives efficiency, innovation, and growth.",
       content: [
         {
-          heading: "",
-          points: [
-            "Provide expert guidance for technology transformation: Support organizations in technology transformation and adoption of open-source and cloud technologies, offering strategic advice and guidance aligned with their business goals.",
+          heading: "Strategic IT Advisory",
+          description:
+            "We collaborate with your leadership team to develop IT strategies that align with your business goals, ensuring technology acts as a catalyst for growth and competitive advantage.",
+          cta: {
+            title:
+              "Start aligning your IT strategy with your business goals. Speak with our experts!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "IT Infrastructure Assessment & Optimization",
+              url: "#it-infrastructure-assessment",
+            },
+            {
+              title: "Digital Transformation Services",
+              url: "#digital-transformation-services",
+            },
+          ],
+        },
+        {
+          heading: "IT Infrastructure Assessment & Optimization",
+          description:
+            "Our team conducts thorough evaluations of your existing IT infrastructure to identify areas for improvement, ensuring optimal performance, scalability, and security.",
+          cta: {
+            title:
+              "Optimize your IT infrastructure for growth. Talk to our experts!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Strategic IT Advisory",
+              url: "#strategic-it-advisory",
+            },
+            {
+              title: "Cybersecurity & Risk Management",
+              url: "#cybersecurity-risk-management",
+            },
+          ],
+        },
+        {
+          heading: "Digital Transformation Services",
+          description:
+            "We guide organizations through the digital transformation journey, integrating advanced technologies to modernize operations and enhance customer experiences.",
+          cta: {
+            title:
+              "Transform your business with digital solutions. Speak to our team!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "IT Infrastructure Assessment & Optimization",
+              url: "#it-infrastructure-assessment",
+            },
+            {
+              title: "Cloud Services & Migration",
+              url: "#cloud-services-migration",
+            },
+          ],
+        },
+        {
+          heading: "Cybersecurity & Risk Management",
+          description:
+            "Protect your organization from evolving cyber threats with our comprehensive cybersecurity strategies and risk management solutions.",
+          cta: {
+            title:
+              "Protect your assets with robust cybersecurity. Contact us now!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Digital Transformation Services",
+              url: "#digital-transformation-services",
+            },
+            {
+              title: "IT Compliance & Governance",
+              url: "#it-compliance-governance",
+            },
+          ],
+        },
+        {
+          heading: "Cloud Services & Migration",
+          description:
+            "Leverage the power of the cloud with our end-to-end services, including strategy, migration, and management, to enhance agility and reduce costs.",
+          cta: {
+            title: "Maximize your cloud strategy. Talk to our experts today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Digital Transformation Services",
+              url: "#digital-transformation-services",
+            },
+            {
+              title: "IT Project Management",
+              url: "#it-project-management",
+            },
+          ],
+        },
+        {
+          heading: "IT Project Management",
+          description:
+            "Ensure the successful delivery of IT projects with our expert project management services, from planning through execution and support.",
+          cta: {
+            title:
+              "Get your IT projects delivered on time and within budget. Speak to our team!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud Services & Migration",
+              url: "#cloud-services-migration",
+            },
+            {
+              title: "IT Compliance & Governance",
+              url: "#it-compliance-governance",
+            },
+          ],
+        },
+        {
+          heading: "IT Compliance & Governance",
+          description:
+            "Navigate the complex landscape of IT compliance with our services, ensuring adherence to local and international regulations and standards.",
+          cta: {
+            title:
+              "Ensure compliance with expert governance. Get in touch with us!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cybersecurity & Risk Management",
+              url: "#cybersecurity-risk-management",
+            },
+            {
+              title: "IT Project Management",
+              url: "#it-project-management",
+            },
           ],
         },
       ],
+      footer: {
+        description:
+          "Ready to Transform Your IT Landscape? Partner with HADITA to harness the full potential of your technology investments. Contact us today to schedule a consultation and discover how our IT consulting services can drive your business forward.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
     },
     {
-      id: "e-commerce-services",
-      title: "E-Commerce Services",
+      id: "application-modernization-services",
+      title: "Application Modernization Services",
       description:
-        "We specialize in creating powerful and scalable e-commerce solutions that drive growth and maximize online sales. With expertise in platforms like Magento, WooCommerce, and more, we have the knowledge and experience to bring your online store to life.",
+        "Modernizing legacy applications is critical to stay agile, competitive, and secure in today’s digital economy. At HADITA, we help businesses transform outdated systems into scalable, cloud-ready, and future-proof digital assets—without disrupting core operations.",
       content: [
         {
-          heading: "Our E-Commerce Expertise:",
-          points: [
-            "Magento:Harnessing the robust capabilities of Magento, our team crafts bespoke e-commerce experiences. From custom theme development to complex module integrations, we ensure that your online store is both visually stunning and highly functional.",
-            "WooCommerce:As experts in WooCommerce, we leverage the flexibility of this popular WordPress plugin to build seamless and user-friendly e-commerce platforms. Our solutions are designed to convert visitors into loyal customers, all while providing an intuitive backend for easy management.",
+          heading: "Legacy Application Assessment & Roadmapping",
+          description:
+            "We start with a comprehensive evaluation of your existing systems—identifying bottlenecks, technical debt, and modernization opportunities. Our roadmap aligns with your business goals, ensuring minimal disruption and maximum ROI.",
+          cta: {
+            title:
+              "Ready to transform your legacy systems? Let’s start with a smart modernization plan.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Re-Architecture & Re-Engineering",
+              url: "#re-architecture-re-engineering",
+            },
+            {
+              title: "Cloud Migration & Optimization",
+              url: "#cloud-migration-optimization",
+            },
           ],
         },
         {
-          heading: "Key Features of Our E-Commerce Solutions:",
-          points: [
-            "User-Centric Design: Our designs prioritize user experience, ensuring intuitive navigation, mobile responsiveness, and engaging product displays.",
-            "Scalability: Whether you're a startup or an enterprise, our solutions are built to grow with your business, adapting to increased traffic and sales.",
-            "Customization: We understand that every business is unique. Our e-commerce solutions are tailored to your specific needs, allowing for extensive customization and feature integration.",
-            "SEO Optimization: We implement best practices for on-page SEO to ensure your products get the visibility they deserve in search engine results.",
-            "Payment Gateway Integration: Seamless and secure payment processing ensures a hassle-free experience for your customers.",
-            "Inventory Management: Efficiently manage your product catalog, track inventory, and receive real-time updates on stock levels.",
-            "",
+          heading: "Re-Architecture & Re-Engineering",
+          description:
+            "We redesign and re-engineer legacy systems by breaking down monolithic applications into modular, service-oriented or microservices-based architectures. This improves flexibility, maintainability, and performance.",
+          cta: {
+            title:
+              "Empower your tech stack with modern architecture. Speak to our solution architects today.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Legacy Application Assessment & Roadmapping",
+              url: "#legacy-application-assessment-roadmapping",
+            },
+            {
+              title: "Cloud Migration & Optimization",
+              url: "#cloud-migration-optimization",
+            },
           ],
         },
         {
-          heading: "Our Process:",
-          points: [
-            "Consultation: We begin by understanding your business goals, target audience, and specific requirements to create a tailored e-commerce strategy.",
-            "Design and Development: Our skilled team of developers and designers work collaboratively to bring your vision to life, focusing on both aesthetics and functionality.",
-            "Testing and Quality Assurance: Rigorous testing ensures that your e-commerce platform is bug-free, secure, and performs optimally.",
-            "Launch and Optimization: Once your site is live, we continue to monitor performance and make necessary adjustments to improve user experience and conversion rates.",
+          heading: "Cloud Migration & Optimization",
+          description:
+            "HADITA ensures a seamless migration of applications from on-premise to cloud environments—public, private, or hybrid. We also optimize workloads for better performance, cost-efficiency, and reliability.",
+          cta: {
+            title:
+              "Scale faster in the cloud. Schedule your cloud readiness assessment now.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Legacy Application Assessment & Roadmapping",
+              url: "#legacy-application-assessment-roadmapping",
+            },
+            {
+              title: "Re-Architecture & Re-Engineering",
+              url: "#re-architecture-re-engineering",
+            },
+          ],
+        },
+        {
+          heading: "UI/UX Modernization",
+          description:
+            "Outdated user interfaces hurt usability and engagement. We redesign legacy frontends with modern UI/UX principles, ensuring mobile responsiveness, accessibility, and seamless navigation across all devices.",
+          cta: {
+            title:
+              "Give your app a modern look and feel. Request a UI/UX revamp consultation.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Legacy Application Assessment & Roadmapping",
+              url: "#legacy-application-assessment-roadmapping",
+            },
+            {
+              title: "Re-Architecture & Re-Engineering",
+              url: "#re-architecture-re-engineering",
+            },
+          ],
+        },
+        {
+          heading: "Integration with Modern Systems",
+          description:
+            "HADITA enables your legacy apps to communicate effectively with modern CRMs, ERPs, and third-party platforms via custom APIs, middleware, or event-driven architectures.",
+          cta: {
+            title:
+              "Bridge the old with the new. Let’s unlock your data’s full potential.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Legacy Application Assessment & Roadmapping",
+              url: "#legacy-application-assessment-roadmapping",
+            },
+            {
+              title: "Re-Architecture & Re-Engineering",
+              url: "#re-architecture-re-engineering",
+            },
           ],
         },
       ],
+      footer: {
+        description:
+          "Contact us today for a free modernization assessment or to schedule a discovery workshop.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "e-commerce-platform-development",
+      title:
+        "E-commerce Services by Hadita: Build, Scale, and Future-proof Digital Storefronts.",
+      description:
+        "In a world where digital commerce is evolving at lightning speed, a cookie-cutter online store just won't cut it. At Hadita, we specialize in building robust, future-ready e-commerce platforms that empower brands to sell smarter, scale faster, and deliver delightful customer experiences across all channels. Whether you're launching a D2C brand, creating a B2B portal, or scaling a multi-vendor marketplace, our team brings strategy, creativity, and cutting-edge technology to the table—ensuring every touchpoint drives value.",
+      content: [
+        {
+          heading: "Custom E-commerce Development",
+          description:
+            "Your business is unique—your online store should be too. We design and develop bespoke e-commerce platforms that reflect your brand ethos and streamline your customer journey from browsing to checkout.",
+          cta: {
+            title: "Speak to Our Consultants to Build Your Storefront!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Headless Commerce Solutions",
+              url: "#headless-commerce-solutions",
+            },
+            {
+              title: "E-Commerce SEO and Marketing",
+              url: "#e-commerce-seo-and-marketing",
+            },
+            {
+              title: "System Integration & Automation",
+              url: "#system-integration-automation",
+            },
+          ],
+        },
+        {
+          heading: "Headless Commerce Solutions",
+          description:
+            "Headless commerce empowers brands to deliver lightning-fast, omnichannel experiences across web, mobile, POS, and more. It separates the presentation layer from the logic layer—giving you total control over UX and scalability.",
+          cta: {
+            title: "Speak to Our Consultants to Build Your Storefront!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom E-commerce Development",
+              url: "#custom-e-commerce-development",
+            },
+            {
+              title: "E-Commerce SEO and Marketing",
+              url: "#e-commerce-seo-and-marketing",
+            },
+            {
+              title: "System Integration & Automation",
+              url: "#system-integration-automation",
+            },
+          ],
+        },
+        {
+          heading: "E-commerce SEO & Performance Marketing",
+          description:
+            "E-commerce success doesn’t stop at launch. Our digital marketing and SEO strategies ensure your products reach the right people at the right time—across search engines, social platforms, and marketplaces.",
+          cta: {
+            title: "Grow Your Online Sales with Hadita. Speak to a Consultant!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom E-commerce Development",
+              url: "#custom-e-commerce-development",
+            },
+            {
+              title: "Headless Commerce Solutions",
+              url: "#headless-commerce-solutions",
+            },
+            {
+              title: "System Integration & Automation",
+              url: "#system-integration-automation",
+            },
+          ],
+        },
+        {
+          heading: "System Integration & Automation",
+          description:
+            "Streamline operations by integrating your store with inventory, shipping, finance, and CRM systems. Automation reduces manual effort and human error, improving operational efficiency.",
+          cta: {
+            title:
+              "Streamline your E-Commerce business. Speak to our consultant!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom E-commerce Development",
+              url: "#custom-e-commerce-development",
+            },
+            {
+              title: "Headless Commerce Solutions",
+              url: "#headless-commerce-solutions",
+            },
+            {
+              title: "E-Commerce SEO and Marketing",
+              url: "#e-commerce-seo-and-marketing",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're launching a new store, scaling an existing one, or reimagining your customer experience—Hadita is your strategic partner for smart, scalable, and future-ready e-commerce solutions. Let’s talk about your e-commerce goals.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "artificial-intelligence-ai-consulting",
+      title:
+        "Artificial Intelligence (AI) Consulting Services by HADITA: Strategic Intelligence. Smart Solutions. Real Impact.",
+      description:
+        "At HADITA, we help businesses move from ambition to action with AI. Our AI Consulting Services are designed to guide organizations through every phase of their AI journey—from ideation to implementation—with a focus on solving real-world problems, creating measurable impact, and building future-ready capabilities. Whether you're exploring automation, predictive insights, or next-gen AI products, HADITA brings a strategic, data-driven, and human-centered approach to make it happen.",
+      content: [
+        {
+          heading: "AI Strategy & Roadmap",
+          description:
+            "We align AI capabilities with your business goals, helping you build a strategic foundation that drives innovation and value from day one.",
+          offerings: [
+            "AI maturity benchmarking",
+            "Use case discovery workshops",
+            "Strategic roadmap with timelines & ROI projections",
+            "Change management and stakeholder alignment",
+          ],
+          valueAdd:
+            "Tailored strategies for AI adoption and execution, aligned with your business objectives and outcomes.",
+          cta: {
+            title: "Speak to our AI Consultant today!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Use Case Discovery & Feasibility",
+              url: "#use-case-discovery-feasibility",
+            },
+            {
+              title: "Machine Learning and Data Science Solutions",
+              url: "#machine-learning-data-science-solutions",
+            },
+            {
+              title: "AI Powered Process Optimization",
+              url: "#ai-powered-process-optimization",
+            },
+            {
+              title: "AI Training & Team Enablement",
+              url: "#ai-training-team-enablement",
+            },
+          ],
+        },
+        {
+          heading: "Use Case Discovery & Feasibility",
+          description:
+            "We help you find and prioritize AI use cases that align with your data, business challenges, and potential for return—grounded in both technical feasibility and business value.",
+          offerings: [
+            "Business process analysis & pain-point mapping",
+            "Technical readiness & data health assessment",
+            "Feasibility scoring & value matrix",
+            "Risk indicators and mitigation strategies",
+          ],
+          valueAdd:
+            "Ensuring high-impact AI solutions by prioritizing business value and aligning with data readiness and technical feasibility.",
+          cta: {
+            title: "Speak to our AI Consultant today!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "AI Strategy & Roadmap",
+              url: "#ai-strategy-roadmap",
+            },
+            {
+              title: "Machine Learning and Data Science Solutions",
+              url: "#machine-learning-data-science-solutions",
+            },
+            {
+              title: "AI Powered Process Optimization",
+              url: "#ai-powered-process-optimization",
+            },
+            {
+              title: "AI Training & Team Enablement",
+              url: "#ai-training-team-enablement",
+            },
+          ],
+        },
+        {
+          heading: "Machine Learning & Data Science Solutions",
+          description:
+            "From customer behavior prediction to image classification and NLP, we design custom AI solutions that learn, adapt, and scale with your business.",
+          offerings: [
+            "Predictive & prescriptive modeling",
+            "Natural Language Processing (NLP), computer vision & recommendation engines",
+            "Model training, tuning, and deployment",
+            "MLOps frameworks for lifecycle management",
+          ],
+          valueAdd:
+            "Custom-designed AI models that learn and scale with your business needs, providing actionable insights to improve decision-making.",
+          cta: {
+            title:
+              "Learn how actionable insights lead to better decisions and smart operations.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "AI Strategy & Roadmap",
+              url: "#ai-strategy-roadmap",
+            },
+            {
+              title: "Use Case Discovery & Feasibility",
+              url: "#use-case-discovery-feasibility",
+            },
+            {
+              title: "AI Powered Process Optimization",
+              url: "#ai-powered-process-optimization",
+            },
+            {
+              title: "AI Training & Team Enablement",
+              url: "#ai-training-team-enablement",
+            },
+          ],
+        },
+        {
+          heading: "AI-Powered Process Optimization",
+          description:
+            "We help businesses re-engineer their workflows with AI—automating repetitive tasks, predicting process bottlenecks, and improving efficiency across the board. Optimized processes mean lower costs, faster delivery, and happier customers—powered by AI that keeps learning.",
+          offerings: [
+            "Process analysis and automation roadmap",
+            "Intelligent automation using AI + RPA",
+            "Predictive insights for smarter operations",
+            "Real-time monitoring and optimization",
+          ],
+          valueAdd:
+            "Transforming workflows to drive efficiency, reduce costs, and enhance customer experience using AI-powered automation.",
+          cta: {
+            title: "Learn more about AI-powered process optimization!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "AI Strategy & Roadmap",
+              url: "#ai-strategy-roadmap",
+            },
+            {
+              title: "Use Case Discovery & Feasibility",
+              url: "#use-case-discovery-feasibility",
+            },
+            {
+              title: "Machine Learning and Data Science Solutions",
+              url: "#machine-learning-data-science-solutions",
+            },
+            {
+              title: "AI Training & Team Enablement",
+              url: "#ai-training-team-enablement",
+            },
+          ],
+        },
+        {
+          heading: "AI Training & Team Enablement",
+          description:
+            "We empower your teams with the skills and mindset needed to manage, sustain, and scale AI initiatives from within.",
+          offerings: [
+            "Executive briefings and team workshops",
+            "Hands-on training in ML tools and platforms",
+            "AI adoption playbooks for business functions",
+            "Internal champions and CoE guidance",
+          ],
+          valueAdd:
+            "Building internal AI capabilities and champions through comprehensive training and support to scale AI across the business.",
+          cta: {
+            title: "Build an AI-ready team. Speak to our Team!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "AI Strategy & Roadmap",
+              url: "#ai-strategy-roadmap",
+            },
+            {
+              title: "Use Case Discovery & Feasibility",
+              url: "#use-case-discovery-feasibility",
+            },
+            {
+              title: "Machine Learning and Data Science Solutions",
+              url: "#machine-learning-data-science-solutions",
+            },
+            {
+              title: "AI Powered Process Optimization",
+              url: "#ai-powered-process-optimization",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "At HADITA, AI is more than technology—it’s transformation. Whether you're just getting started or scaling AI across your enterprise, we're here to help you deliver it right.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "custom-ai-development",
+      title:
+        "Custom AI Software Development: AI Solutions Tailored to Your Business. Built to Scale.",
+      description:
+        "At HADITA, we build custom AI-powered software that transforms how your business operates. Whether you're building a recommendation engine, predictive analytics dashboard, or a computer vision platform—we engineer intelligent systems from the ground up, precisely aligned with your goals, data, and ecosystem. From idea to impact, our team of AI experts, data scientists, and solution architects deliver cutting-edge applications that are scalable, secure, and production ready.",
+      content: [
+        {
+          heading: "Custom AI Software Development",
+          description:
+            "We develop end-to-end AI applications that align with your unique needs—built to scale, integrate, and perform across real-world scenarios. From predictive models to full-stack ML systems, we bring your AI vision to life with precision.",
+          offerings: [
+            "Custom ML models (regression, classification, forecasting)",
+            "NLP tools (chatbots, sentiment analysis, text summarization)",
+            "Computer vision systems (object detection, image analysis)",
+            "MLOps implementation for continuous learning and scalability",
+          ],
+          valueAdd:
+            "AI solutions tailored to your business that scale, integrate seamlessly, and drive meaningful results.",
+          cta: {
+            title:
+              "Ready to develop your custom AI product? Request a free consultation.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Generative AI Development",
+              url: "#generative-ai-development",
+            },
+            {
+              title: "AI Component Development",
+              url: "#ai-component-development",
+            },
+            {
+              title: "AI Training",
+              url: "#ai-training",
+            },
+          ],
+        },
+        {
+          heading: "Generative AI Development",
+          description:
+            "We help you build and integrate Generative AI models that create, automate, and personalize—at scale. From content generation to conversational agents, we engineer powerful GenAI systems that adapt to your brand’s tone and business logic.",
+          offerings: [
+            "Custom LLM-based applications and fine-tuning",
+            "GenAI-powered chatbots and digital assistants",
+            "Text, code, and image generation workflows",
+            "Integration with OpenAI, Claude, open-source LLMs",
+          ],
+          valueAdd:
+            "Generative AI models that adapt to your business, automate processes, and generate content in alignment with your brand’s vision.",
+          cta: {
+            title: "Want to build your own GenAI assistant? Speak to our Team.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom AI Software Development",
+              url: "#custom-ai-software-development",
+            },
+            {
+              title: "AI Component Development",
+              url: "#ai-component-development",
+            },
+            {
+              title: "AI Training",
+              url: "#ai-training",
+            },
+          ],
+        },
+        {
+          heading: "AI Component Development",
+          description:
+            "We engineer AI modules that seamlessly embed into your existing infrastructure—enhancing workflows without overhauling systems. From fraud detection engines to recommendation models, our components are modular, efficient, and API-ready.",
+          offerings: [
+            "Reusable AI modules for core business functions",
+            "Smart extractors, classifiers, recommendation systems",
+            "API-first design for ERP, CRM, or custom tools",
+            "Real-time analytics and alert engines",
+          ],
+          valueAdd:
+            "Modular, lightweight AI components that integrate smoothly with your existing systems to optimize business functions.",
+          cta: {
+            title:
+              "Need intelligent components for your current platform? Get a Free Consultation.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom AI Software Development",
+              url: "#custom-ai-software-development",
+            },
+            {
+              title: "Generative AI Development",
+              url: "#generative-ai-development",
+            },
+            {
+              title: "AI Training",
+              url: "#ai-training",
+            },
+          ],
+        },
+        {
+          heading: "AI Enablement & Team Training",
+          description:
+            "We don’t just build AI—we help you adopt and evolve it. Our enablement programs ensure your teams understand, manage, and scale AI solutions confidently, with full transparency.",
+          offerings: [
+            "Executive AI briefings & roadmap alignment",
+            "Workshops on ML, GenAI, and prompt engineering",
+            "Internal documentation & knowledge transfer",
+            "Building internal AI champions and CoEs",
+          ],
+          valueAdd:
+            "Tailored AI enablement and training to empower your team to confidently manage, scale, and sustain AI technologies across your organization.",
+          cta: {
+            title:
+              "Empower your team for AI success? Request a free consultation.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom AI Software Development",
+              url: "#custom-ai-software-development",
+            },
+            {
+              title: "Generative AI Development",
+              url: "#generative-ai-development",
+            },
+            {
+              title: "AI Component Development",
+              url: "#ai-component-development",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Every business challenge is unique—your AI solution should be too. With HADITA, you get custom-built intelligence that delivers real results, not one-size-fits-all algorithms.",
+        cta: {
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "data-analytics",
+      title:
+        "Data & Analytics Consulting: Turn Your Data into Decisions. Insights into Impact.",
+      description:
+        "At HADITA, we empower organizations to unlock the true value of their data. From raw, scattered information to clear, actionable insights—we help you build a data-first culture that drives agility, accuracy, and business growth. Our data & analytics services are built to transform how you operate, strategize, and compete in a digital world.",
+      content: [
+        {
+          heading: "Business Intelligence (BI) Solutions",
+          description:
+            "Interactive dashboards and KPIs for real-time decision-making—using tools like Power BI, Tableau, and Looker.",
+          offerings: [
+            "Real-time dashboards",
+            "Custom KPIs",
+            "Power BI, Tableau, and Looker expertise",
+            "Data visualization for executive decision-making",
+          ],
+          valueAdd:
+            "Empower your team with intuitive, real-time insights through interactive BI solutions that enhance decision-making at all levels.",
+          cta: {
+            title: "Speak to our Data Consultant Now!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Data Strategy & Architecture",
+              url: "#data-strategy-architecture",
+            },
+            {
+              title: "Advanced Analytics & Forecasting",
+              url: "#advanced-analytics-forecasting",
+            },
+            {
+              title: "ETL & Data Integration",
+              url: "#etl-data-integration",
+            },
+            {
+              title: "Data Governance & Quality Frameworks",
+              url: "#data-governance-quality",
+            },
+          ],
+        },
+        {
+          heading: "Data Strategy & Architecture",
+          description:
+            "Define your enterprise data roadmap, implement scalable architectures, and modernize your data infrastructure across cloud, hybrid, or on-prem environments.",
+          offerings: [
+            "Data architecture design",
+            "Cloud, hybrid, and on-prem architecture solutions",
+            "Enterprise data roadmap planning",
+            "Modernizing legacy data systems",
+          ],
+          valueAdd:
+            "Create a robust, scalable data infrastructure to support your business goals and future-proof your organization’s data needs.",
+          cta: {
+            title: "Want to build a data strategy? Speak to our Expert!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Business Intelligence (BI) Solutions",
+              url: "#business-intelligence-solutions",
+            },
+            {
+              title: "Advanced Analytics & Forecasting",
+              url: "#advanced-analytics-forecasting",
+            },
+            {
+              title: "ETL & Data Integration",
+              url: "#etl-data-integration",
+            },
+            {
+              title: "Data Governance & Quality Frameworks",
+              url: "#data-governance-quality",
+            },
+          ],
+        },
+        {
+          heading: "Advanced Analytics & Forecasting",
+          description:
+            "Predictive modeling, customer segmentation, churn analysis, and anomaly detection using machine learning.",
+          offerings: [
+            "Predictive analytics & modeling",
+            "Customer segmentation and targeting",
+            "Churn analysis and retention modeling",
+            "Anomaly detection using AI",
+          ],
+          valueAdd:
+            "Leverage machine learning and advanced analytics to drive smarter decisions, improve customer retention, and predict future business trends.",
+          cta: {
+            title:
+              "Unlock predictive insights for your business. Get in touch today!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Business Intelligence (BI) Solutions",
+              url: "#business-intelligence-solutions",
+            },
+            {
+              title: "Data Strategy & Architecture",
+              url: "#data-strategy-architecture",
+            },
+            {
+              title: "ETL & Data Integration",
+              url: "#etl-data-integration",
+            },
+            {
+              title: "Data Governance & Quality Frameworks",
+              url: "#data-governance-quality",
+            },
+          ],
+        },
+        {
+          heading: "ETL & Data Integration",
+          description:
+            "Seamless data extraction, cleansing, and consolidation from multiple sources (ERP, CRM, cloud platforms) into unified, analytics-ready formats.",
+          offerings: [
+            "Data extraction from multiple sources",
+            "Data cleansing and transformation",
+            "Integration with ERP, CRM, cloud platforms",
+            "Unified, analytics-ready data formats",
+          ],
+          valueAdd:
+            "Ensure smooth data flows across your systems with efficient ETL processes and seamless integration, enabling better decision-making with clean, consolidated data.",
+          cta: {
+            title: "Need ETL and data integration services? Speak to our Team.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Business Intelligence (BI) Solutions",
+              url: "#business-intelligence-solutions",
+            },
+            {
+              title: "Data Strategy & Architecture",
+              url: "#data-strategy-architecture",
+            },
+            {
+              title: "Advanced Analytics & Forecasting",
+              url: "#advanced-analytics-forecasting",
+            },
+            {
+              title: "Data Governance & Quality Frameworks",
+              url: "#data-governance-quality",
+            },
+          ],
+        },
+        {
+          heading: "Data Governance & Quality Frameworks",
+          description:
+            "Ensure data consistency, privacy compliance (GDPR, HIPAA), and high-quality pipelines for trusted insights.",
+          offerings: [
+            "Data quality management",
+            "Privacy compliance (GDPR, HIPAA)",
+            "Data pipeline optimization",
+            "End-to-end data governance",
+          ],
+          valueAdd:
+            "Guarantee trusted insights and regulatory compliance by implementing rigorous data governance and quality management frameworks.",
+          cta: {
+            title:
+              "Ensure your data is reliable and compliant. Speak to our Consultant.",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Business Intelligence (BI) Solutions",
+              url: "#business-intelligence-solutions",
+            },
+            {
+              title: "Data Strategy & Architecture",
+              url: "#data-strategy-architecture",
+            },
+            {
+              title: "Advanced Analytics & Forecasting",
+              url: "#advanced-analytics-forecasting",
+            },
+            {
+              title: "ETL & Data Integration",
+              url: "#etl-data-integration",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you’re building a data lake, implementing enterprise dashboards, or launching a full analytics CoE—HADITA is your strategic partner for intelligent data transformation.",
+        cta: {
+          title: "Talk to our Data Consultant Now!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "data-science-as-a-service",
+      title:
+        "Data Science Solutions: Unlock the Power of Data. Transform Insights into Action.",
+      description:
+        "At HADITA, we specialize in turning complex data into actionable insights. Our advanced Data Science solutions empower organizations to make data-driven decisions that drive innovation, optimize processes, and improve outcomes. With the right tools, models, and strategies, we help businesses tap into the full potential of their data to unlock new opportunities.",
+      content: [
+        {
+          heading: "Data Strategy & Consulting",
+          description:
+            "Define a clear, comprehensive data strategy aligned with your business goals. We help you design the right roadmap to ensure data is used as a strategic asset.",
+          offerings: [
+            "Data roadmap design and implementation",
+            "Strategic alignment with business objectives",
+            "Data governance frameworks",
+          ],
+          valueAdd:
+            "Ensure that your data is optimized as a strategic asset for smarter decisions and long-term business success.",
+          cta: {
+            title: "Speak to our Data Strategy Consultant!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Predictive Analytics",
+              url: "#predictive-analytics",
+            },
+            {
+              title: "Machine Learning Model Development",
+              url: "#machine-learning-model-development",
+            },
+            {
+              title: "Data Engineering & Integration",
+              url: "#data-engineering-integration",
+            },
+            {
+              title: "Text Analytics & NLP",
+              url: "#text-analytics-nlp",
+            },
+          ],
+        },
+        {
+          heading: "Predictive Analytics",
+          description:
+            "Build predictive models that forecast trends, customer behaviors, and operational outcomes, enabling smarter decision-making and proactive action.",
+          offerings: [
+            "Customer behavior forecasting",
+            "Market trend analysis",
+            "Operational outcome prediction",
+          ],
+          valueAdd:
+            "Leverage predictive insights to drive proactive strategies and decisions for sustained business growth.",
+          cta: {
+            title: "Speak to our Predictive Analytics Expert!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Data Strategy & Consulting",
+              url: "#data-strategy-consulting",
+            },
+            {
+              title: "Machine Learning Model Development",
+              url: "#machine-learning-model-development",
+            },
+          ],
+        },
+        {
+          heading: "Machine Learning Model Development",
+          description:
+            "Create custom machine learning models for classification, regression, clustering, and optimization, tailored to solve your specific business challenges.",
+          offerings: [
+            "Custom ML model development",
+            "Classification and regression models",
+            "Clustering and optimization solutions",
+          ],
+          valueAdd:
+            "Unlock actionable insights by leveraging advanced machine learning techniques tailored to your business challenges.",
+          cta: {
+            title: "Talk to our Machine Learning Expert!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Predictive Analytics",
+              url: "#predictive-analytics",
+            },
+            {
+              title: "Data Engineering & Integration",
+              url: "#data-engineering-integration",
+            },
+          ],
+        },
+        {
+          heading: "Data Engineering & Integration",
+          description:
+            "Design robust data pipelines to streamline data collection, processing, and integration from diverse sources, ensuring high-quality data for analysis.",
+          offerings: [
+            "ETL process design and implementation",
+            "Data pipeline integration",
+            "Data quality assurance",
+          ],
+          valueAdd:
+            "Ensure seamless data flow across systems and reliable data pipelines that provide the foundation for accurate analysis and decision-making.",
+          cta: {
+            title: "Speak to our Data Engineering Consultant!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Predictive Analytics",
+              url: "#predictive-analytics",
+            },
+            {
+              title: "Machine Learning Model Development",
+              url: "#machine-learning-model-development",
+            },
+          ],
+        },
+        {
+          heading: "Advanced Statistical Analysis",
+          description:
+            "Utilize advanced statistical methods and techniques to uncover insights from large datasets, enabling better insights into customer behavior, market trends, and operational performance.",
+          offerings: [
+            "Statistical analysis and modeling",
+            "Hypothesis testing",
+            "Advanced data exploration techniques",
+          ],
+          valueAdd:
+            "Enhance data-driven decision-making by utilizing robust statistical methods that bring clarity to your business performance and trends.",
+          cta: {
+            title: "Talk to our Data Scientist for Statistical Insights!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Data Strategy & Consulting",
+              url: "#data-strategy-consulting",
+            },
+            {
+              title: "Data Visualization & Reporting",
+              url: "#data-visualization-reporting",
+            },
+          ],
+        },
+        {
+          heading: "Data Visualization & Reporting",
+          description:
+            "Convert complex data into easy-to-understand visualizations that enable actionable insights. Dashboards, charts, and reports that highlight key performance indicators (KPIs).",
+          offerings: [
+            "Custom dashboards and reporting tools",
+            "Data visualization for business intelligence",
+            "KPI tracking and reporting",
+          ],
+          valueAdd:
+            "Transform complex data into meaningful insights through intuitive visualizations and dashboards that empower timely, informed decision-making.",
+          cta: {
+            title: "Speak to our Data Visualization Expert!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Advanced Statistical Analysis",
+              url: "#advanced-statistical-analysis",
+            },
+            {
+              title: "Text Analytics & NLP",
+              url: "#text-analytics-nlp",
+            },
+          ],
+        },
+        {
+          heading: "Text Analytics & Natural Language Processing (NLP)",
+          description:
+            "Extract insights from unstructured data using text mining, sentiment analysis, and NLP techniques to gain valuable insights from customer feedback, reviews, and other textual data sources.",
+          offerings: [
+            "Sentiment analysis",
+            "Text mining and extraction",
+            "NLP for customer feedback and reviews",
+          ],
+          valueAdd:
+            "Unlock valuable insights from unstructured data, enhancing customer understanding and improving business strategies through NLP techniques.",
+          cta: {
+            title: "Speak to our NLP Expert!",
+            buttonText: "Request Consultation",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Data Strategy & Consulting",
+              url: "#data-strategy-consulting",
+            },
+            {
+              title: "Data Visualization & Reporting",
+              url: "#data-visualization-reporting",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Unlock the power of your data and fuel business growth with our data science solutions, tailored to meet your organization’s unique needs.",
+        cta: {
+          title: "Schedule a Free Consultation with our Data Scientists!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "digital-enablement",
+      title: "Digital Enablement: Elevate Your Brand in the Digital World",
+      description:
+        "At HADITA, we offer a comprehensive suite of services designed to elevate your brand in the digital world. Whether you’re looking to develop a dynamic website, boost your digital marketing efforts, or enhance your online visibility with SEO, we are here to help you succeed. Our team of experts works with you to create tailored solutions that not only meet your business goals but also provide a seamless, engaging experience for your audience. Partner with us to build a robust online presence, drive growth, and stay ahead of the competition in today’s fast-paced digital landscape.",
+      content: [
+        {
+          heading: "Website Development",
+          description:
+            "At HADITA, we specialize in creating responsive and user-friendly websites tailored to your business objectives. Our services encompass:",
+          offerings: [
+            "Custom Web Design: Developing unique, visually appealing designs that align with your brand identity.",
+            "E-commerce Solutions: Building secure and scalable online stores to enhance your sales performance.",
+            "Content Management Systems (CMS): Implementing platforms like WordPress and Joomla for easy content updates.",
+            "Web Application Development: Delivering robust applications to streamline your business processes.",
+          ],
+          valueAdd:
+            "Partner with us to transform your digital presence and engage effectively with your audience.",
+          cta: {
+            title: "Request a Free Website Development Consultation!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Digital Marketing",
+              url: "#digital-marketing",
+            },
+            {
+              title: "Search Engine Optimization (SEO)",
+              url: "#seo",
+            },
+          ],
+        },
+        {
+          heading: "Digital Marketing",
+          description:
+            "Our comprehensive digital marketing services are designed to elevate your brand's online presence:",
+          offerings: [
+            "Social Media Marketing (SMM): Leveraging platforms like Facebook, Instagram, and LinkedIn to connect with your target audience.",
+            "Pay-Per-Click (PPC) Advertising: Managing targeted ad campaigns to drive immediate traffic and conversions.",
+            "Email Marketing: Crafting personalized campaigns to nurture leads and retain customers.",
+            "Content Marketing: Developing valuable content to engage users and establish brand authority.",
+          ],
+          valueAdd:
+            "Book a free consultation to elevate your digital marketing strategy and enhance your online presence.",
+          cta: {
+            title: "Request a Free Digital Marketing Consultation!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Website Development",
+              url: "#website-development",
+            },
+            {
+              title: "Search Engine Optimization (SEO)",
+              url: "#seo",
+            },
+          ],
+        },
+        {
+          heading: "Search Engine Optimization (SEO)",
+          description:
+            "Our SEO services are focused on improving your website's ranking on search engines, thereby increasing organic traffic:",
+          offerings: [
+            "On-Page SEO: Optimizing website elements like meta tags, headers, and content for relevant keywords.",
+            "Off-Page SEO: Building quality backlinks and enhancing domain authority through ethical practices.",
+            "Technical SEO: Ensuring your website's technical aspects, such as site speed and mobile-friendliness, meet search engine standards.",
+            "Local SEO: Optimizing your online presence to attract local customers and improve regional search rankings.",
+          ],
+          valueAdd:
+            "Book a free consultation to boost your search engine rankings and drive targeted traffic to your site.",
+          cta: {
+            title: "Request an SEO Consultation!",
+            buttonText: "Submit",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Website Development",
+              url: "#website-development",
+            },
+            {
+              title: "Digital Marketing",
+              url: "#digital-marketing",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "At HADITA, we combine creativity, strategy, and technology to deliver exceptional website development, digital marketing, and SEO services tailored to your business needs.",
+        cta: {
+          title:
+            "Let’s Build Something Great Together! Book a Free Consultation.",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "web-development",
+      title:
+        "Website Development Services: Build Fast. Build Smart. Build to Convert.",
+      description:
+        "At HADITA, we don’t just build websites—we craft high-performing digital platforms that deliver seamless user experiences, drive engagement, and elevate your brand’s digital presence. Whether you're a startup, a scaling business, or an enterprise, we offer end-to-end website development services that align technology with business strategy.",
+      content: [
+        {
+          heading: "Custom Website Development",
+          description:
+            "Tailor-made websites that reflect your brand, attract customers, and create lasting impressions.",
+          offerings: [
+            "Custom website design and development",
+            "Responsive design for seamless user experience",
+            "User-centric UI/UX design",
+            "Scalable architecture for future growth",
+            "Performance optimization for faster load times",
+          ],
+          valueAdd:
+            "Tailored designs that match your business needs, built with the latest technologies to ensure speed, performance, and scalability.",
+          cta: {
+            title: "Speak to our Website Development Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "E-Commerce Development",
+              url: "#e-commerce-development",
+            },
+            {
+              title: "Web Application Development",
+              url: "#web-application-development",
+            },
+            {
+              title: "Mobile-Responsive Development",
+              url: "#mobile-responsive-development",
+            },
+            {
+              title: "Security & Performance Optimization",
+              url: "#security-performance-optimization",
+            },
+            {
+              title: "CMS Development",
+              url: "#cms-development",
+            },
+          ],
+        },
+        {
+          heading: "E-Commerce Development",
+          description:
+            "Launch scalable, secure, and high-performance online stores that drive conversions.",
+          offerings: [
+            "E-commerce platform development (Shopify, WooCommerce, Magento)",
+            "Custom cart, checkout, and payment gateway integration",
+            "Product management, inventory systems, and order tracking",
+            "Customer account management and security features",
+            "SEO-friendly design and optimized for conversions",
+          ],
+          valueAdd:
+            "Scalable e-commerce platforms that provide an easy-to-manage storefront, secure payment systems, and seamless customer experiences.",
+          cta: {
+            title: "Talk to Our E-Commerce Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom Website Development",
+              url: "#custom-website-development",
+            },
+            {
+              title: "Web Application Development",
+              url: "#web-application-development",
+            },
+            {
+              title: "Mobile-Responsive Development",
+              url: "#mobile-responsive-development",
+            },
+            {
+              title: "Security & Performance Optimization",
+              url: "#security-performance-optimization",
+            },
+            {
+              title: "CMS Development",
+              url: "#cms-development",
+            },
+          ],
+        },
+        {
+          heading: "Web Application Development",
+          description:
+            "Create custom web applications that solve unique business challenges and enhance operational efficiency.",
+          offerings: [
+            "Custom web applications for businesses",
+            "Full-stack development (React, Angular, Node.js, Python)",
+            "Cloud-based application integration",
+            "API development and third-party integrations",
+            "Data management systems and analytics tools",
+          ],
+          valueAdd:
+            "Robust, user-friendly web apps that streamline your business operations, built for scalability, flexibility, and performance.",
+          cta: {
+            title: "Get Your Web Application Built!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom Website Development",
+              url: "#custom-website-development",
+            },
+            {
+              title: "E-Commerce Development",
+              url: "#e-commerce-development",
+            },
+            {
+              title: "Mobile-Responsive Development",
+              url: "#mobile-responsive-development",
+            },
+            {
+              title: "Security & Performance Optimization",
+              url: "#security-performance-optimization",
+            },
+            {
+              title: "CMS Development",
+              url: "#cms-development",
+            },
+          ],
+        },
+        {
+          heading: "Mobile-Responsive Development",
+          description:
+            "Ensure your website looks and performs perfectly on all devices, from mobile phones to desktop computers.",
+          offerings: [
+            "Mobile-first design strategy",
+            "Responsive layout design for multi-device compatibility",
+            "Cross-browser compatibility and testing",
+            "User experience optimization for touchscreens",
+            "Fast loading times on mobile devices",
+          ],
+          valueAdd:
+            "Provide an optimal user experience on every device, keeping your brand consistent and accessible across all screen sizes.",
+          cta: {
+            title: "Optimize Your Website for Mobile!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom Website Development",
+              url: "#custom-website-development",
+            },
+            {
+              title: "E-Commerce Development",
+              url: "#e-commerce-development",
+            },
+            {
+              title: "Web Application Development",
+              url: "#web-application-development",
+            },
+            {
+              title: "Security & Performance Optimization",
+              url: "#security-performance-optimization",
+            },
+            {
+              title: "CMS Development",
+              url: "#cms-development",
+            },
+          ],
+        },
+        {
+          heading: "Security & Performance Optimization",
+          description:
+            "Protect your website and ensure fast loading times for a flawless user experience.",
+          offerings: [
+            "SSL certificate integration for secure browsing",
+            "Speed optimization (image compression, code minification)",
+            "Security best practices (firewall, DDoS protection)",
+            "Performance monitoring and tuning",
+            "Regular updates and patch management",
+          ],
+          valueAdd:
+            "Maximize site speed and security to provide a secure, fast, and seamless browsing experience for your users.",
+          cta: {
+            title: "Enhance Your Website's Security & Speed!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom Website Development",
+              url: "#custom-website-development",
+            },
+            {
+              title: "E-Commerce Development",
+              url: "#e-commerce-development",
+            },
+            {
+              title: "Web Application Development",
+              url: "#web-application-development",
+            },
+            {
+              title: "Mobile-Responsive Development",
+              url: "#mobile-responsive-development",
+            },
+            {
+              title: "CMS Development",
+              url: "#cms-development",
+            },
+          ],
+        },
+        {
+          heading: "CMS Development",
+          description:
+            "Empower your team to easily manage content with flexible, user-friendly content management systems.",
+          offerings: [
+            "WordPress, Joomla, and Drupal development",
+            "Custom CMS development for tailored functionality",
+            "Theme and plugin development",
+            "Content migration and integration",
+            "SEO optimization for better content visibility",
+          ],
+          valueAdd:
+            "Create websites that allow you to manage content effortlessly, empowering your team to focus on what matters most—your business.",
+          cta: {
+            title: "Create Your Custom CMS Today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Custom Website Development",
+              url: "#custom-website-development",
+            },
+            {
+              title: "E-Commerce Development",
+              url: "#e-commerce-development",
+            },
+            {
+              title: "Web Application Development",
+              url: "#web-application-development",
+            },
+            {
+              title: "Mobile-Responsive Development",
+              url: "#mobile-responsive-development",
+            },
+            {
+              title: "Security & Performance Optimization",
+              url: "#security-performance-optimization",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Let HADITA transform your vision into a powerful online presence. Whether you're revamping an old site or launching a new one, our experts are ready to deliver a high-quality website that converts.",
+        cta: {
+          title: "Book a Consultation!",
+          form: {
+            name: "Name",
+            mobile: "Mobile",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "seo-services",
+      title:
+        "Search Engine Optimization (SEO) Services: Boost Visibility. Drive Traffic. Grow Organically with HADITA.",
+      description:
+        "In today’s digital world, if your business isn’t on the first page of search results, it might as well be invisible. At HADITA, we help you rise above the noise with strategic SEO solutions designed to improve your search rankings, drive qualified traffic, and convert visitors into loyal customers. Our approach blends creativity with data and technical precision to build a long-term organic growth engine for your business.",
+      content: [
+        {
+          heading: "Technical SEO",
+          description:
+            "We start from the foundation. Our experts ensure your website is fast, mobile-friendly, secure, and technically optimized for search engines to crawl and index effectively.",
+          offerings: [
+            "Site Speed Optimization",
+            "Mobile Responsiveness",
+            "Schema Markup Implementation",
+            "Crawlability & Indexing Improvements",
+            "XML Sitemaps & Robots.txt Optimization",
+            "Core Web Vitals Optimization",
+          ],
+          valueAdd:
+            "A solid technical foundation that ensures optimal website performance and search engine visibility, setting the stage for organic growth.",
+          cta: {
+            title: "Talk to Our Technical SEO Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "On-Page SEO",
+              url: "#on-page-seo",
+            },
+            {
+              title: "Off-Page SEO & Link Building",
+              url: "#off-page-seo-link-building",
+            },
+            {
+              title: "Local SEO",
+              url: "#local-seo",
+            },
+            {
+              title: "E-Commerce SEO",
+              url: "#e-commerce-seo",
+            },
+            {
+              title: "SEO Audits & Analytics",
+              url: "#seo-audits-analytics",
+            },
+          ],
+        },
+        {
+          heading: "On-Page SEO",
+          description:
+            "Content is key—but structure is just as important. We fine-tune every element of your web pages to improve relevance, clarity, and keyword alignment.",
+          offerings: [
+            "Keyword Research & Mapping",
+            "Meta Tags Optimization (Title, Description, Alt Text)",
+            "Internal Linking Strategy",
+            "Content Optimization for SEO",
+            "UX Enhancements",
+            "Image SEO",
+          ],
+          valueAdd:
+            "Optimized content and structure that enhances your website’s relevance, improving search rankings and delivering a better user experience.",
+          cta: {
+            title: "Get Your On-Page SEO Improved!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Technical SEO",
+              url: "#technical-seo",
+            },
+            {
+              title: "Off-Page SEO & Link Building",
+              url: "#off-page-seo-link-building",
+            },
+            {
+              title: "Local SEO",
+              url: "#local-seo",
+            },
+            {
+              title: "E-Commerce SEO",
+              url: "#e-commerce-seo",
+            },
+            {
+              title: "SEO Audits & Analytics",
+              url: "#seo-audits-analytics",
+            },
+          ],
+        },
+        {
+          heading: "Off-Page SEO & Link Building",
+          description:
+            "We strengthen your domain authority with ethical and strategic backlink-building techniques that establish your brand as a trustworthy source in your industry.",
+          offerings: [
+            "High-Quality Backlink Acquisition",
+            "Guest Posting & PR Outreach",
+            "Business Directory Listings",
+            "Competitor Link Gap Analysis",
+            "Influencer Collaboration for SEO",
+          ],
+          valueAdd:
+            "Ethical backlinking strategies that not only improve your SEO but also enhance your online reputation and authority.",
+          cta: {
+            title: "Start Building Strong Backlinks!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Technical SEO",
+              url: "#technical-seo",
+            },
+            {
+              title: "On-Page SEO",
+              url: "#on-page-seo",
+            },
+            {
+              title: "Local SEO",
+              url: "#local-seo",
+            },
+            {
+              title: "E-Commerce SEO",
+              url: "#e-commerce-seo",
+            },
+            {
+              title: "SEO Audits & Analytics",
+              url: "#seo-audits-analytics",
+            },
+          ],
+        },
+        {
+          heading: "Local SEO",
+          description:
+            "Capture local customers by optimizing your Google Business Profile and ensuring consistency across directories. Perfect for clinics, cafes, retail outlets, and local service providers.",
+          offerings: [
+            "Google My Business Optimization",
+            "Local Keywords Targeting",
+            "Customer Review Strategy",
+            "Location Pages & Maps Integration",
+            "Citation Building",
+          ],
+          valueAdd:
+            "Increase local visibility, capture foot traffic, and attract nearby customers with well-optimized location-based SEO strategies.",
+          cta: {
+            title: "Boost Your Local Search Rankings!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Technical SEO",
+              url: "#technical-seo",
+            },
+            {
+              title: "On-Page SEO",
+              url: "#on-page-seo",
+            },
+            {
+              title: "Off-Page SEO & Link Building",
+              url: "#off-page-seo-link-building",
+            },
+            {
+              title: "E-Commerce SEO",
+              url: "#e-commerce-seo",
+            },
+            {
+              title: "SEO Audits & Analytics",
+              url: "#seo-audits-analytics",
+            },
+          ],
+        },
+        {
+          heading: "E-Commerce SEO",
+          description:
+            "We help your products get discovered by optimizing product pages, descriptions, filters, and rich snippets to improve search visibility across e-commerce platforms.",
+          offerings: [
+            "Product Page Optimization",
+            "SEO-Friendly URLs for Products",
+            "Structured Data for Products",
+            "Category/Filter SEO",
+            "Image & Video SEO",
+          ],
+          valueAdd:
+            "Enhance your product discoverability, improve visibility on major e-commerce platforms, and boost sales with strategic SEO for your store.",
+          cta: {
+            title: "Enhance Your E-Commerce SEO!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Technical SEO",
+              url: "#technical-seo",
+            },
+            {
+              title: "On-Page SEO",
+              url: "#on-page-seo",
+            },
+            {
+              title: "Off-Page SEO & Link Building",
+              url: "#off-page-seo-link-building",
+            },
+            {
+              title: "Local SEO",
+              url: "#local-seo",
+            },
+            {
+              title: "SEO Audits & Analytics",
+              url: "#seo-audits-analytics",
+            },
+          ],
+        },
+        {
+          heading: "SEO Audits & Analytics",
+          description:
+            "Our comprehensive audits uncover what’s holding your site back. Get detailed insights and recommendations, followed by continuous monitoring of KPIs and SEO health.",
+          offerings: [
+            "SEO Site Audits & Reports",
+            "Performance Analytics & Insights",
+            "Continuous SEO Health Monitoring",
+            "Competitor & Keyword Analysis",
+            "Monthly Performance Reporting",
+          ],
+          valueAdd:
+            "Actionable insights and data-driven strategies to continuously improve and adapt your SEO efforts for sustained growth.",
+          cta: {
+            title: "Get Your Free SEO Audit!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Technical SEO",
+              url: "#technical-seo",
+            },
+            {
+              title: "On-Page SEO",
+              url: "#on-page-seo",
+            },
+            {
+              title: "Off-Page SEO & Link Building",
+              url: "#off-page-seo-link-building",
+            },
+            {
+              title: "Local SEO",
+              url: "#local-seo",
+            },
+            {
+              title: "E-Commerce SEO",
+              url: "#e-commerce-seo",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Let HADITA help you dominate search engine rankings, drive quality traffic, and grow your business organically. Our full-service SEO solutions are designed to put your brand on the map.",
+        cta: {
+          title: "Book Your Free SEO Audit Today!",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "digital-marketing-services",
+      title: "Digital Marketing Services",
+      description:
+        "Power Your Brand’s Growth. Reach, Engage & Convert with HADITA.",
+      content: [
+        {
+          heading: "Social Media Marketing (SMM)",
+          description:
+            "Grow your community, amplify your voice, and build a brand that connects. We create platform-specific content and campaigns that spark engagement and conversions.",
+          offerings: [
+            "Campaign Management",
+            "Content Calendars",
+            "Influencer Partnerships",
+            "Ad Management",
+          ],
+          valueAdd:
+            "Targeted campaigns that build a loyal audience and drive measurable results on platforms like Instagram, Facebook, LinkedIn, and TikTok.",
+          cta: {
+            title: "Speak to our Social Media Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Search Engine Marketing (SEM)",
+              url: "#search-engine-marketing-sem",
+            },
+            {
+              title: "Email Marketing & Automation",
+              url: "#email-marketing-automation",
+            },
+            {
+              title: "Content Marketing",
+              url: "#content-marketing",
+            },
+            {
+              title: "E-Commerce & Marketplace Marketing",
+              url: "#e-commerce-marketplace-marketing",
+            },
+            {
+              title: "Analytics & Conversion Rate Optimization (CRO)",
+              url: "#analytics-cro",
+            },
+          ],
+        },
+        {
+          heading: "Search Engine Marketing (SEM / PPC)",
+          description:
+            "Get instant visibility and qualified leads through targeted paid ad campaigns. We manage every step—from keyword research to A/B testing and budget optimization.",
+          offerings: [
+            "Search Ads",
+            "Shopping Ads",
+            "Remarketing",
+            "Performance Analytics",
+          ],
+          valueAdd:
+            "Maximize ROI through precision-targeted PPC campaigns on Google, Bing, and YouTube.",
+          cta: {
+            title: "Speak to our SEM Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Social Media Marketing (SMM)",
+              url: "#social-media-marketing-smm",
+            },
+            {
+              title: "Email Marketing & Automation",
+              url: "#email-marketing-automation",
+            },
+            {
+              title: "Content Marketing",
+              url: "#content-marketing",
+            },
+            {
+              title: "E-Commerce & Marketplace Marketing",
+              url: "#e-commerce-marketplace-marketing",
+            },
+            {
+              title: "Analytics & Conversion Rate Optimization (CRO)",
+              url: "#analytics-cro",
+            },
+          ],
+        },
+        {
+          heading: "Email Marketing & Automation",
+          description:
+            "Drive retention and repeat sales with personalized email campaigns. From newsletters to drip sequences, we create content that converts.",
+          offerings: [
+            "Campaign Design",
+            "Segmentation",
+            "Automation",
+            "Analytics",
+          ],
+          valueAdd:
+            "Tailored email strategies that nurture leads, improve engagement, and drive conversions with tools like Mailchimp, HubSpot, and Klaviyo.",
+          cta: {
+            title: "Speak to our Email Marketing Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Social Media Marketing (SMM)",
+              url: "#social-media-marketing-smm",
+            },
+            {
+              title: "Search Engine Marketing (SEM)",
+              url: "#search-engine-marketing-sem",
+            },
+            {
+              title: "Content Marketing",
+              url: "#content-marketing",
+            },
+            {
+              title: "E-Commerce & Marketplace Marketing",
+              url: "#e-commerce-marketplace-marketing",
+            },
+            {
+              title: "Analytics & Conversion Rate Optimization (CRO)",
+              url: "#analytics-cro",
+            },
+          ],
+        },
+        {
+          heading: "Content Marketing",
+          description:
+            "Build thought leadership and rank better with engaging, SEO-rich content. We craft blog articles, videos, case studies, infographics, and more to connect your brand with your audience.",
+          offerings: [
+            "Blog Writing",
+            "Video Scripting",
+            "Content Strategy",
+            "Landing Pages",
+          ],
+          valueAdd:
+            "Create high-quality content that boosts brand credibility, drives traffic, and improves SEO rankings.",
+          cta: {
+            title: "Speak to our Content Marketing Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Social Media Marketing (SMM)",
+              url: "#social-media-marketing-smm",
+            },
+            {
+              title: "Search Engine Marketing (SEM)",
+              url: "#search-engine-marketing-sem",
+            },
+            {
+              title: "Email Marketing & Automation",
+              url: "#email-marketing-automation",
+            },
+            {
+              title: "E-Commerce & Marketplace Marketing",
+              url: "#e-commerce-marketplace-marketing",
+            },
+            {
+              title: "Analytics & Conversion Rate Optimization (CRO)",
+              url: "#analytics-cro",
+            },
+          ],
+        },
+        {
+          heading: "E-Commerce & Marketplace Marketing",
+          description:
+            "We optimize your digital storefronts and run high-ROI campaigns on platforms like Amazon, Flipkart, Noon, and Shopify.",
+          offerings: [
+            "Product Listing Optimization",
+            "Sponsored Ads",
+            "Conversion Funnel Optimization",
+          ],
+          valueAdd:
+            "Optimize product visibility and sales with targeted strategies across e-commerce platforms like Amazon, Flipkart, and Shopify.",
+          cta: {
+            title: "Speak to our E-Commerce Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Social Media Marketing (SMM)",
+              url: "#social-media-marketing-smm",
+            },
+            {
+              title: "Search Engine Marketing (SEM)",
+              url: "#search-engine-marketing-sem",
+            },
+            {
+              title: "Email Marketing & Automation",
+              url: "#email-marketing-automation",
+            },
+            {
+              title: "Content Marketing",
+              url: "#content-marketing",
+            },
+            {
+              title: "Analytics & Conversion Rate Optimization (CRO)",
+              url: "#analytics-cro",
+            },
+          ],
+        },
+        {
+          heading: "Analytics & Conversion Rate Optimization (CRO)",
+          description:
+            "Every campaign is backed by insights. We continuously monitor, test, and refine strategies to improve ROI.",
+          offerings: [
+            "Dashboard Setup",
+            "Heatmaps",
+            "A/B Testing",
+            "Funnel Optimization",
+          ],
+          valueAdd:
+            "Data-driven optimization strategies to increase conversions and ensure measurable campaign success.",
+          cta: {
+            title: "Speak to our CRO Expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Social Media Marketing (SMM)",
+              url: "#social-media-marketing-smm",
+            },
+            {
+              title: "Search Engine Marketing (SEM)",
+              url: "#search-engine-marketing-sem",
+            },
+            {
+              title: "Email Marketing & Automation",
+              url: "#email-marketing-automation",
+            },
+            {
+              title: "Content Marketing",
+              url: "#content-marketing",
+            },
+            {
+              title: "E-Commerce & Marketplace Marketing",
+              url: "#e-commerce-marketplace-marketing",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're launching a startup or expanding your digital presence, HADITA’s digital marketing expertise ensures you’re reaching the right people—at the right time—on the right channels.",
+        cta: {
+          title: "Book a Free Strategy Session!",
+          form: {
+            name: "Name",
+            mobile: "Mobile",
+            buttonText: "Submit",
+          },
+        },
+      },
     },
   ];
+  console.log(services);
   const selectedService = services.find((el) => el.id === id);
   console.log(selectedService);
   res.render("user/service-details", { service: selectedService });
