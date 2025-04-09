@@ -8,12 +8,699 @@ const showServiceDetails = (req, res) => {
   const id = req.params["id"];
   const services = [
     {
+      id: "cloud-services",
+      title: "Cloud Services",
+      description:
+        "HADITA Cloud Services – End-to-End Cloud Transformation for Future-Ready Enterprises. At HADITA, we offer a robust suite of cloud services designed to help businesses modernize, scale, and thrive in the digital economy. Our comprehensive offerings span across assessment, migration, operations, optimization, and compliance, all delivered with strategic guidance and support.",
+      content: [
+        {
+          id: "cloud-assessment-strategy",
+          heading: "Cloud Assessment & Strategy Development",
+          description:
+            "Our Cloud Assessment Services deliver a 360-degree analysis of your existing IT infrastructure, applications, workloads, and business goals. HADITA helps you assess cloud readiness and build a personalized transformation roadmap that aligns with your operational, financial, and security needs.",
+          offerings: [
+            "Infrastructure & application discovery",
+            "Cloud readiness scoring",
+            "TCO & ROI analysis",
+            "Cloud platform selection (AWS, Azure, GCP, Hybrid)",
+            "Strategic roadmap design",
+          ],
+          valueAdd:
+            "We go beyond templates—our team provides consultative guidance, industry-specific insights, and stakeholder workshops to ensure you have a cloud strategy that is realistic, secure, and scalable.",
+          cta: {
+            title: "For a free consultation, please contact!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "cloud-deployment-migration",
+          heading: "Cloud Deployment & Migration Services",
+          description:
+            "Transition to the cloud with zero disruption. HADITA's deployment and migration services are tailored to minimize downtime, maintain data integrity, and reduce risk. We support rehosting, re-platforming, and cloud-native modernization initiatives.",
+          offerings: [
+            "Migration strategy & planning",
+            "Application & data migration",
+            "Cloud-native app development",
+            "Hybrid and multi-cloud setups",
+            "Pilot and phased deployment approaches",
+          ],
+          valueAdd:
+            "With our certified engineers and prebuilt accelerators, we ensure seamless migration execution with full post-migration validation, training, and documentation.",
+          cta: {
+            title:
+              "We are happy to assist you in your cloud deployment and migration!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "cloud-operations-management",
+          heading: "Cloud Operations & Infrastructure Management",
+          description:
+            "Ensure continuous availability, performance, and cost-efficiency of your cloud environments. HADITA provides managed services for infrastructure, workloads, and applications with a proactive and SLA-driven approach.",
+          offerings: [
+            "Real-time performance monitoring",
+            "Incident detection and remediation",
+            "Cloud cost and resource optimization",
+            "Backup management and disaster recovery",
+            "Capacity planning and auto-scaling",
+          ],
+          valueAdd:
+            "Our integrated CloudOps model includes automation, alerting, governance, and reporting tools that keep your environment always optimized and secure.",
+          cta: {
+            title:
+              "Our experts are happy to support you in your Cloud operation and management.",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "modern-work-solutions",
+          heading: "Modern Work Solutions",
+          description:
+            "Enable a connected, secure, and collaborative workplace. HADITA's modern work solutions empower your workforce to operate from anywhere while maintaining enterprise-grade security and productivity.",
+          offerings: [
+            "Microsoft 365 and Google Workspace deployment",
+            "Identity & Access Management (IAM)",
+            "Endpoint security and mobile device management",
+            "Remote work infrastructure setup",
+            "Collaboration tools and policy enforcement",
+          ],
+          valueAdd:
+            "We help businesses build flexible work environments without compromising compliance or user experience, supported by continuous training and support.",
+          cta: {
+            title:
+              "Learn more about how HADITA can support you in setting up modern work solutions!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "cloud-backup-security",
+          heading: "Cloud Backup, Security & Risk Mitigation",
+          description:
+            "Protect your data and assets from breaches, loss, and system failures. HADITA implements multi-layered security frameworks and enterprise-grade backup systems to keep your business resilient.",
+          offerings: [
+            "Automated backup systems",
+            "Threat detection and response",
+            "Encryption at rest and in transit",
+            "Ransomware protection",
+            "Security audits and penetration testing",
+          ],
+          valueAdd:
+            "Security is baked into every layer—from design to deployment. Our Zero Trust security framework ensures robust protection and fast incident response.",
+          cta: {
+            title: "Look for backup and security solutions!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "cloud-optimization",
+          heading: "Cloud Optimization",
+          description:
+            "Make your cloud work smarter. HADITA's optimization services analyze your current architecture to eliminate inefficiencies, reduce costs, and improve scalability.",
+          offerings: [
+            "Cost tracking and budgeting",
+            "Resource right-sizing and scaling",
+            "Performance tuning",
+            "Reserved and spot instance optimization",
+            "Multi-cloud billing management",
+          ],
+          valueAdd:
+            "We provide real-time dashboards, savings recommendations, and automation scripts to continuously reduce spend while enhancing performance.",
+          cta: {
+            title: "Look for backup and security solutions!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "cloud-integration",
+          heading: "Cloud Integration",
+          description:
+            "Ensure your applications talk to each other smoothly. HADITA builds reliable integration pipelines that connect legacy systems, SaaS platforms, and third-party services.",
+          offerings: [
+            "API gateway configuration",
+            "Integration with ERP, CRM, and custom apps",
+            "Event-driven architecture setup",
+            "Data flow mapping and transformation",
+            "Hybrid integration solutions",
+          ],
+          valueAdd:
+            "Our cloud integration architects ensure your business processes are streamlined through secure, scalable, and real-time integrations.",
+          cta: {
+            title: "Speak to our integration expert!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "ai-ml-model-development-hosting",
+          heading: "AI/ML Model Development and Hosting",
+          description:
+            "Unlock the power of artificial intelligence and machine learning to automate processes, drive smarter decision-making, and enhance customer experiences. HADITA offers full-lifecycle AI/ML services—from use-case identification to scalable deployment.",
+          offerings: [
+            "AI/ML consulting & use-case discovery",
+            "Model development (supervised, unsupervised, NLP, CV)",
+            "Data pipeline creation & feature engineering",
+            "Model training, tuning, and validation",
+            "Hosting models on cloud-native platforms (SageMaker, Vertex AI, Azure ML)",
+            "MLOps pipeline setup for version control and continuous learning",
+            "Real-time inference deployment through REST APIs",
+          ],
+          valueAdd:
+            "We combine cloud-native tools and open-source frameworks to reduce development time and operational overhead while ensuring your models are secure, scalable, and cost-effective.",
+          cta: {
+            title: "Speak to our AI/ML experts!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "iot-integration-cloud-platforms",
+          heading: "IoT Integration with Cloud Platforms",
+          description:
+            "Transform your physical assets into intelligent systems with our Internet of Things (IoT) cloud integration services. HADITA enables real-time data collection, processing, and analytics from distributed devices to unlock automation and insights.",
+          offerings: [
+            "IoT architecture design and device onboarding",
+            "Integration with cloud platforms (AWS IoT Core, Azure IoT Hub, Google Cloud IoT)",
+            "Protocol support (MQTT, CoAP, HTTP, OPC-UA)",
+            "Edge-to-cloud data ingestion",
+            "IoT analytics and dashboards",
+            "Device management, firmware updates, and remote control",
+          ],
+          valueAdd:
+            "We provide secure, scalable, and interoperable IoT ecosystems, enabling you to build smart factories, cities, healthcare systems, and logistics solutions with low maintenance.",
+          cta: {
+            title: "Speak to our IoT experts!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+        {
+          id: "pocs-innovation-labs",
+          heading: "POCs and Innovation Labs",
+          description:
+            "Accelerate your innovation journey with HADITA's Proof-of-Concept (POC) services and Innovation Labs. We help you validate new ideas, experiment with cutting-edge technologies, and build real-world use cases to drive digital transformation.",
+          offerings: [
+            "Prototype and MVP development",
+            "Rapid prototyping with cloud services",
+            "Experimentation with emerging technologies (AI/ML, IoT, blockchain)",
+            "Cross-functional collaboration",
+            "Go-to-market strategy development",
+          ],
+          valueAdd:
+            "We work with you from concept to execution, helping you mitigate risks, validate market-fit, and scale innovation initiatives with the latest tools and frameworks.",
+          cta: {
+            title: "Interested in exploring new possibilities?",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Cloud assessment and strategy",
+              url: "#cloud-assessment-strategy",
+            },
+            {
+              title: "Cloud deployment and migration",
+              url: "#cloud-deployment-migration",
+            },
+            {
+              title: "Cloud operations and management",
+              url: "#cloud-operations-management",
+            },
+            {
+              title: "Modern work solutions",
+              url: "#modern-work-solutions",
+            },
+            {
+              title: "Cloud backup and security",
+              url: "#cloud-backup-security",
+            },
+            {
+              title: "Cloud optimization",
+              url: "#cloud-optimization",
+            },
+            {
+              title: "Cloud integration",
+              url: "#cloud-integration",
+            },
+            {
+              title: "AI/ML model development and hosting",
+              url: "#ai-ml-model-development-hosting",
+            },
+            {
+              title: "IoT integration with cloud platforms",
+              url: "#iot-integration-cloud-platforms",
+            },
+            {
+              title: "POCs and innovation labs",
+              url: "#pocs-innovation-labs",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're modernizing legacy systems, moving to the cloud for the first time, or scaling up a cloud-native business—HADITA is your trusted transformation partner.",
+        cta: {
+          title: "Book a Free Consulting Call",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
       id: "infrastructure-services",
       title: "Infrastructure Services",
       description:
         "HADITA Infrastructure Services: Design and Implement Robust and Resilient Infrastructure Solutions. At HADITA, we design, implement, and manage intelligent infrastructure solutions that serve as the digital backbone for modern enterprises. From foundational IT hardware to virtualized cloud infrastructure, our services are built to support secure, scalable, and high-performing environments tailored to your business goals. We provide end-to-end infrastructure services, covering physical, hybrid, and cloud-native environments with a strong focus on security, uptime, and performance.",
       content: [
         {
+          id: "core-it-infrastructure-services",
           heading: "Core IT Infrastructure Services",
           description:
             "These services focus on building and managing your foundational IT environment—on-premise or hybrid.",
@@ -69,6 +756,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "cloud-infrastructure-services",
           heading: "Cloud Infrastructure Services",
           description:
             "Leverage the agility of the cloud while maintaining enterprise-grade performance and governance.",
@@ -124,6 +812,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "network-infrastructure-solutions",
           heading: "Network Infrastructure Solutions",
           description:
             "Power fast, secure, and reliable communication across your organization with intelligent networking solutions.",
@@ -178,9 +867,10 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "infrastructure-security-services",
           heading: "Infrastructure Security Services",
           description:
-            "Protect your IT environment with multi-layered security that’s embedded across your infrastructure stack.",
+            "Protect your IT environment with multi-layered security that's embedded across your infrastructure stack.",
           offerings: [
             "Network access control and segmentation",
             "Infrastructure hardening and patch management",
@@ -232,6 +922,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "infrastructure-monitoring-management",
           heading: "Infrastructure Monitoring & Management",
           description:
             "Maintain peak operational efficiency and pre-empt disruptions with proactive monitoring and support.",
@@ -286,6 +977,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "infrastructure-modernization-automation",
           heading: "Infrastructure Modernization & Automation",
           description:
             "Transform legacy environments into agile, automated ecosystems optimized for modern workloads.",
@@ -360,6 +1052,7 @@ const showServiceDetails = (req, res) => {
         "HADITA Cloud Security Services: Secure by Design. Scalable by Default. Powered by Intelligence.",
       content: [
         {
+          id: "cloud-infrastructure-security",
           heading: "Cloud Infrastructure Security",
           description:
             "Protect your foundational cloud resources—compute, storage, and networking—with policy-driven controls and continuous risk assessments.",
@@ -411,6 +1104,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "workload-application-security",
           heading: "Workload & Application Security",
           description:
             "Secure cloud-native workloads, containers, and applications without compromising agility or performance.",
@@ -461,6 +1155,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "cloud-visibility-monitoring-threat-detection",
           heading: "Cloud Visibility, Monitoring & Threat Detection",
           description:
             "Centralized visibility is key to stopping breaches. HADITA delivers real-time insights and actionable intelligence across all your cloud environments.",
@@ -512,6 +1207,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "identity-access-management-iam-security",
           heading: "Identity & Access Management (IAM) Security",
           description:
             "Misconfigured identities are a top cloud risk. We ensure your identity policies are air-tight and aligned to least privilege principles.",
@@ -561,6 +1257,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "security-automation-devsecops",
           heading: "Security Automation & DevSecOps",
           description:
             "Embed security into your DevOps workflows to minimize manual effort and eliminate security debt.",
@@ -610,6 +1307,7 @@ const showServiceDetails = (req, res) => {
           ],
         },
         {
+          id: "security-advisory-audit-training",
           heading: "Security Advisory, Audit & Training",
           description:
             "Security is a journey—HADITA equips your teams with the knowledge and strategies to stay ahead of threats.",
@@ -621,7 +1319,7 @@ const showServiceDetails = (req, res) => {
             "Executive reporting and roadmap planning",
           ],
           valueAdd:
-            "We don’t just fix issues—we enable your teams with long-term resilience through actionable strategies and continuous improvement.",
+            "We don't just fix issues—we enable your teams with long-term resilience through actionable strategies and continuous improvement.",
           cta: {
             title: "Speak to our Security Consultant!",
             buttonText: "Request Call Back",

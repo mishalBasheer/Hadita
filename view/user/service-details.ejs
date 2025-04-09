@@ -56,7 +56,7 @@
                   <!-- Content Column -->
                   <div class="col-lg-8">
                     <div class="card mb-4"
-                      id="<%= section.heading ? section.heading.toLowerCase().replace(/\s+/g, '-') : 'section-' + index %>">
+                      id="<%= section.id ? section.id : section.heading.toLowerCase().replace(/\s+/g, '-') %>">
                       <div class="card-body p-4 p-lg-5">
                         <% if (section.heading) { %>
                           <h3 class="mb-4">
