@@ -723,8 +723,6 @@ progress {
   }
 }
 .list-unstyled {
-  display: flex;
-  justify-content: space-between;
   padding-left: 0;
   list-style: none;
 }
@@ -799,11 +797,6 @@ progress {
   padding-left: var(--elixir-gutter-x, 1rem);
   margin-right: auto;
   margin-left: auto;
-}
-@media (max-width: 768px) {
-  .list-unstyled {
-    flex-wrap: wrap;
-  }
 }
 @media (min-width: 576px) {
   .container-sm,
@@ -17634,4 +17627,17 @@ iframe.yt-video.loaded {
 /* Ensure dropdown menu doesn't interfere with underline */
 .navbar-nav .dropdown>.nav-link {
   pointer-events: auto;
+}
+.custom-list-unstyled {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+@media (max-width: 575.98px) {
+  .custom-list-unstyled {
+    flex-wrap: wrap;
+  }
 }
