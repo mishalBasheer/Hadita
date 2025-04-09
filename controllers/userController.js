@@ -2747,8 +2747,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "e-commerce-platform-development",
-      title:
-        "E-commerce Services by Hadita: Build, Scale, and Future-proof Digital Storefronts.",
+      title: "E-commerce Services",
       description:
         "In a world where digital commerce is evolving at lightning speed, a cookie-cutter online store just won't cut it. At Hadita, we specialize in building robust, future-ready e-commerce platforms that empower brands to sell smarter, scale faster, and deliver delightful customer experiences across all channels. Whether you're launching a D2C brand, creating a B2B portal, or scaling a multi-vendor marketplace, our team brings strategy, creativity, and cutting-edge technology to the table—ensuring every touchpoint drives value.",
       content: [
@@ -2880,8 +2879,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "artificial-intelligence-ai-consulting",
-      title:
-        "Artificial Intelligence (AI) Consulting Services by HADITA: Strategic Intelligence. Smart Solutions. Real Impact.",
+      title: "Artificial Intelligence (AI) Consulting Services",
       description:
         "At HADITA, we help businesses move from ambition to action with AI. Our AI Consulting Services are designed to guide organizations through every phase of their AI journey—from ideation to implementation—with a focus on solving real-world problems, creating measurable impact, and building future-ready capabilities. Whether you're exploring automation, predictive insights, or next-gen AI products, HADITA brings a strategic, data-driven, and human-centered approach to make it happen.",
       content: [
@@ -3101,8 +3099,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "custom-ai-development",
-      title:
-        "Custom AI Software Development: AI Solutions Tailored to Your Business. Built to Scale.",
+      title: "Custom AI Software Development",
       description:
         "At HADITA, we build custom AI-powered software that transforms how your business operates. Whether you're building a recommendation engine, predictive analytics dashboard, or a computer vision platform—we engineer intelligent systems from the ground up, precisely aligned with your goals, data, and ecosystem. From idea to impact, our team of AI experts, data scientists, and solution architects deliver cutting-edge applications that are scalable, secure, and production ready.",
       content: [
@@ -3268,8 +3265,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "data-analytics",
-      title:
-        "Data & Analytics Consulting: Turn Your Data into Decisions. Insights into Impact.",
+      title: "Data & Analytics Consulting",
       description:
         "At HADITA, we empower organizations to unlock the true value of their data. From raw, scattered information to clear, actionable insights—we help you build a data-first culture that drives agility, accuracy, and business growth. Our data & analytics services are built to transform how you operate, strategize, and compete in a digital world.",
       content: [
@@ -3491,8 +3487,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "data-science-as-a-service",
-      title:
-        "Data Science Solutions: Unlock the Power of Data. Transform Insights into Action.",
+      title: "Data Science Solutions",
       description:
         "At HADITA, we specialize in turning complex data into actionable insights. Our advanced Data Science solutions empower organizations to make data-driven decisions that drive innovation, optimize processes, and improve outcomes. With the right tools, models, and strategies, we help businesses tap into the full potential of their data to unlock new opportunities.",
       content: [
@@ -3737,7 +3732,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "digital-enablement",
-      title: "Digital Enablement: Elevate Your Brand in the Digital World",
+      title: "Digital Enablement",
       description:
         "At HADITA, we offer a comprehensive suite of services designed to elevate your brand in the digital world. Whether you’re looking to develop a dynamic website, boost your digital marketing efforts, or enhance your online visibility with SEO, we are here to help you succeed. Our team of experts works with you to create tailored solutions that not only meet your business goals but also provide a seamless, engaging experience for your audience. Partner with us to build a robust online presence, drive growth, and stay ahead of the competition in today’s fast-paced digital landscape.",
       content: [
@@ -3854,8 +3849,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "web-development",
-      title:
-        "Website Development Services: Build Fast. Build Smart. Build to Convert.",
+      title: "Website Development Services",
       description:
         "At HADITA, we don’t just build websites—we craft high-performing digital platforms that deliver seamless user experiences, drive engagement, and elevate your brand’s digital presence. Whether you're a startup, a scaling business, or an enterprise, we offer end-to-end website development services that align technology with business strategy.",
       content: [
@@ -4145,8 +4139,7 @@ const showServiceDetails = (req, res) => {
     },
     {
       id: "seo-services",
-      title:
-        "Search Engine Optimization (SEO) Services: Boost Visibility. Drive Traffic. Grow Organically with HADITA.",
+      title: "Search Engine Optimization (SEO) Services",
       description:
         "In today’s digital world, if your business isn’t on the first page of search results, it might as well be invisible. At HADITA, we help you rise above the noise with strategic SEO solutions designed to improve your search rankings, drive qualified traffic, and convert visitors into loyal customers. Our approach blends creativity with data and technical precision to build a long-term organic growth engine for your business.",
       content: [
