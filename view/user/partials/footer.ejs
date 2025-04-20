@@ -36,20 +36,23 @@
       </div>
       <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
         <h5 class="text-white">I would like to discuss:</h5>
-        <form class="mt-4" method="post">
+        <form class="mt-4 cta-form" method="post">
           <div class="row">
             <div class="col-6">
               <input class="form-control" type="hidden" name="to" value="username@domain.extension" />
-              <input class="form-control" type="text" placeholder="Your Name" aria-label="Your Name" />
+              <input class="form-control" type="text" name="name" placeholder="Your Name" aria-label="Your Name"
+                required />
             </div>
             <div class="col-6">
-              <input class="form-control" type="text" placeholder="Phone Number" aria-label="Phone Number" />
+              <input class="form-control" type="text" placeholder="Phone Number" name="mobile" aria-label="Phone Number"
+                required />
             </div>
             <div class="col-6 mt-4">
-              <input class="form-control" type="text" placeholder="Subject" aria-label="Subject" />
+              <input class="form-control" type="text" placeholder="Subject" name="message" aria-label="Subject"
+                required />
             </div>
             <div class="col-6 mt-4">
-              <button class="btn btn-warning w-100" type="submit">
+              <button class="btn btn-warning w-100" type="submit" id="submit">
                 Submit
               </button>
               <ul class="custom-list-unstyled mt-4">
@@ -133,6 +136,38 @@
     })();
   });
 </script>
+<script>
+
+  $(".cta-form").submit(function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const $form = $(this); // Reference to the current form that triggered submission
+
+    $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbwEyKN4f5ab0khNT_EehbwbJ7_J8OSwMZ77TO6w9eSxwbkhzHaVRYluwdTjSZn052LSyg/exec",
+      data: $form.serialize(),
+      method: "post",
+      success: function (response) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Form submitted successfully.',
+          confirmButtonColor: '#3085d6'
+        });
+        $form[0].reset();
+      },
+      error: function (err) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops!',
+          text: 'Something went wrong. Please try again.',
+          confirmButtonColor: '#d33'
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>

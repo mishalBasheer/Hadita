@@ -169,14 +169,14 @@
                 <%= service.footer.cta.title %>
               </h4>
               <% } %>
-                <form action="/submit-consultation" method="POST">
+                <form class="cta-form" method="POST">
                   <div class="mb-3">
-                    <input type="text" class="form-control"
+                    <input type="text" name="name" class="form-control"
                       placeholder="<%= service && service.footer && service.footer.cta && service.footer.cta.form && service.footer.cta.form.name ? service.footer.cta.form.name : 'Name' %>"
                       required>
                   </div>
                   <div class="mb-3">
-                    <input type="tel" class="form-control"
+                    <input type="tel" name="mobile" class="form-control"
                       placeholder="<%= service && service.footer && service.footer.cta && service.footer.cta.form && service.footer.cta.form.mobile ? service.footer.cta.form.mobile : 'Mobile Number' %>"
                       required>
                   </div>

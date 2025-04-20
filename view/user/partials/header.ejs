@@ -30,6 +30,8 @@
   <link href="/vendors/hamburgers/hamburgers.min.css" rel="stylesheet" />
   <link href="/vendors/loaders/loaders.css" rel="stylesheet" />
   <link href="/assets/css/theme.min.css" rel="stylesheet" />
+  <!-- SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
 
   <!-- Load Google Fonts Efficiently -->
   <link rel="stylesheet"
@@ -44,6 +46,10 @@
     gtag('js', new Date());
     gtag('config', 'UA-257228017-1');
   </script>
+
+  <!-- SweetAlert2 JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Move Non-Essential JS to Bottom of <body> for Faster Rendering -->
 </head>
@@ -75,10 +81,11 @@
                     <h4>Connect With Our Team</h4>
                     <p>Our experts are happy to support you in your cloud and modernization journey.</p>
                     <p>Request a Call Back</p>
-                    <form class="quick-contact-form">
-                      <input type="text" placeholder="Your Name" class="form-control mb-2">
-                      <input type="tel" placeholder="Your Mobile Number" class="form-control mb-2">
-                      <button type="submit" class="btn btn-outline-light w-100">Submit</button>
+                    <form class="quick-contact-form cta-form">
+                      <input type="text" name="name" placeholder="Your Name" class="form-control mb-2" required>
+                      <input type="tel" name="mobile" placeholder="Your Mobile Number" class="form-control mb-2"
+                        required>
+                      <button type="submit" id="submit" class="btn btn-outline-light w-100">Submit</button>
                     </form>
                   </div>
                   <!-- Services Section -->
