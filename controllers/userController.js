@@ -4712,6 +4712,686 @@ const showServiceDetails = (req, res) => {
         },
       },
     },
+    {
+      id: "sap-business-one",
+      title: "SAP Services",
+      description:
+        "SAP Business One is a cost-effective ERP for SMEs. HADITA helps businesses deploy and optimize this solution to manage finance, operations, inventory, and customer relationships under one integrated platform.",
+      content: [
+        {
+          id: "sap-business-one",
+          heading: "SAP Business One",
+          description:
+            "SAP Business One is a comprehensive ERP solution designed for SMEs. HADITA provides end-to-end services to implement, customize, and optimize SAP B1 to streamline your finance, operations, inventory, and customer relationship management.",
+          offerings: [
+            "Rapid Implementation",
+            "Customization & Add-On Development",
+            "User Training & Enablement",
+            "Support and Troubleshooting",
+            "Process optimization and workflow automation",
+            "Integration with third-party systems",
+          ],
+          valueAdd:
+            "Our localized approach ensures quick go-live with minimal disruption. We enable SMEs to scale effectively with reliable reporting, inventory accuracy, and improved customer service through SAP B1.",
+          cta: {
+            title:
+              "Get in touch today to transform your finance, operations, and customer experience with SAP B1!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "SAP S/4HANA Migration",
+              url: "/services/sap-s4hana-migration",
+            },
+            {
+              title: "SAP Implementation and Rollout",
+              url: "/services/sap-implementation",
+            },
+            {
+              title: "SAP Cloud Services",
+              url: "/services/sap-cloud-services",
+            },
+            {
+              title: "SAP Upgrade Services",
+              url: "/services/sap-upgrade-services",
+            },
+            {
+              title: "SAP Support and Maintenance",
+              url: "/services/sap-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're implementing SAP Business One for the first time, customizing it for your unique business needs, or looking for ongoing support - HADITA is your trusted SAP partner for SMEs.",
+        cta: {
+          title: "Book a Free SAP Consultation",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "sap-s4hana-migration",
+      title: "SAP Services",
+      description:
+        "Partnering with Incresol, HADITA offers a structured approach to migrating from legacy SAP systems or ECC to SAP S/4HANA, leveraging Incresol's migration frameworks and best practices.",
+      content: [
+        {
+          id: "sap-s4hana-migration",
+          heading: "SAP S/4HANA Migration",
+          description:
+            "HADITA provides comprehensive migration services to transition your business from legacy SAP systems or ECC to the intelligent ERP suite SAP S/4HANA. Our partnership with Incresol ensures proven methodologies and best practices for a smooth transformation.",
+          offerings: [
+            "System Readiness Assessment",
+            "Greenfield or Brownfield Migration",
+            "Post-Migration Optimization",
+            "Hybrid Cloud Deployment",
+            "Data migration and transformation",
+            "Custom code adaptation",
+            "Testing and validation",
+          ],
+          valueAdd:
+            "We bring S/4HANA transformation without disrupting ongoing operations, reducing TCO, and increasing system intelligence and business responsiveness. Our phased approach minimizes risk while maximizing the value of your S/4HANA investment.",
+          cta: {
+            title:
+              "Accelerate your SAP S/4HANA migration with HADITA—seamless transition, smarter systems, and zero disruption. Contact us today!",
+            buttonText: "Request Migration Assessment",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "SAP Business One",
+              url: "/services/sap-business-one",
+            },
+            {
+              title: "SAP S/4HANA Migration",
+              url: "/services/sap-s4hana-migration",
+            },
+            {
+              title: "SAP Implementation and Rollout",
+              url: "/services/sap-implementation",
+            },
+            {
+              title: "SAP Cloud Services",
+              url: "/services/sap-cloud-services",
+            },
+            {
+              title: "SAP Upgrade Services",
+              url: "/services/sap-upgrade-services",
+            },
+            {
+              title: "SAP Support and Maintenance",
+              url: "/services/sap-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're planning your first move to S/4HANA or optimizing an existing implementation, HADITA's migration expertise ensures you unlock the full potential of SAP's next-generation ERP.",
+        cta: {
+          title: "Get Your Free S/4HANA Migration Assessment",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "sap-implementation",
+      title: "SAP Services",
+      description:
+        "From discovery to deployment, HADITA provides SAP implementation services that align with your business goals using global methodologies and regional expertise.",
+      content: [
+        {
+          id: "sap-implementation-rollout",
+          heading: "SAP Implementation & Rollout",
+          description:
+            "HADITA delivers end-to-end SAP implementation services combining global best practices with local business understanding to ensure successful digital transformation.",
+          offerings: [
+            "Full-Cycle Implementation",
+            "Regional Rollout Support",
+            "Functional Enhancements",
+            "Roll-in for Multinational Deployments",
+            "Business process reengineering",
+            "Data migration and cutover planning",
+            "Post-go-live hypercare",
+          ],
+          valueAdd:
+            "We focus on business continuity, user-centric configuration, and phased implementation strategies to maximize impact and user adoption.",
+          cta: {
+            title:
+              "Drive successful SAP implementations with HADITA—global standards, regional insight, and business-aligned delivery from start to finish. Contact us today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "SAP Business One",
+              url: "/services/sap-business-one",
+            },
+            {
+              title: "SAP S/4HANA Migration",
+              url: "/services/sap-s4hana-migration",
+            },
+            {
+              title: "SAP Implementation and Rollout",
+              url: "/services/sap-implementation",
+            },
+            {
+              title: "SAP Cloud Services",
+              url: "/services/sap-cloud-services",
+            },
+            {
+              title: "SAP Upgrade Services",
+              url: "/services/sap-upgrade-services",
+            },
+            {
+              title: "SAP Support and Maintenance",
+              url: "/services/sap-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you need a full-scale SAP implementation, regional rollout support, or multinational deployment coordination - HADITA combines global SAP expertise with local business understanding for successful transformations.",
+        cta: {
+          title: "Discuss Your SAP Implementation Needs",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "sap-cloud-services",
+      title: "SAP Services",
+      description:
+        "HADITA facilitates the transition to SAP S/4HANA Cloud, empowering businesses with real-time data access, agility, and reduced infrastructure overhead.",
+      content: [
+        {
+          id: "sap-cloud-services",
+          heading: "SAP Cloud Services",
+          description:
+            "HADITA provides comprehensive SAP Cloud solutions to help businesses transition to SAP S/4HANA Cloud, enabling real-time data access, business agility, and reduced infrastructure complexity.",
+          offerings: [
+            "Cloud Strategy & Planning",
+            "Public/Private Cloud Setup",
+            "Data Security & Compliance",
+            "Cloud Operations Management",
+            "Hybrid cloud architecture design",
+            "Performance optimization and monitoring",
+            "Disaster recovery planning",
+          ],
+          valueAdd:
+            "We combine the innovation of SAP Cloud with robust support to accelerate your digital transformation securely and sustainably.",
+          cta: {
+            title:
+              "Unlock agility and innovation with HADITA—your trusted partner for secure, scalable SAP Cloud transformation. Contact us today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "SAP Business One",
+              url: "/services/sap-business-one",
+            },
+            {
+              title: "SAP S/4HANA Migration",
+              url: "/services/sap-s4hana-migration",
+            },
+            {
+              title: "SAP Implementation and Rollout",
+              url: "/services/sap-implementation",
+            },
+            {
+              title: "SAP Cloud Services",
+              url: "/services/sap-cloud-services",
+            },
+            {
+              title: "SAP Upgrade Services",
+              url: "/services/sap-upgrade-services",
+            },
+            {
+              title: "SAP Support and Maintenance",
+              url: "/services/sap-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're moving to SAP Cloud for the first time or optimizing your existing cloud environment, HADITA provides the expertise to ensure a secure, high-performance SAP Cloud transformation.",
+        cta: {
+          title: "Discuss Your SAP Cloud Strategy",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "sap-upgrade-services",
+      title: "SAP Services",
+      description:
+        "The 2027 SAP HANA Mandate: SAP has mandated that all current SAP ECC systems must be migrated to the SAP S/4HANA platform by 2027, as ECC will no longer receive standard support beyond that date. This upgrade isn't just a technical migration—it's a strategic move towards a more agile, real-time enterprise built on SAP's powerful in-memory HANA database and intelligent technologies.",
+      content: [
+        {
+          id: "sap-upgrade-services",
+          heading: "SAP Upgrade Services",
+          description:
+            "With SAP's announcement to end mainstream support for SAP ECC by 2027, organizations must plan their migration to SAP S/4HANA to stay current and compliant. In partnership with Incresol, HADITA can support you to upgrade SAP services to the latest SAP technologies efficiently.",
+          offerings: [
+            "SAP ECC to S/4HANA Upgrade (Greenfield or Brownfield)",
+            "Technical and Functional Readiness Assessments",
+            "Data Migration and Cleansing",
+            "Process Reengineering and Fiori Enablement",
+            "Post-Migration Optimization and Training",
+            "System performance benchmarking",
+            "Custom code adaptation",
+          ],
+          valueAdd:
+            "HADITA is committed to guiding organizations across the Middle East through this critical upgrade journey with minimal business disruption. Our offerings include:\n- Local SAP experts with hands-on S/4HANA migration experience\n- Pre-assessment workshops to evaluate current SAP landscape readiness\n- Customized migration roadmap aligned with your business goals and timelines\n- Cost-effective support packages for SMEs and large enterprises\n- Ongoing post-upgrade maintenance and optimization to fully leverage S/4HANA capabilities\n\nWe ensure a smooth, secure, and scalable transition to S/4HANA, future-proofing your business and aligning with SAP's long-term vision for intelligent enterprise transformation.",
+          cta: {
+            title:
+              "Future-proof your business with HADITA—seamlessly upgrade to SAP S/4HANA before 2027 with expert-led, disruption-free transformation. Contact us today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "SAP Business One",
+              url: "/services/sap-business-one",
+            },
+            {
+              title: "SAP S/4HANA Migration",
+              url: "/services/sap-s4hana-migration",
+            },
+            {
+              title: "SAP Implementation and Rollout",
+              url: "/services/sap-implementation",
+            },
+            {
+              title: "SAP Cloud Services",
+              url: "/services/sap-cloud-services",
+            },
+            {
+              title: "SAP Upgrade Services",
+              url: "/services/sap-upgrade-services",
+            },
+            {
+              title: "SAP Support and Maintenance",
+              url: "/services/sap-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Don't wait until the 2027 deadline - start your SAP S/4HANA upgrade journey now with HADITA's proven methodology and regional expertise to ensure business continuity and maximize the value of your SAP investment.",
+        cta: {
+          title: "Schedule Your SAP Upgrade Assessment",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "sap-support-maintenance",
+      title: "SAP Services",
+      description:
+        "Get end-to-end application management, real-time monitoring, issue resolution, and performance optimization for your SAP systems.",
+      content: [
+        {
+          id: "sap-support-maintenance",
+          heading: "SAP Support & Maintenance",
+          description:
+            "Comprehensive support services to keep your SAP systems running optimally with high availability and business continuity.",
+          offerings: [
+            "Managed SAP Services",
+            "SLA-Based Support",
+            "24/7 Monitoring & Helpdesk",
+            "Functional and Technical Maintenance",
+            "Performance tuning and optimization",
+            "Patch management and version updates",
+            "Custom code support and debugging",
+          ],
+          valueAdd:
+            "We provide peace of mind through proactive SAP support tailored to your operational needs, ensuring high availability and business continuity.",
+          cta: {
+            title:
+              "Ensure uninterrupted operations with HADITA—your reliable partner for proactive, round-the-clock SAP support and maintenance. Contact us today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "SAP Business One",
+              url: "/services/sap-business-one",
+            },
+            {
+              title: "SAP S/4HANA Migration",
+              url: "/services/sap-s4hana-migration",
+            },
+            {
+              title: "SAP Implementation and Rollout",
+              url: "/services/sap-implementation",
+            },
+            {
+              title: "SAP Cloud Services",
+              url: "/services/sap-cloud-services",
+            },
+            {
+              title: "SAP Upgrade Services",
+              url: "/services/sap-upgrade-services",
+            },
+            {
+              title: "SAP Support and Maintenance",
+              url: "/services/sap-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "From routine maintenance to critical issue resolution, HADITA's SAP support services ensure your business systems remain stable, secure, and performing at their peak.",
+        cta: {
+          title: "Get Expert SAP Support",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "salesforce-implementation-services",
+      title: "Salesforce CRM Solutions",
+      description:
+        "Delivering scalable CRM solutions using Salesforce's suite including Sales Cloud, Service Cloud, and Marketing Cloud, with end-to-end integration and support.",
+      content: [
+        {
+          id: "salesforce-implementation-services",
+          heading: "Salesforce Implementation Services",
+          description:
+            "Implement tailored Salesforce solutions based on your sales and service processes for accelerated CRM adoption.",
+          offerings: [
+            "Process Mapping & Configuration",
+            "Data Migration & Setup",
+            "App Customization",
+            "Training & Hypercare",
+            "User adoption strategies",
+            "Change management support",
+          ],
+          valueAdd:
+            "Our agile approach ensures a fast, efficient rollout with built-in scalability, helping you maximize Salesforce's full potential.",
+          cta: {
+            title:
+              "Maximize your customer relationships with HADITA—agile, scalable Salesforce CRM solutions tailored for growth. Contact us today!",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Salesforce Implementation Services",
+              url: "/services/salesforce-implementation-services",
+            },
+            {
+              title: "Salesforce Integration Services",
+              url: "/services/salesforce-integration-services",
+            },
+            {
+              title: "Salesforce Support and Maintenance",
+              url: "/services/salesforce-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you're implementing Salesforce for the first time, customizing it for your unique business processes, or looking for ongoing optimization - HADITA is your trusted Salesforce partner for CRM transformation.",
+        cta: {
+          title: "Book a Free Salesforce Consultation",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "salesforce-integration-services",
+      title: "Salesforce Services",
+      description:
+        "We integrate Salesforce with ERPs, marketing automation tools, and custom platforms for unified data and improved collaboration.",
+      content: [
+        {
+          id: "salesforce-integration-services",
+          heading: "Salesforce Integration Services",
+          description:
+            "HADITA provides comprehensive Salesforce integration solutions to connect your CRM with other business systems, eliminating data silos and enabling seamless workflows across your organization.",
+          offerings: [
+            "API-Based Integration",
+            "Middleware Configuration",
+            "Legacy System Integration",
+            "Cross-Platform Synchronization",
+            "Real-time data sync solutions",
+            "Custom connector development",
+            "Integration monitoring and maintenance",
+          ],
+          valueAdd:
+            "Our robust integration framework reduces data silos and operational friction, enabling connected customer experiences across all your business platforms.",
+          cta: {
+            title:
+              "Seamless Salesforce integration for connected, data-driven operations! Contact us today.",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Salesforce Implementation Services",
+              url: "/services/salesforce-implementation-services",
+            },
+            {
+              title: "Salesforce Integration Services",
+              url: "/services/salesforce-integration-services",
+            },
+            {
+              title: "Salesforce Support and Maintenance",
+              url: "/services/salesforce-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you need to connect Salesforce with your ERP, marketing tools, or custom applications, HADITA delivers reliable, scalable integration solutions that drive business efficiency.",
+        cta: {
+          title: "Get Started with Salesforce Integration",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "salesforce-support-maintenance",
+      title: "Salesforce Services",
+      description:
+        "HADITA offers Salesforce administration, issue resolution, enhancements, and system scaling for long-term CRM success.",
+      content: [
+        {
+          id: "salesforce-support-maintenance",
+          heading: "Salesforce Support & Maintenance",
+          description:
+            "HADITA provides comprehensive Salesforce support and maintenance services to ensure your CRM platform remains optimized, secure, and aligned with your evolving business needs.",
+          offerings: [
+            "On-Demand Support",
+            "Change Request Management",
+            "Salesforce Health Checks",
+            "Enhancement Services",
+            "Performance optimization",
+            "Security updates and compliance",
+            "User training and adoption support",
+          ],
+          valueAdd:
+            "We ensure your CRM evolves with your business, delivering reliability, user satisfaction, and consistent performance through proactive maintenance and strategic enhancements.",
+          cta: {
+            title:
+              "Keep your Salesforce CRM running at its best with HADITA—reliable support, smart enhancements, and scalable performance for lasting success.",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your Name",
+              mobile: "Your Number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Salesforce Implementation Services",
+              url: "/services/salesforce-implementation-services",
+            },
+            {
+              title: "Salesforce Integration Services",
+              url: "/services/salesforce-integration-services",
+            },
+            {
+              title: "Salesforce Support and Maintenance",
+              url: "/services/salesforce-support-maintenance",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you need ongoing support, periodic enhancements, or complete system health checks - HADITA's Salesforce experts ensure your CRM investment delivers continuous business value.",
+        cta: {
+          title: "Get a Free Salesforce Health Check",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
+      id: "odoo-erp-solutions",
+      title: "Odoo ERP Solutions",
+      description:
+        "We implement Odoo's modular ERP to streamline functions like inventory, sales, HR, and accounting into a unified system.",
+      content: [
+        {
+          id: "odoo-erp-implementation",
+          heading: "Odoo – ERP Solutions",
+          description:
+            "HADITA implements Odoo's flexible, modular ERP platform to integrate and automate your business processes across departments including inventory, sales, HR, and accounting.",
+          offerings: [
+            "End-to-End Implementation",
+            "Module Customization",
+            "Ongoing Support & Upgrades",
+            "Odoo Training",
+            "Multi-company and multi-currency setup",
+            "Integration with third-party applications",
+            "Performance optimization and scaling",
+          ],
+          valueAdd:
+            "Our Odoo expertise helps you scale affordably while achieving automation, real-time insights, and business efficiency across all departments.",
+          cta: {
+            title:
+              "Simplify and scale your operations with HADITA—expert Odoo ERP solutions tailored for efficiency, automation, and growth.",
+            buttonText: "Request Call Back",
+            form: {
+              name: "Your name",
+              mobile: "Your number",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Why Odoo for your business?",
+              url: "#odoo-business-case",
+            },
+            {
+              title: "Odoo Implementation Process",
+              url: "#odoo-implementation-process",
+            },
+            {
+              title: "Odoo Customization Services",
+              url: "#odoo-customization",
+            },
+            {
+              title: "Odoo Support Packages",
+              url: "#odoo-support",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Whether you need a complete Odoo implementation, specific module customization, or ongoing support, HADITA delivers cost-effective ERP solutions that grow with your business.",
+        cta: {
+          title: "Get a Free Odoo Consultation",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
   ];
   console.log(services);
   const selectedService = services.find((el) => el.id === id);
