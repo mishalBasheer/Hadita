@@ -1569,7 +1569,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "Web & Mobile App Development",
           description:
-            "Create engaging digital experiences with HADITA’s end-to-end web and mobile application development. From responsive websites to native and cross-platform mobile apps, we focus on performance, intuitive design, and seamless user experiences across devices.",
+            "Create engaging digital experiences with HADITA's end-to-end web and mobile application development. From responsive websites to native and cross-platform mobile apps, we focus on performance, intuitive design, and seamless user experiences across devices.",
           offerings: [],
           valueAdd: "",
           cta: {
@@ -1637,7 +1637,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "Post-Deployment Support & Maintenance",
           description:
-            "Our commitment doesn’t end at launch. HADITA offers reliable software support and maintenance services, including bug fixes, performance optimization, version upgrades, and continuous improvements—ensuring your solutions stay future-ready and aligned with evolving business goals.",
+            "Our commitment doesn't end at launch. HADITA offers reliable software support and maintenance services, including bug fixes, performance optimization, version upgrades, and continuous improvements—ensuring your solutions stay future-ready and aligned with evolving business goals.",
           offerings: [],
           valueAdd: "",
           cta: {
@@ -1670,7 +1670,7 @@ const showServiceDetails = (req, res) => {
         },
       ],
       footer: {
-        description: "Let’s create software that works the way you do—better.",
+        description: "Let's create software that works the way you do—better.",
         cta: {
           title: "Speak to our consultant today!",
           form: {
@@ -1690,7 +1690,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "Native App Development",
           description:
-            "We develop native mobile apps that harness the full capabilities of iOS and Android platforms. Whether you're targeting Apple’s iOS ecosystem or the expansive Android market, HADITA delivers sleek, responsive, and feature-rich apps with maximum device compatibility and speed.",
+            "We develop native mobile apps that harness the full capabilities of iOS and Android platforms. Whether you're targeting Apple's iOS ecosystem or the expansive Android market, HADITA delivers sleek, responsive, and feature-rich apps with maximum device compatibility and speed.",
           offerings: [
             "iOS (Swift, Objective-C)",
             "Android (Kotlin, Java)",
@@ -1966,7 +1966,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "App Maintenance & Support",
           description:
-            "We provide post-launch support to ensure continuous improvement, regular updates, and peak performance. HADITA’s mobile app lifecycle management includes bug fixes, OS updates, feature enhancements, and user feedback implementation.",
+            "We provide post-launch support to ensure continuous improvement, regular updates, and peak performance. HADITA's mobile app lifecycle management includes bug fixes, OS updates, feature enhancements, and user feedback implementation.",
           offerings: [
             "SLA-based support",
             "App store management",
@@ -2092,7 +2092,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "RPA Tool: UiPath",
           description:
-            "A user-friendly and enterprise-grade RPA platform, UiPath offers powerful automation for both attended and unattended processes. It’s ideal for rapid deployment, AI integration, and scaling automation across departments.",
+            "A user-friendly and enterprise-grade RPA platform, UiPath offers powerful automation for both attended and unattended processes. It's ideal for rapid deployment, AI integration, and scaling automation across departments.",
           cta: {
             title: "Discover how UiPath can empower your business operations!",
             buttonText: "Request Call Back",
@@ -2141,7 +2141,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "RPA Tool: Blue Prism",
           description:
-            "Blue Prism delivers secure, scalable digital workforce solutions for highly regulated industries. It’s ideal for clients who require centralized control, auditability, and enterprise-grade compliance.",
+            "Blue Prism delivers secure, scalable digital workforce solutions for highly regulated industries. It's ideal for clients who require centralized control, auditability, and enterprise-grade compliance.",
           cta: {
             title:
               "Find out how Blue Prism can meet your compliance and scalability needs!",
@@ -2605,7 +2605,7 @@ const showServiceDetails = (req, res) => {
       id: "application-modernization-services",
       title: "Application Modernization Services",
       description:
-        "Modernizing legacy applications is critical to stay agile, competitive, and secure in today’s digital economy. At HADITA, we help businesses transform outdated systems into scalable, cloud-ready, and future-proof digital assets—without disrupting core operations.",
+        "Modernizing legacy applications is critical to stay agile, competitive, and secure in today's digital economy. At HADITA, we help businesses transform outdated systems into scalable, cloud-ready, and future-proof digital assets—without disrupting core operations.",
       content: [
         {
           heading: "Legacy Application Assessment & Roadmapping",
@@ -2613,7 +2613,7 @@ const showServiceDetails = (req, res) => {
             "We start with a comprehensive evaluation of your existing systems—identifying bottlenecks, technical debt, and modernization opportunities. Our roadmap aligns with your business goals, ensuring minimal disruption and maximum ROI.",
           cta: {
             title:
-              "Ready to transform your legacy systems? Let’s start with a smart modernization plan.",
+              "Ready to transform your legacy systems? Let's start with a smart modernization plan.",
             buttonText: "Submit",
             form: {
               name: "Name",
@@ -2713,7 +2713,7 @@ const showServiceDetails = (req, res) => {
             "HADITA enables your legacy apps to communicate effectively with modern CRMs, ERPs, and third-party platforms via custom APIs, middleware, or event-driven architectures.",
           cta: {
             title:
-              "Bridge the old with the new. Let’s unlock your data’s full potential.",
+              "Bridge the old with the new. Let's unlock your data's full potential.",
             buttonText: "Submit",
             form: {
               name: "Name",
@@ -2810,7 +2810,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "E-commerce SEO & Performance Marketing",
           description:
-            "E-commerce success doesn’t stop at launch. Our digital marketing and SEO strategies ensure your products reach the right people at the right time—across search engines, social platforms, and marketplaces.",
+            "E-commerce success doesn't stop at launch. Our digital marketing and SEO strategies ensure your products reach the right people at the right time—across search engines, social platforms, and marketplaces.",
           cta: {
             title: "Grow Your Online Sales with Hadita. Speak to a Consultant!",
             buttonText: "Submit",
@@ -2867,7 +2867,7 @@ const showServiceDetails = (req, res) => {
       ],
       footer: {
         description:
-          "Whether you're launching a new store, scaling an existing one, or reimagining your customer experience—Hadita is your strategic partner for smart, scalable, and future-ready e-commerce solutions. Let’s talk about your e-commerce goals.",
+          "Whether you're launching a new store, scaling an existing one, or reimagining your customer experience—Hadita is your strategic partner for smart, scalable, and future-ready e-commerce solutions. Let's talk about your e-commerce goals.",
         cta: {
           form: {
             name: "Name",
@@ -3087,7 +3087,7 @@ const showServiceDetails = (req, res) => {
       ],
       footer: {
         description:
-          "At HADITA, AI is more than technology—it’s transformation. Whether you're just getting started or scaling AI across your enterprise, we're here to help you deliver it right.",
+          "At HADITA, AI is more than technology—it's transformation. Whether you're just getting started or scaling AI across your enterprise, we're here to help you deliver it right.",
         cta: {
           form: {
             name: "Name",
@@ -3143,7 +3143,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "Generative AI Development",
           description:
-            "We help you build and integrate Generative AI models that create, automate, and personalize—at scale. From content generation to conversational agents, we engineer powerful GenAI systems that adapt to your brand’s tone and business logic.",
+            "We help you build and integrate Generative AI models that create, automate, and personalize—at scale. From content generation to conversational agents, we engineer powerful GenAI systems that adapt to your brand's tone and business logic.",
           offerings: [
             "Custom LLM-based applications and fine-tuning",
             "GenAI-powered chatbots and digital assistants",
@@ -3151,7 +3151,7 @@ const showServiceDetails = (req, res) => {
             "Integration with OpenAI, Claude, open-source LLMs",
           ],
           valueAdd:
-            "Generative AI models that adapt to your business, automate processes, and generate content in alignment with your brand’s vision.",
+            "Generative AI models that adapt to your business, automate processes, and generate content in alignment with your brand's vision.",
           cta: {
             title: "Want to build your own GenAI assistant? Speak to our Team.",
             buttonText: "Submit",
@@ -3216,7 +3216,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "AI Enablement & Team Training",
           description:
-            "We don’t just build AI—we help you adopt and evolve it. Our enablement programs ensure your teams understand, manage, and scale AI solutions confidently, with full transparency.",
+            "We don't just build AI—we help you adopt and evolve it. Our enablement programs ensure your teams understand, manage, and scale AI solutions confidently, with full transparency.",
           offerings: [
             "Executive AI briefings & roadmap alignment",
             "Workshops on ML, GenAI, and prompt engineering",
@@ -3320,7 +3320,7 @@ const showServiceDetails = (req, res) => {
             "Modernizing legacy data systems",
           ],
           valueAdd:
-            "Create a robust, scalable data infrastructure to support your business goals and future-proof your organization’s data needs.",
+            "Create a robust, scalable data infrastructure to support your business goals and future-proof your organization's data needs.",
           cta: {
             title: "Want to build a data strategy? Speak to our Expert!",
             buttonText: "Submit",
@@ -3474,7 +3474,7 @@ const showServiceDetails = (req, res) => {
       ],
       footer: {
         description:
-          "Whether you’re building a data lake, implementing enterprise dashboards, or launching a full analytics CoE—HADITA is your strategic partner for intelligent data transformation.",
+          "Whether you're building a data lake, implementing enterprise dashboards, or launching a full analytics CoE—HADITA is your strategic partner for intelligent data transformation.",
         cta: {
           title: "Talk to our Data Consultant Now!",
           form: {
@@ -3719,7 +3719,7 @@ const showServiceDetails = (req, res) => {
       ],
       footer: {
         description:
-          "Unlock the power of your data and fuel business growth with our data science solutions, tailored to meet your organization’s unique needs.",
+          "Unlock the power of your data and fuel business growth with our data science solutions, tailored to meet your organization's unique needs.",
         cta: {
           title: "Schedule a Free Consultation with our Data Scientists!",
           form: {
@@ -3734,7 +3734,7 @@ const showServiceDetails = (req, res) => {
       id: "digital-enablement",
       title: "Digital Enablement",
       description:
-        "At HADITA, we offer a comprehensive suite of services designed to elevate your brand in the digital world. Whether you’re looking to develop a dynamic website, boost your digital marketing efforts, or enhance your online visibility with SEO, we are here to help you succeed. Our team of experts works with you to create tailored solutions that not only meet your business goals but also provide a seamless, engaging experience for your audience. Partner with us to build a robust online presence, drive growth, and stay ahead of the competition in today’s fast-paced digital landscape.",
+        "At HADITA, we offer a comprehensive suite of services designed to elevate your brand in the digital world. Whether you're looking to develop a dynamic website, boost your digital marketing efforts, or enhance your online visibility with SEO, we are here to help you succeed. Our team of experts works with you to create tailored solutions that not only meet your business goals but also provide a seamless, engaging experience for your audience. Partner with us to build a robust online presence, drive growth, and stay ahead of the competition in today's fast-paced digital landscape.",
       content: [
         {
           heading: "Website Development",
@@ -3838,7 +3838,7 @@ const showServiceDetails = (req, res) => {
           "At HADITA, we combine creativity, strategy, and technology to deliver exceptional website development, digital marketing, and SEO services tailored to your business needs.",
         cta: {
           title:
-            "Let’s Build Something Great Together! Book a Free Consultation.",
+            "Let's Build Something Great Together! Book a Free Consultation.",
           form: {
             name: "Name",
             mobile: "Mobile#",
@@ -3851,7 +3851,7 @@ const showServiceDetails = (req, res) => {
       id: "web-development",
       title: "Website Development Services",
       description:
-        "At HADITA, we don’t just build websites—we craft high-performing digital platforms that deliver seamless user experiences, drive engagement, and elevate your brand’s digital presence. Whether you're a startup, a scaling business, or an enterprise, we offer end-to-end website development services that align technology with business strategy.",
+        "At HADITA, we don't just build websites—we craft high-performing digital platforms that deliver seamless user experiences, drive engagement, and elevate your brand's digital presence. Whether you're a startup, a scaling business, or an enterprise, we offer end-to-end website development services that align technology with business strategy.",
       content: [
         {
           heading: "Custom Website Development",
@@ -4141,7 +4141,7 @@ const showServiceDetails = (req, res) => {
       id: "seo-services",
       title: "Search Engine Optimization (SEO) Services",
       description:
-        "In today’s digital world, if your business isn’t on the first page of search results, it might as well be invisible. At HADITA, we help you rise above the noise with strategic SEO solutions designed to improve your search rankings, drive qualified traffic, and convert visitors into loyal customers. Our approach blends creativity with data and technical precision to build a long-term organic growth engine for your business.",
+        "In today's digital world, if your business isn't on the first page of search results, it might as well be invisible. At HADITA, we help you rise above the noise with strategic SEO solutions designed to improve your search rankings, drive qualified traffic, and convert visitors into loyal customers. Our approach blends creativity with data and technical precision to build a long-term organic growth engine for your business.",
       content: [
         {
           heading: "Technical SEO",
@@ -4202,7 +4202,7 @@ const showServiceDetails = (req, res) => {
             "Image SEO",
           ],
           valueAdd:
-            "Optimized content and structure that enhances your website’s relevance, improving search rankings and delivering a better user experience.",
+            "Optimized content and structure that enhances your website's relevance, improving search rankings and delivering a better user experience.",
           cta: {
             title: "Get Your On-Page SEO Improved!",
             buttonText: "Request Call Back",
@@ -4373,7 +4373,7 @@ const showServiceDetails = (req, res) => {
         {
           heading: "SEO Audits & Analytics",
           description:
-            "Our comprehensive audits uncover what’s holding your site back. Get detailed insights and recommendations, followed by continuous monitoring of KPIs and SEO health.",
+            "Our comprehensive audits uncover what's holding your site back. Get detailed insights and recommendations, followed by continuous monitoring of KPIs and SEO health.",
           offerings: [
             "SEO Site Audits & Reports",
             "Performance Analytics & Insights",
@@ -4429,289 +4429,6 @@ const showServiceDetails = (req, res) => {
         },
       },
     },
-    // {
-    //   id: "digital-marketing-services",
-    //   title: "Digital Marketing Services",
-    //   description:
-    //     "Power Your Brand’s Growth. Reach, Engage & Convert with HADITA.",
-    //   content: [
-    //     {
-    //       heading: "Social Media Marketing (SMM)",
-    //       description:
-    //         "Grow your community, amplify your voice, and build a brand that connects. We create platform-specific content and campaigns that spark engagement and conversions.",
-    //       offerings: [
-    //         "Campaign Management",
-    //         "Content Calendars",
-    //         "Influencer Partnerships",
-    //         "Ad Management",
-    //       ],
-    //       valueAdd:
-    //         "Targeted campaigns that build a loyal audience and drive measurable results on platforms like Instagram, Facebook, LinkedIn, and TikTok.",
-    //       cta: {
-    //         title: "Speak to our Social Media Expert!",
-    //         buttonText: "Request Call Back",
-    //         form: {
-    //           name: "Name",
-    //           mobile: "Mobile#",
-    //           buttonText: "Submit",
-    //         },
-    //       },
-    //       intraLinks: [
-    //         {
-    //           title: "Search Engine Marketing (SEM)",
-    //           url: "#search-engine-marketing-sem",
-    //         },
-    //         {
-    //           title: "Email Marketing & Automation",
-    //           url: "#email-marketing-automation",
-    //         },
-    //         {
-    //           title: "Content Marketing",
-    //           url: "#content-marketing",
-    //         },
-    //         {
-    //           title: "E-Commerce & Marketplace Marketing",
-    //           url: "#e-commerce-marketplace-marketing",
-    //         },
-    //         {
-    //           title: "Analytics & Conversion Rate Optimization (CRO)",
-    //           url: "#analytics-cro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       heading: "Search Engine Marketing (SEM / PPC)",
-    //       description:
-    //         "Get instant visibility and qualified leads through targeted paid ad campaigns. We manage every step—from keyword research to A/B testing and budget optimization.",
-    //       offerings: [
-    //         "Search Ads",
-    //         "Shopping Ads",
-    //         "Remarketing",
-    //         "Performance Analytics",
-    //       ],
-    //       valueAdd:
-    //         "Maximize ROI through precision-targeted PPC campaigns on Google, Bing, and YouTube.",
-    //       cta: {
-    //         title: "Speak to our SEM Expert!",
-    //         buttonText: "Request Call Back",
-    //         form: {
-    //           name: "Name",
-    //           mobile: "Mobile#",
-    //           buttonText: "Submit",
-    //         },
-    //       },
-    //       intraLinks: [
-    //         {
-    //           title: "Social Media Marketing (SMM)",
-    //           url: "#social-media-marketing-smm",
-    //         },
-    //         {
-    //           title: "Email Marketing & Automation",
-    //           url: "#email-marketing-automation",
-    //         },
-    //         {
-    //           title: "Content Marketing",
-    //           url: "#content-marketing",
-    //         },
-    //         {
-    //           title: "E-Commerce & Marketplace Marketing",
-    //           url: "#e-commerce-marketplace-marketing",
-    //         },
-    //         {
-    //           title: "Analytics & Conversion Rate Optimization (CRO)",
-    //           url: "#analytics-cro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       heading: "Email Marketing & Automation",
-    //       description:
-    //         "Drive retention and repeat sales with personalized email campaigns. From newsletters to drip sequences, we create content that converts.",
-    //       offerings: [
-    //         "Campaign Design",
-    //         "Segmentation",
-    //         "Automation",
-    //         "Analytics",
-    //       ],
-    //       valueAdd:
-    //         "Tailored email strategies that nurture leads, improve engagement, and drive conversions with tools like Mailchimp, HubSpot, and Klaviyo.",
-    //       cta: {
-    //         title: "Speak to our Email Marketing Expert!",
-    //         buttonText: "Request Call Back",
-    //         form: {
-    //           name: "Name",
-    //           mobile: "Mobile#",
-    //           buttonText: "Submit",
-    //         },
-    //       },
-    //       intraLinks: [
-    //         {
-    //           title: "Social Media Marketing (SMM)",
-    //           url: "#social-media-marketing-smm",
-    //         },
-    //         {
-    //           title: "Search Engine Marketing (SEM)",
-    //           url: "#search-engine-marketing-sem",
-    //         },
-    //         {
-    //           title: "Content Marketing",
-    //           url: "#content-marketing",
-    //         },
-    //         {
-    //           title: "E-Commerce & Marketplace Marketing",
-    //           url: "#e-commerce-marketplace-marketing",
-    //         },
-    //         {
-    //           title: "Analytics & Conversion Rate Optimization (CRO)",
-    //           url: "#analytics-cro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       heading: "Content Marketing",
-    //       description:
-    //         "Build thought leadership and rank better with engaging, SEO-rich content. We craft blog articles, videos, case studies, infographics, and more to connect your brand with your audience.",
-    //       offerings: [
-    //         "Blog Writing",
-    //         "Video Scripting",
-    //         "Content Strategy",
-    //         "Landing Pages",
-    //       ],
-    //       valueAdd:
-    //         "Create high-quality content that boosts brand credibility, drives traffic, and improves SEO rankings.",
-    //       cta: {
-    //         title: "Speak to our Content Marketing Expert!",
-    //         buttonText: "Request Call Back",
-    //         form: {
-    //           name: "Name",
-    //           mobile: "Mobile#",
-    //           buttonText: "Submit",
-    //         },
-    //       },
-    //       intraLinks: [
-    //         {
-    //           title: "Social Media Marketing (SMM)",
-    //           url: "#social-media-marketing-smm",
-    //         },
-    //         {
-    //           title: "Search Engine Marketing (SEM)",
-    //           url: "#search-engine-marketing-sem",
-    //         },
-    //         {
-    //           title: "Email Marketing & Automation",
-    //           url: "#email-marketing-automation",
-    //         },
-    //         {
-    //           title: "E-Commerce & Marketplace Marketing",
-    //           url: "#e-commerce-marketplace-marketing",
-    //         },
-    //         {
-    //           title: "Analytics & Conversion Rate Optimization (CRO)",
-    //           url: "#analytics-cro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       heading: "E-Commerce & Marketplace Marketing",
-    //       description:
-    //         "We optimize your digital storefronts and run high-ROI campaigns on platforms like Amazon, Flipkart, Noon, and Shopify.",
-    //       offerings: [
-    //         "Product Listing Optimization",
-    //         "Sponsored Ads",
-    //         "Conversion Funnel Optimization",
-    //       ],
-    //       valueAdd:
-    //         "Optimize product visibility and sales with targeted strategies across e-commerce platforms like Amazon, Flipkart, and Shopify.",
-    //       cta: {
-    //         title: "Speak to our E-Commerce Expert!",
-    //         buttonText: "Request Call Back",
-    //         form: {
-    //           name: "Name",
-    //           mobile: "Mobile#",
-    //           buttonText: "Submit",
-    //         },
-    //       },
-    //       intraLinks: [
-    //         {
-    //           title: "Social Media Marketing (SMM)",
-    //           url: "#social-media-marketing-smm",
-    //         },
-    //         {
-    //           title: "Search Engine Marketing (SEM)",
-    //           url: "#search-engine-marketing-sem",
-    //         },
-    //         {
-    //           title: "Email Marketing & Automation",
-    //           url: "#email-marketing-automation",
-    //         },
-    //         {
-    //           title: "Content Marketing",
-    //           url: "#content-marketing",
-    //         },
-    //         {
-    //           title: "Analytics & Conversion Rate Optimization (CRO)",
-    //           url: "#analytics-cro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       heading: "Analytics & Conversion Rate Optimization (CRO)",
-    //       description:
-    //         "Every campaign is backed by insights. We continuously monitor, test, and refine strategies to improve ROI.",
-    //       offerings: [
-    //         "Dashboard Setup",
-    //         "Heatmaps",
-    //         "A/B Testing",
-    //         "Funnel Optimization",
-    //       ],
-    //       valueAdd:
-    //         "Data-driven optimization strategies to increase conversions and ensure measurable campaign success.",
-    //       cta: {
-    //         title: "Speak to our CRO Expert!",
-    //         buttonText: "Request Call Back",
-    //         form: {
-    //           name: "Name",
-    //           mobile: "Mobile#",
-    //           buttonText: "Submit",
-    //         },
-    //       },
-    //       intraLinks: [
-    //         {
-    //           title: "Social Media Marketing (SMM)",
-    //           url: "#social-media-marketing-smm",
-    //         },
-    //         {
-    //           title: "Search Engine Marketing (SEM)",
-    //           url: "#search-engine-marketing-sem",
-    //         },
-    //         {
-    //           title: "Email Marketing & Automation",
-    //           url: "#email-marketing-automation",
-    //         },
-    //         {
-    //           title: "Content Marketing",
-    //           url: "#content-marketing",
-    //         },
-    //         {
-    //           title: "E-Commerce & Marketplace Marketing",
-    //           url: "#e-commerce-marketplace-marketing",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   footer: {
-    //     description:
-    //       "Whether you're launching a startup or expanding your digital presence, HADITA’s digital marketing expertise ensures you’re reaching the right people—at the right time—on the right channels.",
-    //     cta: {
-    //       title: "Book a Free Strategy Session!",
-    //       form: {
-    //         name: "Name",
-    //         mobile: "Mobile",
-    //         buttonText: "Submit",
-    //       },
-    //     },
-    //   },
-    // },
     {
       id: "digital-marketing-services",
       title: "Digital Marketing Services",
@@ -5621,6 +5338,26 @@ const showTerms = (req, res) => {
   res.render("user/terms-of-use");
 };
 
+const showThanks = (req, res) => {
+  // Get trending services for the thanks page
+  const trendingServices = [
+    {
+      id: "digital-marketing-services",
+      title: "Digital Marketing",
+      shortDescription:
+        "Drive growth and increase visibility with our comprehensive digital marketing solutions.",
+    },
+    {
+      id: "web-development",
+      title: "Web Development",
+      shortDescription:
+        "Create stunning, responsive websites that convert visitors into customers.",
+    },
+  ];
+
+  res.render("user/thanks", { trendingServices });
+};
+
 export {
   showLanding,
   showContact,
@@ -5632,4 +5369,5 @@ export {
   showNewsDetails,
   showPrivacyPolicy,
   showTerms,
+  showThanks,
 };

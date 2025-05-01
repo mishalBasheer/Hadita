@@ -142,11 +142,6 @@
     e.preventDefault(); // Prevent default form submission
     const loadingOverlay = document.getElementById('loadingOverlay');
     loadingOverlay.style.display = 'flex';
-    // Simulate form submission (replace with your actual form submission logic)
-    setTimeout(() => {
-      loadingOverlay.style.display = 'none';
-      // Add your form submission success handling here
-    }, 2000);
 
     const $form = $(this); // Reference to the current form that triggered submission
     $.ajax({
@@ -155,13 +150,8 @@
       method: "post",
       success: function (response) {
         loadingOverlay.style.display = 'none';
-        Swal.fire({
-          icon: 'success',
-          title: 'Success!',
-          text: 'Form submitted successfully.',
-          confirmButtonColor: '#3085d6'
-        });
-        $form[0].reset();
+        // Redirect to thanks page instead of showing alert
+        window.location.href = '/thank-you';
       },
       error: function (err) {
         loadingOverlay.style.display = 'none';
