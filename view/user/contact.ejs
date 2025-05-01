@@ -23,16 +23,19 @@
           <div class="card mb-4 col-md-7">
             <div class="card-body h-100 p-5">
               <h5 class="mb-3">Write to us</h5>
-              <form>
+              <form class="cta-form">
                 <div class="mb-4">
-                  <input class="form-control bg-white" type="text" placeholder="Your Name" required="required" />
+                  <input type="hidden" name="source" value="contact-us-page">
+                  <input class="form-control bg-white" name="name" type="text" placeholder="Your Name"
+                    required="required" />
                 </div>
                 <div class="mb-4">
-                  <input class="form-control bg-white" type="email" placeholder="Email" required="required" />
+                  <input class="form-control bg-white" name="email" type="email" placeholder="Email"
+                    required="required" />
                 </div>
                 <div class="mb-4">
-                  <textarea class="form-control bg-white" rows="11" placeholder="Enter your descriptions here..."
-                    required="required"></textarea>
+                  <textarea class="form-control bg-white" name="message" rows="11"
+                    placeholder="Enter your descriptions here..."></textarea>
                 </div>
                 <button class="btn btn-md-lg btn-primary" type="Submit">
                   <span class="color-white fw-600">Send Now</span>

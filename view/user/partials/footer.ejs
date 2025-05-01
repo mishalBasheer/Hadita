@@ -36,10 +36,10 @@
       </div>
       <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
         <h5 class="text-white">I would like to discuss:</h5>
-        <form class="mt-4 cta-form" method="post">
+        <form class="mt-4 cta-form">
           <div class="row">
             <div class="col-6">
-              <input class="form-control" type="hidden" name="to" value="username@domain.extension" />
+              <input type="hidden" name="source" value="footer-form">
               <input class="form-control" type="text" name="name" placeholder="Your Name" aria-label="Your Name"
                 required />
             </div>
@@ -140,14 +140,21 @@
 
   $(".cta-form").submit(function (e) {
     e.preventDefault(); // Prevent default form submission
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    loadingOverlay.style.display = 'flex';
+    // Simulate form submission (replace with your actual form submission logic)
+    setTimeout(() => {
+      loadingOverlay.style.display = 'none';
+      // Add your form submission success handling here
+    }, 2000);
 
     const $form = $(this); // Reference to the current form that triggered submission
-
     $.ajax({
       url: "https://script.google.com/macros/s/AKfycbwEyKN4f5ab0khNT_EehbwbJ7_J8OSwMZ77TO6w9eSxwbkhzHaVRYluwdTjSZn052LSyg/exec",
       data: $form.serialize(),
       method: "post",
       success: function (response) {
+        loadingOverlay.style.display = 'none';
         Swal.fire({
           icon: 'success',
           title: 'Success!',
@@ -157,6 +164,7 @@
         $form[0].reset();
       },
       error: function (err) {
+        loadingOverlay.style.display = 'none';
         Swal.fire({
           icon: 'error',
           title: 'Oops!',

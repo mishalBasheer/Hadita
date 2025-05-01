@@ -4429,27 +4429,314 @@ const showServiceDetails = (req, res) => {
         },
       },
     },
+    // {
+    //   id: "digital-marketing-services",
+    //   title: "Digital Marketing Services",
+    //   description:
+    //     "Power Your Brand’s Growth. Reach, Engage & Convert with HADITA.",
+    //   content: [
+    //     {
+    //       heading: "Social Media Marketing (SMM)",
+    //       description:
+    //         "Grow your community, amplify your voice, and build a brand that connects. We create platform-specific content and campaigns that spark engagement and conversions.",
+    //       offerings: [
+    //         "Campaign Management",
+    //         "Content Calendars",
+    //         "Influencer Partnerships",
+    //         "Ad Management",
+    //       ],
+    //       valueAdd:
+    //         "Targeted campaigns that build a loyal audience and drive measurable results on platforms like Instagram, Facebook, LinkedIn, and TikTok.",
+    //       cta: {
+    //         title: "Speak to our Social Media Expert!",
+    //         buttonText: "Request Call Back",
+    //         form: {
+    //           name: "Name",
+    //           mobile: "Mobile#",
+    //           buttonText: "Submit",
+    //         },
+    //       },
+    //       intraLinks: [
+    //         {
+    //           title: "Search Engine Marketing (SEM)",
+    //           url: "#search-engine-marketing-sem",
+    //         },
+    //         {
+    //           title: "Email Marketing & Automation",
+    //           url: "#email-marketing-automation",
+    //         },
+    //         {
+    //           title: "Content Marketing",
+    //           url: "#content-marketing",
+    //         },
+    //         {
+    //           title: "E-Commerce & Marketplace Marketing",
+    //           url: "#e-commerce-marketplace-marketing",
+    //         },
+    //         {
+    //           title: "Analytics & Conversion Rate Optimization (CRO)",
+    //           url: "#analytics-cro",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       heading: "Search Engine Marketing (SEM / PPC)",
+    //       description:
+    //         "Get instant visibility and qualified leads through targeted paid ad campaigns. We manage every step—from keyword research to A/B testing and budget optimization.",
+    //       offerings: [
+    //         "Search Ads",
+    //         "Shopping Ads",
+    //         "Remarketing",
+    //         "Performance Analytics",
+    //       ],
+    //       valueAdd:
+    //         "Maximize ROI through precision-targeted PPC campaigns on Google, Bing, and YouTube.",
+    //       cta: {
+    //         title: "Speak to our SEM Expert!",
+    //         buttonText: "Request Call Back",
+    //         form: {
+    //           name: "Name",
+    //           mobile: "Mobile#",
+    //           buttonText: "Submit",
+    //         },
+    //       },
+    //       intraLinks: [
+    //         {
+    //           title: "Social Media Marketing (SMM)",
+    //           url: "#social-media-marketing-smm",
+    //         },
+    //         {
+    //           title: "Email Marketing & Automation",
+    //           url: "#email-marketing-automation",
+    //         },
+    //         {
+    //           title: "Content Marketing",
+    //           url: "#content-marketing",
+    //         },
+    //         {
+    //           title: "E-Commerce & Marketplace Marketing",
+    //           url: "#e-commerce-marketplace-marketing",
+    //         },
+    //         {
+    //           title: "Analytics & Conversion Rate Optimization (CRO)",
+    //           url: "#analytics-cro",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       heading: "Email Marketing & Automation",
+    //       description:
+    //         "Drive retention and repeat sales with personalized email campaigns. From newsletters to drip sequences, we create content that converts.",
+    //       offerings: [
+    //         "Campaign Design",
+    //         "Segmentation",
+    //         "Automation",
+    //         "Analytics",
+    //       ],
+    //       valueAdd:
+    //         "Tailored email strategies that nurture leads, improve engagement, and drive conversions with tools like Mailchimp, HubSpot, and Klaviyo.",
+    //       cta: {
+    //         title: "Speak to our Email Marketing Expert!",
+    //         buttonText: "Request Call Back",
+    //         form: {
+    //           name: "Name",
+    //           mobile: "Mobile#",
+    //           buttonText: "Submit",
+    //         },
+    //       },
+    //       intraLinks: [
+    //         {
+    //           title: "Social Media Marketing (SMM)",
+    //           url: "#social-media-marketing-smm",
+    //         },
+    //         {
+    //           title: "Search Engine Marketing (SEM)",
+    //           url: "#search-engine-marketing-sem",
+    //         },
+    //         {
+    //           title: "Content Marketing",
+    //           url: "#content-marketing",
+    //         },
+    //         {
+    //           title: "E-Commerce & Marketplace Marketing",
+    //           url: "#e-commerce-marketplace-marketing",
+    //         },
+    //         {
+    //           title: "Analytics & Conversion Rate Optimization (CRO)",
+    //           url: "#analytics-cro",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       heading: "Content Marketing",
+    //       description:
+    //         "Build thought leadership and rank better with engaging, SEO-rich content. We craft blog articles, videos, case studies, infographics, and more to connect your brand with your audience.",
+    //       offerings: [
+    //         "Blog Writing",
+    //         "Video Scripting",
+    //         "Content Strategy",
+    //         "Landing Pages",
+    //       ],
+    //       valueAdd:
+    //         "Create high-quality content that boosts brand credibility, drives traffic, and improves SEO rankings.",
+    //       cta: {
+    //         title: "Speak to our Content Marketing Expert!",
+    //         buttonText: "Request Call Back",
+    //         form: {
+    //           name: "Name",
+    //           mobile: "Mobile#",
+    //           buttonText: "Submit",
+    //         },
+    //       },
+    //       intraLinks: [
+    //         {
+    //           title: "Social Media Marketing (SMM)",
+    //           url: "#social-media-marketing-smm",
+    //         },
+    //         {
+    //           title: "Search Engine Marketing (SEM)",
+    //           url: "#search-engine-marketing-sem",
+    //         },
+    //         {
+    //           title: "Email Marketing & Automation",
+    //           url: "#email-marketing-automation",
+    //         },
+    //         {
+    //           title: "E-Commerce & Marketplace Marketing",
+    //           url: "#e-commerce-marketplace-marketing",
+    //         },
+    //         {
+    //           title: "Analytics & Conversion Rate Optimization (CRO)",
+    //           url: "#analytics-cro",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       heading: "E-Commerce & Marketplace Marketing",
+    //       description:
+    //         "We optimize your digital storefronts and run high-ROI campaigns on platforms like Amazon, Flipkart, Noon, and Shopify.",
+    //       offerings: [
+    //         "Product Listing Optimization",
+    //         "Sponsored Ads",
+    //         "Conversion Funnel Optimization",
+    //       ],
+    //       valueAdd:
+    //         "Optimize product visibility and sales with targeted strategies across e-commerce platforms like Amazon, Flipkart, and Shopify.",
+    //       cta: {
+    //         title: "Speak to our E-Commerce Expert!",
+    //         buttonText: "Request Call Back",
+    //         form: {
+    //           name: "Name",
+    //           mobile: "Mobile#",
+    //           buttonText: "Submit",
+    //         },
+    //       },
+    //       intraLinks: [
+    //         {
+    //           title: "Social Media Marketing (SMM)",
+    //           url: "#social-media-marketing-smm",
+    //         },
+    //         {
+    //           title: "Search Engine Marketing (SEM)",
+    //           url: "#search-engine-marketing-sem",
+    //         },
+    //         {
+    //           title: "Email Marketing & Automation",
+    //           url: "#email-marketing-automation",
+    //         },
+    //         {
+    //           title: "Content Marketing",
+    //           url: "#content-marketing",
+    //         },
+    //         {
+    //           title: "Analytics & Conversion Rate Optimization (CRO)",
+    //           url: "#analytics-cro",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       heading: "Analytics & Conversion Rate Optimization (CRO)",
+    //       description:
+    //         "Every campaign is backed by insights. We continuously monitor, test, and refine strategies to improve ROI.",
+    //       offerings: [
+    //         "Dashboard Setup",
+    //         "Heatmaps",
+    //         "A/B Testing",
+    //         "Funnel Optimization",
+    //       ],
+    //       valueAdd:
+    //         "Data-driven optimization strategies to increase conversions and ensure measurable campaign success.",
+    //       cta: {
+    //         title: "Speak to our CRO Expert!",
+    //         buttonText: "Request Call Back",
+    //         form: {
+    //           name: "Name",
+    //           mobile: "Mobile#",
+    //           buttonText: "Submit",
+    //         },
+    //       },
+    //       intraLinks: [
+    //         {
+    //           title: "Social Media Marketing (SMM)",
+    //           url: "#social-media-marketing-smm",
+    //         },
+    //         {
+    //           title: "Search Engine Marketing (SEM)",
+    //           url: "#search-engine-marketing-sem",
+    //         },
+    //         {
+    //           title: "Email Marketing & Automation",
+    //           url: "#email-marketing-automation",
+    //         },
+    //         {
+    //           title: "Content Marketing",
+    //           url: "#content-marketing",
+    //         },
+    //         {
+    //           title: "E-Commerce & Marketplace Marketing",
+    //           url: "#e-commerce-marketplace-marketing",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    //   footer: {
+    //     description:
+    //       "Whether you're launching a startup or expanding your digital presence, HADITA’s digital marketing expertise ensures you’re reaching the right people—at the right time—on the right channels.",
+    //     cta: {
+    //       title: "Book a Free Strategy Session!",
+    //       form: {
+    //         name: "Name",
+    //         mobile: "Mobile",
+    //         buttonText: "Submit",
+    //       },
+    //     },
+    //   },
+    // },
     {
       id: "digital-marketing-services",
       title: "Digital Marketing Services",
       description:
-        "Power Your Brand’s Growth. Reach, Engage & Convert with HADITA.",
+        "HADITA Digital Marketing Services - Drive Growth. Increase Visibility. Convert Faster. At HADITA, we don't just run digital campaigns—we craft powerful, data-driven strategies that help your business get found, get leads, and get results.",
       content: [
         {
-          heading: "Social Media Marketing (SMM)",
+          id: "search-engine-optimization",
+          heading: "Search Engine Optimization (SEO)",
           description:
-            "Grow your community, amplify your voice, and build a brand that connects. We create platform-specific content and campaigns that spark engagement and conversions.",
+            "Improve your organic visibility and drive qualified traffic with our comprehensive SEO services.",
           offerings: [
-            "Campaign Management",
-            "Content Calendars",
-            "Influencer Partnerships",
-            "Ad Management",
+            "Keyword optimization",
+            "Technical SEO audits",
+            "Backlink building",
+            "Content strategies",
+            "Local SEO optimization",
+            "SEO performance tracking",
           ],
           valueAdd:
-            "Targeted campaigns that build a loyal audience and drive measurable results on platforms like Instagram, Facebook, LinkedIn, and TikTok.",
+            "Sustainable growth through white-hat SEO techniques that improve rankings while building domain authority.",
           cta: {
-            title: "Speak to our Social Media Expert!",
-            buttonText: "Request Call Back",
+            title:
+              "Get more organic traffic and qualified leads with our SEO services",
+            buttonText: "Request SEO Audit",
             form: {
               name: "Name",
               mobile: "Mobile#",
@@ -4458,42 +4745,34 @@ const showServiceDetails = (req, res) => {
           },
           intraLinks: [
             {
-              title: "Search Engine Marketing (SEM)",
-              url: "#search-engine-marketing-sem",
-            },
-            {
-              title: "Email Marketing & Automation",
-              url: "#email-marketing-automation",
+              title: "Pay-Per-Click Advertising",
+              url: "#pay-per-click-advertising",
             },
             {
               title: "Content Marketing",
               url: "#content-marketing",
             },
-            {
-              title: "E-Commerce & Marketplace Marketing",
-              url: "#e-commerce-marketplace-marketing",
-            },
-            {
-              title: "Analytics & Conversion Rate Optimization (CRO)",
-              url: "#analytics-cro",
-            },
           ],
         },
         {
-          heading: "Search Engine Marketing (SEM / PPC)",
+          id: "pay-per-click-advertising",
+          heading: "Pay-Per-Click Advertising (Google Ads & Meta Ads)",
           description:
-            "Get instant visibility and qualified leads through targeted paid ad campaigns. We manage every step—from keyword research to A/B testing and budget optimization.",
+            "Maximize your ad spend with precisely targeted campaigns that convert.",
           offerings: [
-            "Search Ads",
-            "Shopping Ads",
-            "Remarketing",
-            "Performance Analytics",
+            "Campaign setup & management",
+            "A/B testing",
+            "High-converting landing pages",
+            "Conversion tracking",
+            "Remarketing strategies",
+            "Shopping ads (for e-commerce)",
           ],
           valueAdd:
-            "Maximize ROI through precision-targeted PPC campaigns on Google, Bing, and YouTube.",
+            "Data-driven approach that focuses on your actual ROI rather than just clicks and impressions.",
           cta: {
-            title: "Speak to our SEM Expert!",
-            buttonText: "Request Call Back",
+            title:
+              "Tired of poor ROI from ads? Let's discuss high-performance PPC strategies",
+            buttonText: "Request PPC Consultation",
             form: {
               name: "Name",
               mobile: "Mobile#",
@@ -4502,42 +4781,34 @@ const showServiceDetails = (req, res) => {
           },
           intraLinks: [
             {
-              title: "Social Media Marketing (SMM)",
-              url: "#social-media-marketing-smm",
+              title: "SEO Services",
+              url: "#search-engine-optimization",
             },
             {
-              title: "Email Marketing & Automation",
-              url: "#email-marketing-automation",
-            },
-            {
-              title: "Content Marketing",
-              url: "#content-marketing",
-            },
-            {
-              title: "E-Commerce & Marketplace Marketing",
-              url: "#e-commerce-marketplace-marketing",
-            },
-            {
-              title: "Analytics & Conversion Rate Optimization (CRO)",
-              url: "#analytics-cro",
+              title: "CRM & Marketing Automation",
+              url: "#crm-marketing-automation",
             },
           ],
         },
         {
-          heading: "Email Marketing & Automation",
+          id: "social-media-marketing",
+          heading: "Social Media Marketing",
           description:
-            "Drive retention and repeat sales with personalized email campaigns. From newsletters to drip sequences, we create content that converts.",
+            "Build brand awareness and engagement through strategic social media presence.",
           offerings: [
-            "Campaign Design",
-            "Segmentation",
-            "Automation",
-            "Analytics",
+            "Social media strategy",
+            "Content design & calendar",
+            "Page management",
+            "Paid promotions",
+            "Community engagement",
+            "Influencer collaborations",
           ],
           valueAdd:
-            "Tailored email strategies that nurture leads, improve engagement, and drive conversions with tools like Mailchimp, HubSpot, and Klaviyo.",
+            "Platform-specific strategies tailored to your audience demographics and business objectives.",
           cta: {
-            title: "Speak to our Email Marketing Expert!",
-            buttonText: "Request Call Back",
+            title:
+              "Strengthen your social media presence with expert management",
+            buttonText: "Get SMM Proposal",
             form: {
               name: "Name",
               mobile: "Mobile#",
@@ -4546,42 +4817,34 @@ const showServiceDetails = (req, res) => {
           },
           intraLinks: [
             {
-              title: "Social Media Marketing (SMM)",
-              url: "#social-media-marketing-smm",
-            },
-            {
-              title: "Search Engine Marketing (SEM)",
-              url: "#search-engine-marketing-sem",
-            },
-            {
               title: "Content Marketing",
               url: "#content-marketing",
             },
             {
-              title: "E-Commerce & Marketplace Marketing",
-              url: "#e-commerce-marketplace-marketing",
-            },
-            {
-              title: "Analytics & Conversion Rate Optimization (CRO)",
-              url: "#analytics-cro",
+              title: "PPC Advertising",
+              url: "#pay-per-click-advertising",
             },
           ],
         },
         {
+          id: "content-marketing",
           heading: "Content Marketing",
           description:
-            "Build thought leadership and rank better with engaging, SEO-rich content. We craft blog articles, videos, case studies, infographics, and more to connect your brand with your audience.",
+            "Attract and retain customers through valuable, relevant content.",
           offerings: [
-            "Blog Writing",
-            "Video Scripting",
-            "Content Strategy",
-            "Landing Pages",
+            "Blog content strategy",
+            "Video production",
+            "Email newsletters",
+            "Lead magnets",
+            "Case studies",
+            "Whitepapers & ebooks",
           ],
           valueAdd:
-            "Create high-quality content that boosts brand credibility, drives traffic, and improves SEO rankings.",
+            "Content that educates your audience while strategically moving them through the buyer's journey.",
           cta: {
-            title: "Speak to our Content Marketing Expert!",
-            buttonText: "Request Call Back",
+            title:
+              "Let's create content that attracts and converts your ideal customers",
+            buttonText: "Discuss Content Strategy",
             form: {
               name: "Name",
               mobile: "Mobile#",
@@ -4590,41 +4853,34 @@ const showServiceDetails = (req, res) => {
           },
           intraLinks: [
             {
-              title: "Social Media Marketing (SMM)",
-              url: "#social-media-marketing-smm",
+              title: "SEO Services",
+              url: "#search-engine-optimization",
             },
             {
-              title: "Search Engine Marketing (SEM)",
-              url: "#search-engine-marketing-sem",
-            },
-            {
-              title: "Email Marketing & Automation",
-              url: "#email-marketing-automation",
-            },
-            {
-              title: "E-Commerce & Marketplace Marketing",
-              url: "#e-commerce-marketplace-marketing",
-            },
-            {
-              title: "Analytics & Conversion Rate Optimization (CRO)",
-              url: "#analytics-cro",
+              title: "Social Media Marketing",
+              url: "#social-media-marketing",
             },
           ],
         },
         {
-          heading: "E-Commerce & Marketplace Marketing",
+          id: "crm-marketing-automation",
+          heading: "CRM & Marketing Automation",
           description:
-            "We optimize your digital storefronts and run high-ROI campaigns on platforms like Amazon, Flipkart, Noon, and Shopify.",
+            "Nurture leads and automate customer journeys for maximum efficiency.",
           offerings: [
-            "Product Listing Optimization",
-            "Sponsored Ads",
-            "Conversion Funnel Optimization",
+            "Email workflow automation",
+            "Lead segmentation",
+            "Performance analytics",
+            "CRM integration",
+            "Lead scoring",
+            "Multi-channel campaigns",
           ],
           valueAdd:
-            "Optimize product visibility and sales with targeted strategies across e-commerce platforms like Amazon, Flipkart, and Shopify.",
+            "Seamless integration with your existing systems to deliver personalized experiences at scale.",
           cta: {
-            title: "Speak to our E-Commerce Expert!",
-            buttonText: "Request Call Back",
+            title:
+              "Automate your marketing for better lead nurturing and conversions",
+            buttonText: "Request Demo",
             form: {
               name: "Name",
               mobile: "Mobile#",
@@ -4633,80 +4889,25 @@ const showServiceDetails = (req, res) => {
           },
           intraLinks: [
             {
-              title: "Social Media Marketing (SMM)",
-              url: "#social-media-marketing-smm",
-            },
-            {
-              title: "Search Engine Marketing (SEM)",
-              url: "#search-engine-marketing-sem",
-            },
-            {
-              title: "Email Marketing & Automation",
-              url: "#email-marketing-automation",
+              title: "PPC Advertising",
+              url: "#pay-per-click-advertising",
             },
             {
               title: "Content Marketing",
               url: "#content-marketing",
-            },
-            {
-              title: "Analytics & Conversion Rate Optimization (CRO)",
-              url: "#analytics-cro",
-            },
-          ],
-        },
-        {
-          heading: "Analytics & Conversion Rate Optimization (CRO)",
-          description:
-            "Every campaign is backed by insights. We continuously monitor, test, and refine strategies to improve ROI.",
-          offerings: [
-            "Dashboard Setup",
-            "Heatmaps",
-            "A/B Testing",
-            "Funnel Optimization",
-          ],
-          valueAdd:
-            "Data-driven optimization strategies to increase conversions and ensure measurable campaign success.",
-          cta: {
-            title: "Speak to our CRO Expert!",
-            buttonText: "Request Call Back",
-            form: {
-              name: "Name",
-              mobile: "Mobile#",
-              buttonText: "Submit",
-            },
-          },
-          intraLinks: [
-            {
-              title: "Social Media Marketing (SMM)",
-              url: "#social-media-marketing-smm",
-            },
-            {
-              title: "Search Engine Marketing (SEM)",
-              url: "#search-engine-marketing-sem",
-            },
-            {
-              title: "Email Marketing & Automation",
-              url: "#email-marketing-automation",
-            },
-            {
-              title: "Content Marketing",
-              url: "#content-marketing",
-            },
-            {
-              title: "E-Commerce & Marketplace Marketing",
-              url: "#e-commerce-marketplace-marketing",
             },
           ],
         },
       ],
       footer: {
         description:
-          "Whether you're launching a startup or expanding your digital presence, HADITA’s digital marketing expertise ensures you’re reaching the right people—at the right time—on the right channels.",
+          "Why Choose HADITA? Industry-certified experts (Google, Meta, HubSpot) with proven track record across GCC. We work with startups, SMBs, and enterprises across Retail & E-commerce, Healthcare, Education, Real Estate, Technology, and Professional Services.",
         cta: {
-          title: "Book a Free Strategy Session!",
+          title:
+            "Let's Build Your Digital Growth Engine! Book a free digital audit & growth roadmap",
           form: {
             name: "Name",
-            mobile: "Mobile",
+            mobile: "Mobile#",
             buttonText: "Submit",
           },
         },
