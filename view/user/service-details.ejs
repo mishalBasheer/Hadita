@@ -7,232 +7,436 @@
     </div>
   </div>
 
-  <style>
-    .loading-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-  </style>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const forms = document.querySelectorAll('.cta-form');
-      const loadingOverlay = document.getElementById('loadingOverlay');
-
-      forms.forEach(form => {
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          loadingOverlay.style.display = 'flex';
-
-          // Simulate form submission (replace with your actual form submission logic)
-          setTimeout(() => {
-            loadingOverlay.style.display = 'none';
-            // Add your form submission success handling here
-          }, 2000);
-        });
-      });
-    });
-  </script>
-
-  <!-- Hero Section -->
-  <section class="hero-section py-6">
-    <div class="bg-holder overlay" style="
+  <% if (service && service.id!='digital-marketing-services' ) { %>
+    <!-- Hero Section -->
+    <section class="hero-section py-6">
+      <div class="bg-holder overlay" style="
     background-image: url(/assets/img/background-2.webp);
     background-position: center bottom;
     filter: opacity(0.4);
   "></div>
-    <div class="container">
-      <div class="row" data-inertia='{"weight":1.5}'>
-        <div class="col-lg-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-          <div class="overflow-hidden">
-            <% if (service && service.title) { %>
-              <h1 class="fs-4 fs-md-5 mb-3 lh-1" data-zanim-xs='{"delay":0}'>
-                <%= service.title %>
-              </h1>
+      <div class="container">
+        <div class="row" data-inertia='{"weight":1.5}'>
+          <div class="col-lg-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+            <div class="overflow-hidden">
+              <% if (service && service.title) { %>
+                <h1 class="fs-4 fs-md-5 mb-3 lh-1" data-zanim-xs='{"delay":0}'>
+                  <%= service.title %>
+                </h1>
+                <% } %>
+                  <div class="nav" aria-label="breadcrumb" role="navigation" data-zanim-xs='{"delay":0.2}'>
+                    <ol class="breadcrumb fs-1 ps-0 fw-bold">
+                      <li class="breadcrumb-item"><a class="text-primary" href="/">Home</a></li>
+                      <li class="breadcrumb-item"><a class="text-primary" href="/services">Services</a></li>
+                      <% if (service && service.title) { %>
+                        <li class="breadcrumb-item text-primary active" aria-current="page">
+                          <%= service.title %>
+                        </li>
+                        <% } %>
+                    </ol>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="bg-100 py-6">
+      <div class="container">
+        <div class="row">
+          <!-- Heading Description -->
+          <% if (service && service.description) { %>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-body p-4 p-lg-5">
+                  <p class="lead fw-semi-bold mb-4" data-zanim-xs='{"delay":0.1}'>
+                    <%= service.description %>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <% } %>
+              <!-- Each content row -->
+              <% if (service && service.content && Array.isArray(service.content)) { %>
+                <% service.content.forEach((section, index)=> { %>
+                  <div class="row">
+                    <!-- Content Column -->
+                    <div class="col-lg-8">
+                      <div class="card mb-4"
+                        id="<%= section.id ? section.id : section.heading.toLowerCase().replace(/\s+/g, '-') %>">
+                        <div class="card-body p-4 p-lg-5">
+                          <% if (section.heading) { %>
+                            <h3 class="mb-4">
+                              <%= section.heading %>
+                            </h3>
+                            <% } %>
+                              <% if (section.description) { %>
+                                <p class="lead mb-4">
+                                  <%= section.description %>
+                                </p>
+                                <% } %>
+
+                                  <% if (section.offerings && Array.isArray(section.offerings) &&
+                                    section.offerings.length>
+                                    0) {
+                                    %>
+                                    <h5 class="mb-3">Offerings:</h5>
+                                    <ul class="list-unstyled mb-4">
+                                      <% section.offerings.forEach(offering=> { %>
+                                        <li class="mb-2">• <%= offering %>
+                                        </li>
+                                        <% }) %>
+                                    </ul>
+                                    <% } %>
+
+                                      <% if (section.valueAdd) { %>
+                                        <div class="value-add bg-200 p-4 rounded-3 mb-4">
+                                          <h5 class="mb-3">HADITA Value Add:</h5>
+                                          <p class="mb-0">
+                                            <%= section.valueAdd %>
+                                          </p>
+                                        </div>
+                                        <% } %>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Sidebar Column -->
+                    <div class="col-lg-4">
+
+                      <!-- Intra Links -->
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <h5 class="mb-3">Related Services</h5>
+                          <ul class="nav flex-column">
+                            <% section.intraLinks.forEach(link=> { %>
+                              <% if (link && link.title && link.url) { %>
+                                <li class="nav-item">
+                                  <a class="nav-link ps-0" href="<%= link.url %>">
+                                    <%= link.title %>
+                                  </a>
+                                </li>
+                                <% } %>
+                                  <% }) %>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Section CTA -->
+                      <% if (section.cta) { %>
+                        <div class="cta-section bg-primary text-white p-4 rounded-3 mb-4">
+                          <% if (section.cta.title) { %>
+                            <h5 class="text-center text-white mb-3">
+                              <%= section.cta.title %>
+                            </h5>
+                            <% } %>
+                              <form class="consultation-form cta-form">
+                                <input type="hidden" name="source" value="<%= service.id %>">
+                                <div class="row g-3">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control" name="name"
+                                      placeholder="<%= section.cta.form && section.cta.form.name ? section.cta.form.name : 'Name' %>"
+                                      required>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <input type="tel" class="form-control" name="mobile"
+                                      placeholder="<%= section.cta.form && section.cta.form.mobile ? section.cta.form.mobile : 'Mobile Number' %>"
+                                      required>
+                                  </div>
+                                  <div class="col-12">
+                                    <button type="submit" class="btn btn-warning w-100">
+                                      <%= section.cta.buttonText ? section.cta.buttonText : 'Request Call Back' %>
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                        <% } %>
+                    </div>
+                  </div>
+                  <% }) %>
+                    <% } %>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA Section -->
+    <section class="bg-primary text-white py-6">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0">
+            <% if (service && service.footer && service.footer.description) { %>
+              <h4 class="mb-3 lh-base text-white">
+                <%= service.footer.description %>
+              </h4>
               <% } %>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-white text-dark p-4">
+              <% if (service && service.footer && service.footer.cta && service.footer.cta.title) { %>
+                <h4 class="text-center mb-3">
+                  <%= service.footer.cta.title %>
+                </h4>
+                <% } %>
+                  <form class="cta-form">
+                    <input type="hidden" name="source" value="<%= service.id %>">
+                    <div class="mb-3">
+                      <input type="text" name="name" class="form-control"
+                        placeholder="<%= service && service.footer && service.footer.cta && service.footer.cta.form && service.footer.cta.form.name ? service.footer.cta.form.name : 'Name' %>"
+                        required>
+                    </div>
+                    <div class="mb-3">
+                      <input type="tel" name="mobile" class="form-control"
+                        placeholder="<%= service && service.footer && service.footer.cta && service.footer.cta.form && service.footer.cta.form.mobile ? service.footer.cta.form.mobile : 'Mobile Number' %>"
+                        required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                      <%= service && service.footer && service.footer.cta && service.footer.cta.form &&
+                        service.footer.cta.form.buttonText ? service.footer.cta.form.buttonText : 'Submit' %>
+                    </button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <% } else { %>
+
+      <!-- Hero Section -->
+      <section class="hero-section py-6">
+        <div class="bg-holder overlay" style="
+      background-image: url(/assets/img/background-2.webp);
+      background-position: center bottom;
+      filter: opacity(0.4);
+    "></div>
+        <div class="container">
+          <div class="row" data-inertia='{"weight":1.5}'>
+            <div class="col-lg-8 text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="overflow-hidden">
+                <h1 class="fs-4 fs-md-5 mb-3 lh-1" data-zanim-xs='{"delay":0}'>
+                  Digital Marketing Services
+                </h1>
                 <div class="nav" aria-label="breadcrumb" role="navigation" data-zanim-xs='{"delay":0.2}'>
                   <ol class="breadcrumb fs-1 ps-0 fw-bold">
                     <li class="breadcrumb-item"><a class="text-primary" href="/">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-primary" href="/services">Services</a></li>
-                    <% if (service && service.title) { %>
-                      <li class="breadcrumb-item text-primary active" aria-current="page">
-                        <%= service.title %>
-                      </li>
-                      <% } %>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Digital Marketing</li>
                   </ol>
                 </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content Section -->
-  <section class="bg-100 py-6">
-    <div class="container">
-      <div class="row">
-        <!-- Heading Description -->
-        <% if (service && service.description) { %>
-          <div class="col-12">
-            <div class="card mb-4">
-              <div class="card-body p-4 p-lg-5">
-                <p class="lead fw-semi-bold mb-4" data-zanim-xs='{"delay":0.1}'>
-                  <%= service.description %>
-                </p>
               </div>
             </div>
           </div>
-          <% } %>
-            <!-- Each content row -->
-            <% if (service && service.content && Array.isArray(service.content)) { %>
-              <% service.content.forEach((section, index)=> { %>
-                <div class="row">
-                  <!-- Content Column -->
-                  <div class="col-lg-8">
-                    <div class="card mb-4"
-                      id="<%= section.id ? section.id : section.heading.toLowerCase().replace(/\s+/g, '-') %>">
-                      <div class="card-body p-4 p-lg-5">
-                        <% if (section.heading) { %>
-                          <h3 class="mb-4">
-                            <%= section.heading %>
-                          </h3>
-                          <% } %>
-                            <% if (section.description) { %>
-                              <p class="lead mb-4">
-                                <%= section.description %>
-                              </p>
-                              <% } %>
+        </div>
+      </section>
 
-                                <% if (section.offerings && Array.isArray(section.offerings) &&
-                                  section.offerings.length>
-                                  0) {
-                                  %>
-                                  <h5 class="mb-3">Offerings:</h5>
-                                  <ul class="list-unstyled mb-4">
-                                    <% section.offerings.forEach(offering=> { %>
-                                      <li class="mb-2">• <%= offering %>
-                                      </li>
-                                      <% }) %>
-                                  </ul>
-                                  <% } %>
+      <!-- Main Content Section -->
+      <section class="bg-100 py-6">
+        <div class="container">
+          <div class="row">
+            <!-- Heading Description -->
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-body p-4 p-lg-5">
+                  <h2 class="mb-4">HADITA Digital Marketing Services - Drive Growth. Increase Visibility. Convert
+                    Faster.
+                  </h2>
+                  <p class="lead fw-semi-bold mb-4" data-zanim-xs='{"delay":0.1}'>
+                    At HADITA, we don't just run digital campaigns—we craft powerful, data-driven strategies that help
+                    your
+                    business get found, get leads, and get results.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-                                    <% if (section.valueAdd) { %>
-                                      <div class="value-add bg-200 p-4 rounded-3 mb-4">
-                                        <h5 class="mb-3">HADITA Value Add:</h5>
-                                        <p class="mb-0">
-                                          <%= section.valueAdd %>
-                                        </p>
-                                      </div>
-                                      <% } %>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Sidebar Column -->
-                  <div class="col-lg-4">
-
-                    <!-- Intra Links -->
-                    <div class="card mb-4">
-                      <div class="card-body">
-                        <h5 class="mb-3">Related Services</h5>
-                        <ul class="nav flex-column">
-                          <% section.intraLinks.forEach(link=> { %>
-                            <% if (link && link.title && link.url) { %>
-                              <li class="nav-item">
-                                <a class="nav-link ps-0" href="<%= link.url %>">
-                                  <%= link.title %>
-                                </a>
-                              </li>
-                              <% } %>
-                                <% }) %>
+            <!-- What We Offer Section -->
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-body p-4 p-lg-5">
+                  <h3 class="mb-4">What We Offer</h3>
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <div class="service-item p-4 bg-200 rounded-3 h-100">
+                        <h4 class="mb-3">Search Engine Optimization (SEO)</h4>
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">• Keyword optimization</li>
+                          <li class="mb-2">• Technical SEO</li>
+                          <li class="mb-2">• Backlink building</li>
+                          <li class="mb-2">• Content strategies</li>
                         </ul>
                       </div>
                     </div>
-                    <!-- Section CTA -->
-                    <% if (section.cta) { %>
-                      <div class="cta-section bg-primary text-white p-4 rounded-3 mb-4">
-                        <% if (section.cta.title) { %>
-                          <h5 class="text-center text-white mb-3">
-                            <%= section.cta.title %>
-                          </h5>
-                          <% } %>
-                            <form class="consultation-form cta-form">
-                              <input type="hidden" name="source" value="<%= service.id %>">
-                              <div class="row g-3">
-                                <div class="col-md-6">
-                                  <input type="text" class="form-control" name="name"
-                                    placeholder="<%= section.cta.form && section.cta.form.name ? section.cta.form.name : 'Name' %>"
-                                    required>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="tel" class="form-control" name="mobile"
-                                    placeholder="<%= section.cta.form && section.cta.form.mobile ? section.cta.form.mobile : 'Mobile Number' %>"
-                                    required>
-                                </div>
-                                <div class="col-12">
-                                  <button type="submit" class="btn btn-warning w-100">
-                                    <%= section.cta.buttonText ? section.cta.buttonText : 'Request Call Back' %>
-                                  </button>
-                                </div>
-                              </div>
-                            </form>
+                    <div class="col-md-6">
+                      <div class="service-item p-4 bg-200 rounded-3 h-100">
+                        <h4 class="mb-3">Pay-Per-Click Advertising</h4>
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">• Campaign setup</li>
+                          <li class="mb-2">• A/B testing</li>
+                          <li class="mb-2">• Landing pages</li>
+                          <li class="mb-2">• Conversion tracking</li>
+                        </ul>
                       </div>
-                      <% } %>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item p-4 bg-200 rounded-3 h-100">
+                        <h4 class="mb-3">Social Media Marketing (SMM)</h4>
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">• Strategy development</li>
+                          <li class="mb-2">• Content design</li>
+                          <li class="mb-2">• Page management</li>
+                          <li class="mb-2">• Paid promotions</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item p-4 bg-200 rounded-3 h-100">
+                        <h4 class="mb-3">Content Marketing</h4>
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-2">• Blog creation</li>
+                          <li class="mb-2">• Video production</li>
+                          <li class="mb-2">• Newsletter campaigns</li>
+                          <li class="mb-2">• Lead magnets</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <% }) %>
-                  <% } %>
-      </div>
-    </div>
-  </section>
+              </div>
+            </div>
 
-  <!-- Footer CTA Section -->
-  <section class="bg-primary text-white py-6">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0">
-          <% if (service && service.footer && service.footer.description) { %>
-            <h4 class="mb-3 lh-base text-white">
-              <%= service.footer.description %>
-            </h4>
-            <% } %>
-        </div>
-        <div class="col-lg-4">
-          <div class="card bg-white text-dark p-4">
-            <% if (service && service.footer && service.footer.cta && service.footer.cta.title) { %>
-              <h4 class="text-center mb-3">
-                <%= service.footer.cta.title %>
-              </h4>
-              <% } %>
-                <form class="cta-form">
-                  <input type="hidden" name="source" value="<%= service.id %>">
-                  <div class="mb-3">
-                    <input type="text" name="name" class="form-control"
-                      placeholder="<%= service && service.footer && service.footer.cta && service.footer.cta.form && service.footer.cta.form.name ? service.footer.cta.form.name : 'Name' %>"
-                      required>
+            <!-- CTA Section -->
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-body p-4 p-lg-5">
+                  <div class="row align-items-center">
+                    <div class="col-lg-6">
+                      <h3 class="mb-4">Are you facing these challenges?</h3>
+                      <ul class="list-unstyled mb-4">
+                        <li class="mb-3">
+                          <i class="fas fa-check-circle text-primary me-2"></i>
+                          No Traffic? We bring leads
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check-circle text-primary me-2"></i>
+                          Poor ROI from ads? We support you with high-ROI Ads
+                        </li>
+                        <li class="mb-3">
+                          <i class="fas fa-check-circle text-primary me-2"></i>
+                          Weak online presence? We support you to build strong branding
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="bg-primary text-white p-4 rounded-3">
+                        <h4 class="text-center mb-4">Book a free digital audit & growth roadmap!</h4>
+                        <form class="consultation-form">
+                          <div class="mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Name" required>
+                          </div>
+                          <div class="mb-3">
+                            <input type="tel" class="form-control" name="mobile" placeholder="Mobile Number" required>
+                          </div>
+                          <button type="submit" class="btn btn-warning w-100">Submit</button>
+                        </form>
+                      </div>
+                    </div>
                   </div>
-                  <div class="mb-3">
-                    <input type="tel" name="mobile" class="form-control"
-                      placeholder="<%= service && service.footer && service.footer.cta && service.footer.cta.form && service.footer.cta.form.mobile ? service.footer.cta.form.mobile : 'Mobile Number' %>"
-                      required>
-                  </div>
-                  <button type="submit" class="btn btn-primary w-100">
-                    <%= service && service.footer && service.footer.cta && service.footer.cta.form &&
-                      service.footer.cta.form.buttonText ? service.footer.cta.form.buttonText : 'Submit' %>
-                  </button>
-                </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <%- include('partials/footer') %>
+      <!-- Bottom CTA Section -->
+      <section class="py-6">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="card shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="text-center mb-4">Download Sample Marketing Plan</h4>
+                  <form class="download-form">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3">
+                      <input type="tel" class="form-control" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Download Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section class="bg-primary text-white py-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h3 class="mb-4">Why Choose HADITA?</h3>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>
+                  Industry-certified experts (Google, Meta, HubSpot)
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>
+                  Proven track record across GCC
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>
+                  Transparent reporting with real-time dashboards
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>
+                  Full integration with CRM & ERP tools
+                </li>
+              </ul>
+
+              <h4 class="mb-3">We work with startups, SMBs, and enterprises across:</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li class="mb-2">• Retail & E-commerce</li>
+                    <li class="mb-2">• Healthcare</li>
+                    <li class="mb-2">• Education</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li class="mb-2">• Real Estate</li>
+                    <li class="mb-2">• Technology</li>
+                    <li class="mb-2">• Professional Services</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card bg-white text-dark p-4">
+                <h4 class="text-center mb-4">Let's Build Your Digital Growth Engine!</h4>
+                <p class="text-center mb-4">We are excited to start the conversation on how we can support you.</p>
+                <form class="cta-form">
+                  <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="tel" name="mobile" class="form-control" placeholder="Mobile" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <% } %>
+
+
+
+
+
+        <%- include('partials/footer') %>
