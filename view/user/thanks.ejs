@@ -1,9 +1,7 @@
 <%- include('partials/header') %>
 
-
-
     <!-- Main Content Section -->
-    <section class="bg-100 py-6 mt-4">
+    <section class="bg-100 py-6 mt-4 thanks-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -23,53 +21,9 @@
                         </div>
                     </div>
 
-                    <!-- Trending Services Section -->
-                    <div class="card">
-                        <div class="card-body p-4 p-lg-5">
-                            <h3 class="mb-4">Explore Our Services</h3>
-                            <div class="row g-4">
-                                <% if (trendingServices && Array.isArray(trendingServices)) { %>
-                                    <% trendingServices.forEach(service=> { %>
-                                        <div class="col-md-6">
-                                            <div class="service-card p-4 bg-200 rounded-3 h-100">
-                                                <h4 class="mb-3">
-                                                    <%= service.title %>
-                                                </h4>
-                                                <p class="mb-3">
-                                                    <%= service.shortDescription %>
-                                                </p>
-                                                <a href="/services/<%= service.id %>"
-                                                    class="btn btn-outline-primary">Learn More</a>
-                                            </div>
-                                        </div>
-                                        <% }) %>
-                                            <% } else { %>
-                                                <!-- Default trending services if none provided -->
-                                                <div class="col-md-6">
-                                                    <div class="service-card p-4 bg-200 rounded-3 h-100">
-                                                        <h4 class="mb-3">Digital Marketing</h4>
-                                                        <p class="mb-3">Drive growth and increase visibility with our
-                                                            comprehensive digital marketing solutions.</p>
-                                                        <a href="/services/digital-marketing-services"
-                                                            class="btn btn-outline-primary">Learn More</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="service-card p-4 bg-200 rounded-3 h-100">
-                                                        <h4 class="mb-3">Web Development</h4>
-                                                        <p class="mb-3">Create stunning, responsive websites that
-                                                            convert visitors into customers.</p>
-                                                        <a href="/services/web-development"
-                                                            class="btn btn-outline-primary">Learn More</a>
-                                                    </div>
-                                                </div>
-                                                <% } %>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <%- include('partials/footer') %>
+    <%- include('partials/footer',{form:'remove'}) %>

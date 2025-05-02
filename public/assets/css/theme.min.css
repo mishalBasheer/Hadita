@@ -17767,3 +17767,10 @@ iframe.yt-video.loaded {
   50%  { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+
+.thanks-section{
+  min-height: calc(100vh - 4.6rem);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

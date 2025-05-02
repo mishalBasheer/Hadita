@@ -3,169 +3,172 @@
 <!--===============================================-->
 <!-- ============================================-->
 <!-- <section> begin ============================-->
-<section class="bg-primary pb-0">
-  <div class="container">
-    <div class="row align-items-center text-white">
-      <div class="col-lg-4">
-        <div class="border border-2 border-warning p-4 py-lg-5 text-center rounded-3" data-zanim-timeline="{}"
-          data-zanim-trigger="scroll">
-          <div class="overflow-hidden">
-            <h4 class="text-white" data-zanim-xs='{"delay":0}'>
-              Request a call back
-            </h4>
+
+<% if (form!='remove' ) { %>
+  <section class="bg-primary pb-0">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <div class="col-lg-4">
+          <div class="border border-2 border-warning p-4 py-lg-5 text-center rounded-3" data-zanim-timeline="{}"
+            data-zanim-trigger="scroll">
+            <div class="overflow-hidden">
+              <h4 class="text-white" data-zanim-xs='{"delay":0}'>
+                Request a call back
+              </h4>
+            </div>
+            <div class="overflow-hidden">
+              <p class="px-lg-1 text-100 mb-0" data-zanim-xs='{"delay":0.1}'>
+                Would you like to speak to one of our consultants, please submit
+                your details and we will be in touch with you shortly. You can
+                also email us if you would prefer.
+              </p>
+            </div>
           </div>
-          <div class="overflow-hidden">
-            <p class="px-lg-1 text-100 mb-0" data-zanim-xs='{"delay":0.1}'>
-              Would you like to speak to one of our consultants, please submit
-              your details and we will be in touch with you shortly. You can
-              also email us if you would prefer.
+          <ul class="custom-list-unstyled mt-4">
+            <li class="mb-3">
+              <a class="text-white" href="/contact">Contact Us</a>
+            </li>
+            <li class="mb-3">
+              <a class="text-white" href="/privacy-policy">Privacy Policy</a>
+            </li>
+            <li class="mb-3">
+              <a class="text-white" href="/terms">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
+          <h5 class="text-white">I would like to discuss:</h5>
+          <form class="mt-4 cta-form">
+            <div class="row">
+              <div class="col-6">
+                <input type="hidden" name="source" value="footer-form">
+                <input class="form-control" type="text" name="name" placeholder="Your Name" aria-label="Your Name"
+                  required />
+              </div>
+              <div class="col-6">
+                <input class="form-control" type="text" placeholder="Phone Number" name="mobile"
+                  aria-label="Phone Number" required />
+              </div>
+              <div class="col-6 mt-4">
+                <input class="form-control" type="text" placeholder="Subject" name="message" aria-label="Subject"
+                  required />
+              </div>
+              <div class="col-6 mt-4">
+                <button class="btn btn-warning w-100" type="submit" id="submit">
+                  Submit
+                </button>
+                <ul class="custom-list-unstyled mt-4">
+                  <li class="mb-3">
+                    <a class="text-decoration-none d-flex align-items-center"
+                      href="https://www.linkedin.com/company/hadita/">
+                      <span class="brand-icon me-3"><span class="fab fa-linkedin-in"></span></span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a class="text-decoration-none d-flex align-items-center" href="index.html#!">
+                      <span class="brand-icon text-white me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" aria-hidden="true"
+                          focusable="false">
+                          <path fill="#fff"
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a class="text-decoration-none d-flex align-items-center"
+                      href="https://www.facebook.com/haditatech?mibextid=LQQJ4d" target="_blank">
+                      <span class="brand-icon me-3"><span class="fab fa-facebook-f"></span></span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a class="text-decoration-none d-flex align-items-center"
+                      href="https://www.instagram.com/haditatech?igsh=eGZzZGhxZ2Zra3ll&utm_source=qr">
+                      <span class="brand-icon me-3"><span class="fab fa-instagram"></span></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <% } %>
+    <footer class="footer bg-primary text-center py-4">
+      <div class="container">
+        <div class="row align-items-center opacity-85 text-white">
+          <div class="col-sm-3 text-sm-start">
+            <!-- Logo placeholder -->
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <p class="lh-lg mb-0 fw-semi-bold">
+              &copy; Copyright <%= new Date().getFullYear() %> Hadita Tech
             </p>
           </div>
         </div>
-        <ul class="custom-list-unstyled mt-4">
-          <li class="mb-3">
-            <a class="text-white" href="/contact">Contact Us</a>
-          </li>
-          <li class="mb-3">
-            <a class="text-white" href="/privacy-policy">Privacy Policy</a>
-          </li>
-          <li class="mb-3">
-            <a class="text-white" href="/terms">Terms of Use</a>
-          </li>
-        </ul>
       </div>
-      <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
-        <h5 class="text-white">I would like to discuss:</h5>
-        <form class="mt-4 cta-form">
-          <div class="row">
-            <div class="col-6">
-              <input type="hidden" name="source" value="footer-form">
-              <input class="form-control" type="text" name="name" placeholder="Your Name" aria-label="Your Name"
-                required />
-            </div>
-            <div class="col-6">
-              <input class="form-control" type="text" placeholder="Phone Number" name="mobile" aria-label="Phone Number"
-                required />
-            </div>
-            <div class="col-6 mt-4">
-              <input class="form-control" type="text" placeholder="Subject" name="message" aria-label="Subject"
-                required />
-            </div>
-            <div class="col-6 mt-4">
-              <button class="btn btn-warning w-100" type="submit" id="submit">
-                Submit
-              </button>
-              <ul class="custom-list-unstyled mt-4">
-                <li class="mb-3">
-                  <a class="text-decoration-none d-flex align-items-center"
-                    href="https://www.linkedin.com/company/hadita/">
-                    <span class="brand-icon me-3"><span class="fab fa-linkedin-in"></span></span>
-                  </a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-decoration-none d-flex align-items-center" href="index.html#!">
-                    <span class="brand-icon text-white me-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" aria-hidden="true"
-                        focusable="false">
-                        <path fill="#fff"
-                          d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-                      </svg>
-                    </span>
-                  </a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-decoration-none d-flex align-items-center"
-                    href="https://www.facebook.com/haditatech?mibextid=LQQJ4d" target="_blank">
-                    <span class="brand-icon me-3"><span class="fab fa-facebook-f"></span></span>
-                  </a>
-                </li>
-                <li class="mb-3">
-                  <a class="text-decoration-none d-flex align-items-center"
-                    href="https://www.instagram.com/haditatech?igsh=eGZzZGhxZ2Zra3ll&utm_source=qr">
-                    <span class="brand-icon me-3"><span class="fab fa-instagram"></span></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-</section>
+    </footer>
 
-<footer class="footer bg-primary text-center py-4">
-  <div class="container">
-    <div class="row align-items-center opacity-85 text-white">
-      <div class="col-sm-3 text-sm-start">
-        <!-- Logo placeholder -->
-      </div>
-      <div class="col-sm-6 mt-3 mt-sm-0">
-        <p class="lh-lg mb-0 fw-semi-bold">
-          &copy; Copyright <%= new Date().getFullYear() %> Hadita Tech
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
+    <!-- Deferred JavaScript -->
+    <script src="/vendors/popper/popper.min.js" defer></script>
+    <script src="/vendors/bootstrap/bootstrap.min.js" defer></script>
+    <script src="/vendors/is/is.min.js" defer></script>
+    <script src="/vendors/bigpicture/BigPicture.js" defer></script>
+    <script src="/vendors/countup/countUp.umd.js" defer></script>
+    <script src="/vendors/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://prium.github.io/elixir/v3.0.0/vendors/fontawesome/all.min.js" defer></script>
+    <script src="/vendors/lodash/lodash.min.js" defer></script>
+    <script src="/vendors/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+    <script src="/vendors/gsap/gsap.js" defer></script>
+    <script src="/vendors/gsap/customEase.js" defer></script>
+    <script src="/assets/js/theme.js" defer></script>
 
-<!-- Deferred JavaScript -->
-<script src="/vendors/popper/popper.min.js" defer></script>
-<script src="/vendors/bootstrap/bootstrap.min.js" defer></script>
-<script src="/vendors/is/is.min.js" defer></script>
-<script src="/vendors/bigpicture/BigPicture.js" defer></script>
-<script src="/vendors/countup/countUp.umd.js" defer></script>
-<script src="/vendors/swiper/swiper-bundle.min.js" defer></script>
-<script src="https://prium.github.io/elixir/v3.0.0/vendors/fontawesome/all.min.js" defer></script>
-<script src="/vendors/lodash/lodash.min.js" defer></script>
-<script src="/vendors/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
-<script src="/vendors/gsap/gsap.js" defer></script>
-<script src="/vendors/gsap/customEase.js" defer></script>
-<script src="/assets/js/theme.js" defer></script>
+    <!-- Tawk.to Chat (Load after page is interactive) -->
+    <script>
+      window.addEventListener('load', function () {
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+          var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = 'https://embed.tawk.to/67f7775e7f26c3190cf0f8f9/1iofakivt';
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin', '*');
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      });
+    </script>
+    <script>
 
-<!-- Tawk.to Chat (Load after page is interactive) -->
-<script>
-  window.addEventListener('load', function () {
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/67f7775e7f26c3190cf0f8f9/1iofakivt';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  });
-</script>
-<script>
+      $(".cta-form").submit(function (e) {
+        e.preventDefault(); // Prevent default form submission
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        loadingOverlay.style.display = 'flex';
 
-  $(".cta-form").submit(function (e) {
-    e.preventDefault(); // Prevent default form submission
-    const loadingOverlay = document.getElementById('loadingOverlay');
-    loadingOverlay.style.display = 'flex';
-
-    const $form = $(this); // Reference to the current form that triggered submission
-    $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbwEyKN4f5ab0khNT_EehbwbJ7_J8OSwMZ77TO6w9eSxwbkhzHaVRYluwdTjSZn052LSyg/exec",
-      data: $form.serialize(),
-      method: "post",
-      success: function (response) {
-        loadingOverlay.style.display = 'none';
-        // Redirect to thanks page instead of showing alert
-        window.location.href = '/thank-you';
-      },
-      error: function (err) {
-        loadingOverlay.style.display = 'none';
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops!',
-          text: 'Something went wrong. Please try again.',
-          confirmButtonColor: '#d33'
+        const $form = $(this); // Reference to the current form that triggered submission
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycbwEyKN4f5ab0khNT_EehbwbJ7_J8OSwMZ77TO6w9eSxwbkhzHaVRYluwdTjSZn052LSyg/exec",
+          data: $form.serialize(),
+          method: "post",
+          success: function (response) {
+            loadingOverlay.style.display = 'none';
+            // Redirect to thanks page instead of showing alert
+            window.location.href = '/thank-you';
+          },
+          error: function (err) {
+            loadingOverlay.style.display = 'none';
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops!',
+              text: 'Something went wrong. Please try again.',
+              confirmButtonColor: '#d33'
+            });
+          }
         });
-      }
-    });
-  });
-</script>
+      });
+    </script>
 
-</body>
+    </body>
 
-</html>
+    </html>
