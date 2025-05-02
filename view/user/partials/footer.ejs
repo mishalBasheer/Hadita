@@ -95,6 +95,11 @@
       </div>
   </section>
 
+  <!-- Whatsapp icon -->
+  <div class="whatsapp-btn-container">
+    <a class="whatsapp-btn" href="https://wa.me/971524368556"><i class="fab fa-whatsapp"></i></a>
+    <span>Contact Us</span>
+  </div>
   <% } %>
     <footer class="footer bg-primary text-center py-4">
       <div class="container">
@@ -111,6 +116,7 @@
       </div>
     </footer>
 
+
     <!-- Deferred JavaScript -->
     <script src="/vendors/popper/popper.min.js" defer></script>
     <script src="/vendors/bootstrap/bootstrap.min.js" defer></script>
@@ -125,50 +131,54 @@
     <script src="/vendors/gsap/customEase.js" defer></script>
     <script src="/assets/js/theme.js" defer></script>
 
-    <!-- Tawk.to Chat (Load after page is interactive) -->
-    <script>
-      window.addEventListener('load', function () {
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-          var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-          s1.async = true;
-          s1.src = 'https://embed.tawk.to/67f7775e7f26c3190cf0f8f9/1iofakivt';
-          s1.charset = 'UTF-8';
-          s1.setAttribute('crossorigin', '*');
-          s0.parentNode.insertBefore(s1, s0);
-        })();
-      });
-    </script>
-    <script>
-
-      $(".cta-form").submit(function (e) {
-        e.preventDefault(); // Prevent default form submission
-        const loadingOverlay = document.getElementById('loadingOverlay');
-        loadingOverlay.style.display = 'flex';
-
-        const $form = $(this); // Reference to the current form that triggered submission
-        $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbwEyKN4f5ab0khNT_EehbwbJ7_J8OSwMZ77TO6w9eSxwbkhzHaVRYluwdTjSZn052LSyg/exec",
-          data: $form.serialize(),
-          method: "post",
-          success: function (response) {
-            loadingOverlay.style.display = 'none';
-            // Redirect to thanks page instead of showing alert
-            window.location.href = '/thank-you';
-          },
-          error: function (err) {
-            loadingOverlay.style.display = 'none';
-            Swal.fire({
-              icon: 'error',
-              title: 'Oops!',
-              text: 'Something went wrong. Please try again.',
-              confirmButtonColor: '#d33'
-            });
-          }
+    <% if (form!='remove' ){ %>
+      <!-- Tawk.to Chat (Load after page is interactive) -->
+      <script>
+        window.addEventListener('load', function () {
+          var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+          (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67f7775e7f26c3190cf0f8f9/1iofakivt';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+          })();
         });
-      });
-    </script>
+      </script>
+      <script>
 
-    </body>
+        $(".cta-form").submit(function (e) {
+          e.preventDefault(); // Prevent default form submission
+          const loadingOverlay = document.getElementById('loadingOverlay');
+          loadingOverlay.style.display = 'flex';
 
-    </html>
+          const $form = $(this); // Reference to the current form that triggered submission
+          $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbwEyKN4f5ab0khNT_EehbwbJ7_J8OSwMZ77TO6w9eSxwbkhzHaVRYluwdTjSZn052LSyg/exec",
+            data: $form.serialize(),
+            method: "post",
+            success: function (response) {
+              loadingOverlay.style.display = 'none';
+              // Redirect to thanks page instead of showing alert
+              window.location.href = '/thank-you';
+            },
+            error: function (err) {
+              loadingOverlay.style.display = 'none';
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops!',
+                text: 'Something went wrong. Please try again.',
+                confirmButtonColor: '#d33'
+              });
+            }
+          });
+        });
+      </script>
+      <% } %>
+
+
+
+        </body>
+
+        </html>
