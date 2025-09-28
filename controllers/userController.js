@@ -4631,6 +4631,242 @@ const showServiceDetails = (req, res) => {
       },
     },
     {
+      id: "p-collab",
+      title: "P-Collab – Smarter Collaboration for Enterprises",
+      description:
+        "At HADITA, we are proud to introduce P-Collab, a next-generation business collaboration and supply chain platform now available in UAE and Saudi Arabia. Designed to simplify and digitize interactions between enterprises, suppliers, transporters, and customers, P-Collab enables organizations to operate with greater transparency, speed, and efficiency.",
+      content: [
+        {
+          id: "vendor-partner-onboarding",
+          heading: "Vendor & Partner Onboarding",
+          description:
+            "Streamlined registration and verification for suppliers, customers, and transporters.",
+          offerings: [
+            "Automated registration process",
+            "Document verification and validation",
+            "KYC and compliance checks",
+            "Partner profile management",
+            "Approval workflow automation",
+            "Multi-level authorization",
+          ],
+          valueAdd:
+            "Reduce onboarding time from weeks to days while ensuring compliance and data accuracy across all stakeholders.",
+          cta: {
+            title: "Streamline your vendor onboarding process with P-Collab",
+            buttonText: "Request Demo",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "RFQ & Procurement Management",
+              url: "#rfq-procurement-management",
+            },
+            {
+              title: "Invoice & Payment Automation",
+              url: "#invoice-payment-automation",
+            },
+          ],
+        },
+        {
+          id: "rfq-procurement-management",
+          heading: "RFQ & Procurement Management",
+          description:
+            "Create, share, and evaluate RFQs with complete visibility and smart awarding.",
+          offerings: [
+            "Digital RFQ creation and distribution",
+            "Automated supplier notifications",
+            "Bid comparison and evaluation",
+            "Smart awarding algorithms",
+            "Contract generation",
+            "Performance tracking",
+          ],
+          valueAdd:
+            "Transform procurement from a time-consuming process to an efficient, transparent, and data-driven operation.",
+          cta: {
+            title:
+              "Optimize your procurement process with intelligent RFQ management",
+            buttonText: "Get Procurement Demo",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Vendor & Partner Onboarding",
+              url: "#vendor-partner-onboarding",
+            },
+            {
+              title: "Service & Contract Governance",
+              url: "#service-contract-governance",
+            },
+          ],
+        },
+        {
+          id: "invoice-payment-automation",
+          heading: "Invoice & Payment Automation",
+          description:
+            "Digitize accounts payable and receivable with end-to-end transparency.",
+          offerings: [
+            "Automated invoice processing",
+            "Three-way matching",
+            "Approval workflows",
+            "Payment scheduling",
+            "Real-time payment tracking",
+            "Financial reporting",
+          ],
+          valueAdd:
+            "Eliminate manual invoice processing errors and reduce payment cycles while maintaining complete audit trails.",
+          cta: {
+            title:
+              "Automate your invoice and payment processes for better cash flow management",
+            buttonText: "Request Automation Demo",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "RFQ & Procurement Management",
+              url: "#rfq-procurement-management",
+            },
+            {
+              title: "Powerful ERP Integrations",
+              url: "#powerful-erp-integrations",
+            },
+          ],
+        },
+        {
+          id: "service-contract-governance",
+          heading: "Service & Contract Governance",
+          description:
+            "Stay compliant with automated contract tracking and renewals.",
+          offerings: [
+            "Contract lifecycle management",
+            "Automated renewal notifications",
+            "Compliance monitoring",
+            "License tracking",
+            "Performance metrics",
+            "Risk assessment",
+          ],
+          valueAdd:
+            "Ensure regulatory compliance and reduce contract-related risks through automated governance and monitoring.",
+          cta: {
+            title:
+              "Strengthen your contract governance with automated compliance tracking",
+            buttonText: "Discuss Governance",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Invoice & Payment Automation",
+              url: "#invoice-payment-automation",
+            },
+            {
+              title: "Analytics & Insights",
+              url: "#analytics-insights",
+            },
+          ],
+        },
+        {
+          id: "powerful-erp-integrations",
+          heading: "Powerful ERP Integrations",
+          description:
+            "Built-in APIs, webhooks, and FTP support for SAP, Oracle, Odoo, and more.",
+          offerings: [
+            "Pre-built SAP connectors",
+            "Oracle ERP integration",
+            "Odoo synchronization",
+            "Custom API development",
+            "Webhook configurations",
+            "FTP data exchange",
+          ],
+          valueAdd:
+            "Seamless integration with your existing ERP systems ensures data consistency and eliminates manual data entry.",
+          cta: {
+            title:
+              "Connect P-Collab with your existing ERP systems for unified operations",
+            buttonText: "Request Integration Demo",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Service & Contract Governance",
+              url: "#service-contract-governance",
+            },
+            {
+              title: "Analytics & Insights",
+              url: "#analytics-insights",
+            },
+          ],
+        },
+        {
+          id: "analytics-insights",
+          heading: "Analytics & Insights",
+          description:
+            "Actionable dashboards to monitor performance, compliance, and spending.",
+          offerings: [
+            "Real-time performance dashboards",
+            "Spend analytics and reporting",
+            "Compliance monitoring",
+            "Supplier performance metrics",
+            "Cost optimization insights",
+            "Predictive analytics",
+          ],
+          valueAdd:
+            "Make data-driven decisions with comprehensive insights that help optimize operations and reduce costs.",
+          cta: {
+            title:
+              "Transform your data into actionable insights with P-Collab analytics",
+            buttonText: "View Analytics Demo",
+            form: {
+              name: "Name",
+              mobile: "Mobile#",
+              buttonText: "Submit",
+            },
+          },
+          intraLinks: [
+            {
+              title: "Powerful ERP Integrations",
+              url: "#powerful-erp-integrations",
+            },
+            {
+              title: "Vendor & Partner Onboarding",
+              url: "#vendor-partner-onboarding",
+            },
+          ],
+        },
+      ],
+      footer: {
+        description:
+          "Why Choose HADITA for P-Collab? As the official reseller for Saudi Arabia, HADITA provides comprehensive support from consultation to implementation and ongoing maintenance. We work with enterprises across various industries to streamline their collaboration and supply chain operations.",
+        cta: {
+          title:
+            "Ready to transform your business collaboration? Contact us today to book a demo and see how P-Collab can revolutionize your operations.",
+          form: {
+            name: "Name",
+            mobile: "Mobile#",
+            buttonText: "Submit",
+          },
+        },
+      },
+    },
+    {
       id: "sap-business-one",
       title: "SAP Services",
       description:
